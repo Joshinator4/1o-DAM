@@ -1,0 +1,252 @@
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase Principal
+*/
+package ejercicio1;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+import ejercicio1.SocioBaloncesto.TipoPosicion;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		ArrayList<Socio> listaSocios = new ArrayList<Socio>();
+		ArrayList<Partido> listaPartido = new ArrayList<Partido>();
+		File archivoSocioFutbol = new File("SociosFutbol.txt");
+		File archivoSocioBaloncesto = new File("SociosBaloncesto.txt");
+		File archivoPartidosFutbol = new File("PartidosFutbol.txt");
+		File archivoPartidosBaloncesto = new File("PartidosBaloncesto.txt");
+		
+		int opcionDeseada;
+		do {
+			System.out.println("Elija un opcion:\n1 - Crear socios.\n2 - Insertar la participación de los socios"
+					+ "\n3 - Mostrar los socios que practican fútbol ordenados por nombre y las actuaciones realizadas ordenadas por fecha."
+					+ "\n4 - Mostrar los socios que practican baloncesto ordenados por nombre y las actuaciones realizadas ordenadas por fecha."
+					+ "\n5 - Mostrar la información del socio que ha marcado más goles.\n6 - Mostrar la información del socio que más puntos ha conseguido."
+					+ "\n7 - Mostrar el dni y nombre de los socios que no han participado en ninguna competición\n0 - Salir del programa");
+			opcionDeseada = teclado.nextInt();
+			switch (opcionDeseada) {
+			case (1): {
+				listaSocios.addAll(lectorSocios(archivoSocioFutbol, 1));
+				listaSocios.addAll(lectorSocios(archivoSocioBaloncesto, 2));
+				break;
+
+			}
+			case (2): {
+				lectorPartidos(listaSocios, listaPartido, archivoPartidosFutbol, 1);
+				lectorPartidos(listaSocios, listaPartido, archivoPartidosBaloncesto, 2);
+				break;
+				
+			}
+			case (3): {
+				Collections.sort(listaSocios);
+				Collections.sort(listaPartido);
+				System.out.println(mostrarSocios(listaSocios, "SocioFutbol")); 
+				System.out.println(mostrarPartidos(listaPartido, "PartidoFutbol"));
+				break;
+
+			}
+			case (4): {
+				Collections.sort(listaSocios);
+				Collections.sort(listaPartido);
+				System.out.println(mostrarSocios(listaSocios, "SocioBaloncesto")); 
+				System.out.println(mostrarPartidos(listaPartido, "PartidoBaloncesto"));
+				
+				break;
+
+			}
+			case (5): {
+				System.out.println(mostrarMayorGoleador(listaSocios));
+				break;
+
+			}
+			case (6): {
+				System.out.println(mostrarMayorEncestador(listaSocios));
+				break;
+
+			}
+			case (7): {
+				System.out.println(mostrarNoParticipantes(listaSocios));
+				break;
+
+			}
+			case (0): {
+				
+				break;
+			}
+			default: {
+				System.out.println(
+						"Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+			}
+
+			}
+
+		} while (opcionDeseada != 0);
+
+	}
+	
+	public static TipoPosicion convertirEnum(String posicion) {
+		TipoPosicion devolucion = null;
+		if(posicion.equalsIgnoreCase("BASE")) {
+			devolucion = TipoPosicion.BASE;
+		}else if(posicion.equalsIgnoreCase("ESCOLTA")) {
+			devolucion = TipoPosicion.ESCOLTA;
+		}else if(posicion.equalsIgnoreCase("ALERO")) {
+			devolucion = TipoPosicion.ALERO;
+		}else if(posicion.equalsIgnoreCase("PIVOT")) {
+			devolucion = TipoPosicion.PIVOT;
+		}
+		return devolucion;
+		
+	}
+	
+	public static ArrayList<Socio> lectorSocios(File archivo, int tipo) {
+		ArrayList<Socio> lista = new ArrayList<Socio>();
+		try {
+			Scanner lector = new Scanner (archivo);
+			SocioBaloncesto.TipoPosicion posicion;
+			while(lector.hasNextLine()) {
+				String linea = lector.nextLine();
+				String[] lineaSeparada = linea.split(";"); 
+				if(filtrarDni(lista, lineaSeparada[1])) {
+					if(tipo == 1) {
+						SocioFutbol socio = new SocioFutbol(lineaSeparada[0], lineaSeparada[1], lineaSeparada[2], lineaSeparada[3]);
+						lista.add(socio);
+						
+					}else {
+						posicion = convertirEnum(lineaSeparada[3]);
+						SocioBaloncesto socio1 = new SocioBaloncesto(lineaSeparada[0], lineaSeparada[1], lineaSeparada[2], posicion);
+						lista.add(socio1);
+						
+					}
+						
+				}else {
+					System.out.println("Dni: " + lineaSeparada[1] + " ya existe. no se añadirá el socio");
+				}				
+		
+			}
+			lector.close();
+		}catch(FileNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+		return lista;
+	}
+	
+	public static void lectorPartidos(ArrayList<Socio> listaSocios, ArrayList<Partido> listaPartidos, File archivo, int tipo) {
+		try {
+			Scanner lector = new Scanner (archivo);
+			while(lector.hasNextLine()) {
+				String linea = lector.nextLine();
+				String[] lineaSeparada = linea.split(";"); 
+				int posicionEnLaLista = filtrarIdentificador(listaSocios, Integer.parseInt(lineaSeparada[0]));
+				if(posicionEnLaLista >= 0 && tipo == 1) {
+					PartidoFutbol partido = new PartidoFutbol(LocalDate.parse(lineaSeparada[1]), Integer.parseInt(lineaSeparada[2]), Integer.parseInt(lineaSeparada[3]), Integer.parseInt(lineaSeparada[4]));
+					listaSocios.get(posicionEnLaLista).agregarListaPartidos(partido);
+					listaPartidos.add(partido);
+				}else if(filtrarIdentificador(listaSocios, Integer.parseInt(lineaSeparada[0])) >= 0 && tipo == 2){
+					PartidoBaloncesto partido1 = new PartidoBaloncesto(LocalDate.parse(lineaSeparada[1]), Integer.parseInt(lineaSeparada[2]), Integer.parseInt(lineaSeparada[3]), Integer.parseInt(lineaSeparada[4]), Integer.parseInt(lineaSeparada[5]));
+					listaSocios.get(posicionEnLaLista).agregarListaPartidos(partido1);
+					listaPartidos.add(partido1);
+				}else {
+					System.out.println("El Identificador de socio " + lineaSeparada[0] +" no existe, no se añadirá ningun partido");
+				}
+			}
+			lector.close();
+		}catch(FileNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	public static boolean filtrarDni(ArrayList<Socio> lista, String dni) {
+		boolean devolucion = true;
+		for(Socio i: lista) {
+			if(i.getDni().equals(dni)) {
+				devolucion = false;
+			}
+		}
+		return devolucion;
+		
+	}
+	
+	public static int filtrarIdentificador(ArrayList<Socio> lista, int identificador) {
+		int devolucion = -1;
+		for(Socio i: lista) {
+			if(i.getIdentificador() == identificador) {
+				devolucion = lista.indexOf(i);
+			}
+		}
+		return devolucion;
+		
+	}
+	
+	public static String mostrarSocios(ArrayList<Socio> lista, String tipoSocio) {
+		String devolucion="";
+		for(Socio i: lista) {
+			if(i.getClass().getSimpleName().equals(tipoSocio)) {
+				devolucion += i.toString();
+			}
+		}
+		return devolucion;
+	}
+	
+	public static String mostrarPartidos(ArrayList<Partido> lista, String tipoPartido) {
+		String devolucion="";
+		for(Partido i: lista) {
+			if(i.getClass().getSimpleName().equals(tipoPartido)) {
+				devolucion += i.toString();
+			}
+		}
+		return devolucion;
+	}
+	
+	public static String mostrarMayorGoleador(ArrayList<Socio> lista) {
+		String devolucion = "";
+		int golesMax = 0, goleador = 0;
+		for(Socio i: lista) {
+			if(i instanceof SocioFutbol) {
+				if(((SocioFutbol) i).calcularGoles() > golesMax) {
+					golesMax = ((SocioFutbol) i).calcularGoles();
+					goleador = lista.indexOf(i);
+				}
+			}
+		}
+		devolucion = lista.get(goleador).toString() + "cantidad goles total: " + golesMax;
+		
+		return devolucion;
+	}
+	public static String mostrarMayorEncestador(ArrayList<Socio> lista) {
+		String devolucion = "";
+		int puntosMax = 0, anotador = 0;
+		for(Socio i: lista) {
+			if(i instanceof SocioBaloncesto) {
+				if(((SocioBaloncesto) i).calcularPuntos() > puntosMax) {
+					puntosMax = ((SocioBaloncesto) i).calcularPuntos();
+					anotador = lista.indexOf(i);
+				}
+			}
+		}
+		devolucion = lista.get(anotador).toString() + "cantidad puntos totales anotados: " + puntosMax;
+		
+		return devolucion;
+	}
+	public static String mostrarNoParticipantes(ArrayList<Socio> lista) {
+		String devolucion = "";
+		for(Socio i: lista) {
+			if(i.comprobarSiHajugado()) {
+				devolucion += "Dni: " + i.getDni() + " nombre: " + i.getNombre() + " ||";
+			}
+			
+		}
+		devolucion += ".\nNo han participado en ninguna competición";
+		return devolucion;
+	}
+
+}

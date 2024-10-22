@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.- Clase Mueble | Mobiliario </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Mobiliario</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mobiliario</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li id="active"><a href="11_clase_mueble.html" class="active no-ch">1.1.- Clase Mueble</a></li>
+      <li><a href="12_clase_modulo.html" class="no-ch">1.2.- Clase Modulo</a></li>
+      <li><a href="13_interfaces_ajustable_y_personalizable.html" class="no-ch">1.3.- Interfaces Ajustable y Personalizable</a></li>
+      <li><a href="14_clase_asiento.html" class="no-ch">1.4.- Clase Asiento</a></li>
+      <li><a href="15_clase_silla.html" class="no-ch">1.5.- Clase Silla</a></li>
+      <li><a href="16_clase_sillon.html" class="no-ch">1.6.- Clase Sillon</a></li>
+      <li><a href="17_clase_sofa.html" class="no-ch">1.7.- Clase Sofa</a></li>
+      <li><a href="18_clase_almacenaje.html" class="no-ch">1.8.- Clase Almacenaje</a></li>
+      <li><a href="19_clase_estanteria.html" class="no-ch">1.9.- Clase Estanteria</a></li>
+      <li><a href="110_clase_armario.html" class="no-ch">1.10.- Clase Armario</a></li>
+      <li><a href="111_clase_mesa.html" class="no-ch">1.11.- Clase Mesa</a></li>
+      <li><a href="112_documentacin_javadoc.html" class="no-ch">1.12.- Documentación javadoc</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="1_descripcin_de_la_tarea.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_clase_modulo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.1.- Clase Mueble</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id25">
+<div class="iDevice emphasis0">
+<div id="ta25_85" class="block iDevice_content">
+<div class="exe-figure exe-image license-pd position-center" style="width: 220px;"><img src="trolley-g3839208d6_640.png" alt="Carrito con un conjunto de paquetes de entrega" title="Paquetes" width="101" height="180" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/photos/carretilla-cajas-moviente-entrega-2582490/" target="_blank" class="author" title="Acceder a la imagen de Msaeedsalem en Pixabay. (Se abre en una nueva ventana)" rel="noopener">Msaeedsalem</a> <span class="sep">(<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)" target="_blank" rel="noopener">Licencia Pixabay</a></span><span class="sep">)</span></span></div>
+</div>
+<p>En la clase <code>Mueble</code> se definen los atributos mínimos para representar las características elementales de cualquier <strong>mueble</strong> que se pueda comercializar en la <strong>tienda de muebles online</strong>:</p>
+<ul class="lista_verificacion">
+<li><strong>identificador</strong> del mueble (<strong>entero</strong>);</li>
+<li><strong>precio </strong>del mueble (<strong>número real</strong> entre 0,01 y 10000,00 euros);</li>
+<li><strong>descripción</strong> del mueble (<strong>texto</strong> con una descripción algo más detallada).</li>
+</ul>
+<p>Tanto el <strong>identificador</strong> como la <strong>descripción</strong> del producto son atributos <strong>inmutables</strong> que una vez creado el objeto no podrán ser modificados. Se implementarán además como atributos privados a los cuales solamente se tendrá acceso desde esta clase. El <strong>precio</strong>, sin embargo, sí podrá ser modificable y además se podrá acceder a él desde clases que sean descendientes de ella (atributo <code>protected</code>). El <strong>identificador se calculará automáticamente</strong> de manera incremental cada vez que se cree un nuevo producto. Eso implicará que tendrás que incluir un <strong>atributo de clase</strong> para poder llevar a cabo ese control. El primer producto que se cree tendrá como identificador el valor 1.</p>
+<p>Además de los atributos anteriores, esta clase también dispondrá de algunos <strong>atributos estáticos constantes públicos</strong> que servirán para establecer el rango de precios correcto:</p>
+<ul class="lista_verificacion">
+<li><strong>precio mínimo de un mueble </strong>(<code>MIN_PRECIO</code>): 0,01 euros;</li>
+<li><strong>precio máximo de un mueble </strong>(<code>MAX_PRECIO</code>): 10000,00 euros.</li>
+</ul>
+<p>Estas características serán comunes a todo mueble, ya sea un <strong>sillón</strong>, una <strong>silla, una mesa, un mueble de tipo almacenaje</strong> (<acronym title="Electronic Book"><strong><span lang="en">estantería</span></strong> </acronym>o <strong><span lang="en">Armario</span></strong>), <abbr title="etcétera">etc</abbr>. Sin embargo, <strong>no podrán crearse objetos de tipo <code>Mueble</code></strong> por ser una clase demasiado "genérica" a la que le faltan aún algunas propiedades y métodos más específicos. Por eso será una clase <strong>abstracta</strong>. Ahora bien, aunque se trate de una clase abstracta, dispondrá de algunos métodos que habrá que implementar:</p>
+<ul class="lista_verificacion">
+<li>Métodos <code>getter</code> para cada uno de los atributos descritos anteriormente:
+<ul>
+<li><code>getid()</code>, que devolverá el <strong>identificador</strong> del mueble;</li>
+<li><code>getPrecio()</code>, que devolverá el <strong>precio</strong> del mueble;</li>
+<li><code>getDescripcion()</code>, que  devolverá la <strong>descripción</strong> del mueble.</li>
+</ul>
+</li>
+<li>Método <code>toString</code>, que devolverá una cadena de caracteres que mostrará la representación como <code>String</code> de los atributos de un mueble con el siguiente formato:</li>
+</ul>
+<div class="highlighted-code language-latex">
+<div>
+<pre><code>Tipo:XXX Id:YYY Precio:ZZZ,ZZ Descripción:VVV</code></pre>
+</div>
+</div>
+<p>donde XXX representa el tipo de mueble (<em>Silla</em>, <em>Sillon</em>, <em>Sofa</em>, <em>Mesa, Armario</em>, <abbr title="etcétera">etc.</abbr>), YYY el identificador, ZZZ,ZZ el precio (con dos decimales) y VVV la descripción.</p>
+<p>Esta clase dispondrá de un único <strong>constructor con dos parámetros</strong> (<strong>precio</strong> y <strong>descripción</strong>). Se lanzará una excepción del tipo <code>IllegalArgumentException</code> si el precio no se encuentra dentro del rango fijado por las constantes. El mensaje de error deberá ser <code>"El precio no está en el rango permitido: XXX,XX"</code>, donde XXX,XX es el precio inválido, con dos decimales. El resto de parámetros no hay que comprobarlos.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper DestacadofpdIdevice" id="id37">
+<div class="iDevice emphasis0" >
+<div class="iDevice_destacadofpd">
+<div id="ta37_151" class="block iDevice_content">
+<p>Tanto la clase <code>Mueble</code> como todas sus subclases y las interfaces que éstas implementen deberán estar agrupadas en un <strong>paquete</strong> llamado <strong><code>mobiliario</code></strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id26">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Implementación del método toString</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta26_148" class="block story iDevice_content">
+<p>El método <code>toString</code> de una clase se utiliza para devolver una representación textual del estado del objeto utilizando algunos de los atributos de la clase (no necesariamente todos). Se trata de un método que nos permite observar y analizar la situación actual del objeto mediante un <code>String</code>. La mayoría de las clases que se implementan en Java suelen disponer de una implementación "especializada" de este método que rescribe y/o amplía la funcionalidad del método <code>toString</code> heredado por su clase padre. Y eso será también lo que tendremos que hacer en esta tarea.</p>
+<p>En el caso de esta clase, el resultado que va a mostrar el método <code>toString</code> no tiene especial complicación: las etiquetas "<em>T</em><em>ipo:</em>", "<em>Id:</em>", "<em>Precio:</em>" y "<em>Descripción:</em>" junto con el valor de los atributos correspondientes a cada etiqueta para ese objeto:</p>
+<div class="highlighted-code language-latex">
+<div>
+<pre class="  language-latex"><code class="  language-latex">Tipo:Mueble Id:YYY Precio:ZZZ,ZZ Descripción:VVV</code></pre>
+</div>
+</div>
+<p>El único valor que no se trata de un atributo del objeto es el "<em>Tipo</em>" (XXX), que podrás obtenerlo mediante el método <code>getClass()</code> que tiene cualquier objeto en Java. Este método devuelve un objeto de tipo <code>Class</code>, que a su vez dispone de un método llamado <code>getSimpleName()</code> que devuelve un <code>String</code> con el nombre de la clase.  El resto de valores (YYY, ZZZ,ZZ, VVV) serán los contenidos en sus atributos correspondientes.</p>
+</div>
+<div id="taquesQuestion0b26" class="block iDevice_content">
+<p>Por ejemplo, si para un objeto de este tipo la clase es <em>Mueble</em>, el <strong>identificador</strong> es 1, la <strong>descripción</strong> "<em>mueble de prueba</em>" y el precio 58,50, el contenido del <code>String</code> devuelto debería ser algo así:</p>
+<div class="highlighted-code language-latex">
+<div>
+<pre><code>Tipo:Mueble      Id: 1 Precio:  58,50 Descripción:mueble de prueba</code></pre>
+</div>
+</div>
+</div>
+<form name="feedback-form-quesFeedback0b26" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b26text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b26" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b26" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<p>Dada la poca información que contendrá una instancia de esta clase, no hay muchas alternativas para manipular y representar esa información. Puedes optar por usar la concatenación de varios <code>String</code>, utilizar un <code>StringBuilder</code> o bien emplear el método estático <code>String.format</code>. Trabajando con esa última alternativa, la implementación del método te podría quedar así:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>    @Override
+    public String toString() {
+        return String.format("tipo:%-11s id:%2d precio:%8.2f descripción:%-20s",
+                this.getClass().getSimpleName(), 
+                this.getId(), 
+                this.getPrecio(),
+                this.getDescripcion()); 
+    }</code></pre>
+</div>
+</div>
+<p>Observa que se ha formateado para que el valor de cada atributo se muestre siempre mostrando un tamaño fijo y alineado a la izquierda, para facilitar la lectura cuando se listen varios objetos uno debajo de otro. Este esquema de espaciado es solo una sugerencia. Tú podrías no indicar ningún tamaño fijo, o uno diferente al que se muestra como ejemplo aquí, para mejorar la presentación en la salida de tus programas.</p>
+<p>También es importante que incluyas la anotación <code>@Override</code>, pues se trata de un método que se ha heredado y que estás sobrescribiendo.</p></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper DestacadofpdIdevice" id="id34">
+<div class="iDevice emphasis0" >
+<div class="iDevice_destacadofpd">
+<div id="ta34_151" class="block iDevice_content">
+<p>Recuerda que para que una clase sea declarada como <strong>abstracta</strong> o no instanciable necesita incorporar el modificador <code>abstract</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="1_descripcin_de_la_tarea.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_clase_modulo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

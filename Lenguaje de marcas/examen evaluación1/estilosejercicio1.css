@@ -1,0 +1,40 @@
+body, html{
+    background-color: aquamarine;
+    height: 99%;
+    width: 100%;
+}
+.contenedor{
+    font-size: 20px;
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.itemscentrados{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: aliceblue;
+    width: 50%;
+    border: solid red 5px;
+    border-style: dotted;
+    border-radius: 10px;
+    align-self: center;
+
+}
+.itemsderecha{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: yellow;
+    width: 48.4%;
+    border: solid rgb(0, 255, 64) 5px;
+    align-self: flex-end;
+}
+.itemsizquierda{
+    padding: 10px;
+    margin-bottom: 5px;
+    color: aliceblue;
+    background-color: blueviolet;
+    width: 48.4%;
+    border: solid rgb(55, 0, 255) 5px;
+    align-self: flex-start;
+}

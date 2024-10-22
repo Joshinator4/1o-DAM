@@ -1,0 +1,1 @@
+insert into cliente(nombre, apellidos, direccion, telefono) values('un cliente mas', 'apellido cliente', 'calle falsa 1', '123456789'), ('un cliente mas2', 'apellido cliente3', 'calle falsa 5', '1234567890')

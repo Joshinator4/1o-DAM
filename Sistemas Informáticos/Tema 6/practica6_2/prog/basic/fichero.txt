@@ -1,0 +1,2 @@
+“La información dentro de los discos se almacena en forma de archivos. Un  archivo o fichero es un conjunto de datos que MS-DOS almacena en un disco y  cuyo control interno es realizado por el sistema operativo, aunque desde el  punto de vista lógico el control es del usuario” 
+"Cada archivo tiene un nombre y una extensi�n que los distingue del resto de  archivos" 

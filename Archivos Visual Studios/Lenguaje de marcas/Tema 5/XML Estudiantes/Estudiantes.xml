@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clase>
+  <estudiante>
+    <nombre>Juan García</nombre>
+    <calificacion>45</calificacion>
+  </estudiante>
+  <estudiante>
+    <nombre>Maria Perez</nombre>
+    <calificacion>70</calificacion>
+  </estudiante>
+  <estudiante>
+    <nombre>Alejo Martínez</nombre>
+    <calificacion>96</calificacion>
+  </estudiante>
+  <estudiante>
+    <nombre>Pepa González</nombre>
+    <calificacion>60</calificacion>
+  </estudiante>
+  <estudiante>
+    <nombre>Pedro Palo</nombre>
+    <calificacion>36</calificacion>
+  </estudiante>
+  <estudiante>
+    <nombre>Anselma Ruíz</nombre>
+    <calificacion>75</calificacion>
+  </estudiante>
+</clase>

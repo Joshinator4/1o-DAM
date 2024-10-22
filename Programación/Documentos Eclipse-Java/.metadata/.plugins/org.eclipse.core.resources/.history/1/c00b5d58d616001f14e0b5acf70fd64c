@@ -1,0 +1,44 @@
+package ejercicio1;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase SocioFutbol
+*/
+public class SocioFutbol extends Socio{
+
+	
+	private String nombreEquipo;
+	private ArrayList<PartidoFutbol> partidosFutbol;
+	
+	
+	public SocioFutbol(String nombre, String dni, String telefono, String nombreEquipo, ArrayList<PartidoFutbol> partidosFutbol) {
+		super(nombre, dni, telefono);
+		this.nombreEquipo = nombreEquipo;
+		this.partidosFutbol = partidosFutbol;
+	}
+
+
+	@Override
+	public int compareTo(SocioFutbol o) {
+		super.compareTo(o);
+		return this.nombre.compareTo(o.getNombre());
+	}
+	
+	
+
+	@Override
+	public int compareTo(Object o) {
+		super.compareTo(o.)
+		return 0;
+	}
+
+
+
+	
+	
+	
+	
+}

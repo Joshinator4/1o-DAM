@@ -1,0 +1,17 @@
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase Principal
+*/
+package ejercicio1;
+
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+}

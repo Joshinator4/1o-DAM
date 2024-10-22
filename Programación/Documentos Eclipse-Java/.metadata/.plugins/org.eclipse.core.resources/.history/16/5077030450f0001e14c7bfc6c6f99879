@@ -1,0 +1,19 @@
+package lectura;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class PrincipalLectura {
+
+	public static void main(String[] args) {
+	
+		
+		File archivo = new File("Empleado.txt");
+		
+		Scanner lector = new Scanner(archivo);
+		
+		
+
+	}
+
+}

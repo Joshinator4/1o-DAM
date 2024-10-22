@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.7.- Ejercicio 07: Documentando la clase (javadoc) | Computador vuelo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Computador vuelo</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Computador de vuelo</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_ejercicio_01_atributos_de_la_clase_estado.html" class="no-ch">1.1.- Ejercicio 01: Atributos de la clase (estado)</a></li>
+      <li><a href="12_ejercicio_02_constructores_y_mtodo_fbrica.html" class="no-ch">1.2.- Ejercicio 02: Constructores y método fábrica</a></li>
+      <li><a href="13_ejercicio_03_mtodos_de_consulta_getters_y_modificacin_setters.html" class="no-ch">1.3.- Ejercicio 03: Métodos de consulta (getters) y modificación (setters)</a></li>
+      <li><a href="14_ejercicio_04_iniciando_un_nuevo_vuelo_despegue.html" class="no-ch">1.4.- Ejercicio 04: Iniciando un nuevo vuelo (despegue)</a></li>
+      <li><a href="15_ejercicio_05_finalizando_el_vuelo_aterrizaje.html" class="no-ch">1.5.- Ejercicio 05: Finalizando el vuelo (aterrizaje)</a></li>
+      <li><a href="16_ejercicio_06_mtodo_tostring_estado_de_la_aeronave.html" class="no-ch">1.6.- Ejercicio 06: Método toString (estado de la aeronave)</a></li>
+      <li id="active"><a href="17_ejercicio_07_documentando_la_clase_javadoc.html" class="active no-ch">1.7.- Ejercicio 07: Documentando la clase (javadoc)</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+      <li><a href="22_excepciones.html" class="no-ch">2.2.- Excepciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="16_ejercicio_06_mtodo_tostring_estado_de_la_aeronave.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_informacin_de_inters.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.7.- Ejercicio 07: Documentando la clase (javadoc)</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_69" class="block iDevice_content">
+<div class="exe-figure exe-image license-pd position-center" style="width: 349px;"><img src="ChipBiciJavadoc.png" alt="Fragmento de ejemplo de documentación Javadoc" title="Documentación javadoc" width="349" height="197" border="1" style="border: 1px solid black; display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><span class="title"><em>Documentación javadoc</em></span> <span class="license"><span class="sep">(</span>Dominio público<span class="sep">)</span></span></span></div>
+</div>
+<p>Para terminar la tarea, en este ejercicio tendrás que documentar adecuadamente el código que has generado haciendo uso de los <strong>comentarios <code><strong><span style="background-color: #ccffff; font-family: Courier New;">Javadoc</span></strong></code></strong> que hemos explicado en clase. <code><strong><span style="background-color: #ccffff; font-family: Courier New;">Javadoc</span></strong></code> te permitirá crear una documentación útil y estandarizada. Te recordamos la <strong>guía-resumen</strong> que ya incluimos en los contenidos<span>:</span></p>
+<ul class="lista_verificacion">
+<li style="text-align: justify;"><span style="background-color: #0000ff; color: #ffffff;"><strong>Documentación general de la clase</strong></span>. Debes incluir una descripción lo más completa y detallada posible de la clase, explicando todo aquello que consideres que pueda ser de interés para otros programadores que vayan a utilizarla. Ten en cuenta que no tienen por qué conocer cómo está implementada por dentro, sino únicamente cómo utilizarla (cómo usar sus miembros que actúan como interfaz con el código externo: métodos y atributos públicos). Esta descripción se puede subdividir en:<br />
+<ul>
+<li style="text-align: justify;"><strong>Descripción corta</strong> o resumen de la clase. Consiste en todo el texto que incluyas hasta el primer punto (".") que contenga el texto. Es el texto que aparecerá en la tabla resumen de clases del paquete en el que se encuentre la clase;</li>
+<li style="text-align: justify;"><strong>Descripción larga</strong> de la clase. Todo el texto que haya después del primer punto. Ambas descripciones aparecerán en la descripción general de la clase;</li>
+</ul>
+</li>
+<li style="text-align: justify;"><span style="background-color: #0000ff; color: #ffffff;"><strong>Documentación de atributos públicos y protegidos</strong></span> (los miembros protegidos los verás en la próxima unidad) indicando para cada uno de ellos una pequeña descripción;
+<ul>
+<li style="text-align: justify;">si se trata de un <strong>atributo constante</strong>, incluye su valor usando la etiqueta <code><strong><span style="background-color: #ccffff; font-family: Courier New;">@value</span></strong></code>. <strong>Debes usar la etiqueta <code><strong><span style="background-color: #ccffff; font-family: Courier New;">@value</span></strong></code> y no escribir un literal en el comentario Javadoc</strong>. De esta manera si se modificara el valor de la constante en el código, no habría que modificar el comentario.</li>
+</ul>
+</li>
+<li style="text-align: justify;"><span style="background-color: #0000ff; color: #ffffff;"><strong>Documentación de los métodos públicos y protegidos</strong></span>, incluyendo para cada método:
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;"><strong>Descripción del método</strong>:
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;"><strong>Descripción corta</strong> o resumen del método. Consiste en todo el texto que incluyas hasta el primer punto. Es el texto que aparecerá en la tabla resumen de métodos;</li>
+<li style="text-align: justify;"><strong>Descripción larga</strong> del método. Todo el texto que haya después del primer punto. Ambas descripciones aparecerán en la descripción detallada del método;</li>
+</ul>
+</li>
+<li style="text-align: justify;"><strong>Descripción del valor devuelto</strong> (etiqueta <code><strong><span style="background-color: #ccffff; font-family: Courier New;">@return</span></strong></code>), si es que devuelve algo. Esta información aparecerá en la descripción detallada del método;</li>
+<li style="text-align: justify;"><strong>Descripción de cada uno de los parámetros</strong> (etiqueta <code><strong><span style="background-color: #ccffff; font-family: Courier New;">@param</span></strong></code>);</li>
+<li style="text-align: justify;"><strong>Descripción de las posibles excepciones</strong> que puede lanzar (etiqueta <code><strong><span style="background-color: #ccffff; font-family: Courier New;">@throws</span></strong></code>);</li>
+</ul>
+</li>
+<li style="text-align: justify;"><span style="background-color: #0000ff; color: #ffffff;"><strong>Documentación de los constructores públicos</strong></span>, de manera similar a los métodos, salvo que nunca tendrán etiqueta <code><strong><span style="background-color: #ccffff; font-family: Courier New;">@return</span></strong></code>.</li>
+</ul>
+<div class="destacado" style="text-align: left;">En el apartado información de interés te proporcionamos algunas <strong>capturas de ejemplo</strong> que muestran cómo podría quedar tu documentación <strong>Javadoc</strong>. Es importante que una vez que hayas incluido todos tus comentarios de <strong>Javadoc </strong>en el código pruebes a generar la documentación  y le eches un vistazo. Es habitual cometer pequeños fallos en la redacción de la documentación y los olvidos suelen ser frecuentes (por ejemplo parámetros o excepciones sin documentar). <strong><br /></strong></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="16_ejercicio_06_mtodo_tostring_estado_de_la_aeronave.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_informacin_de_inters.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

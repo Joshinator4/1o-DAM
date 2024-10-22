@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Tarea evaluable 7.99: Gym </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.9 Portable - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-26"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Tarea evaluable 7.99: Gym</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Tarea evaluable 7.99: Gym</h1></header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id121">
+<div class="iDevice emphasis0">
+<div id="ta121_154" class="block iDevice_content">
+<p><img src="gym.png" alt="" width="225" height="225" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<p>Se desea realizar una aplicación que permita gestionar los socios y cursos de un gimnasio.</p>
+<p><br />Por cada socio del gimnasio se almacena su nombre y dni. Existen tres tipos de socios: normal, jubilado e infantil. Los normales y los jubilados tienen una cuota mensual básica de 50€, los infantiles de 25€. Pagando esta cuota se tiene derecho a disfrutar de las instalaciones del gimnasio y de la piscina.</p>
+<p>Además, el gimnasio ofrece una amplia oferta de cursos a los que los socios pueden apuntarse. Todo curso tiene un código, un nombre y una descripción. Cada curso tiene un número máximo permitido de alumnos y un precio mensual.</p>
+<p>La cuota mensual total que debe abonar un socio se calcula del siguiente modo:</p>
+<p style="padding-left: 30px;">- Suma de la cuota mensual básica más el precio debido a todos los cursos en los que se encuentre inscrito el socio.</p>
+<p style="padding-left: 30px;">- A los jubilados se les aplica un descuento del 10% sobre la cuota mensual total.</p>
+<p style="padding-left: 30px;">- Los socios infantiles pueden estar asociados a un socio adulto (siempre que éste sea un socio normal), en cuyo caso, se le aplica un 25% de descuento a la cuota mensual total.</p>
+<p><br />La aplicación debe permitir al gerente del gimnasio:</p>
+<p><br /><strong>Dar de alta nuevos socios</strong></p>
+<p>1. El gerente selecciona la opción “Añade socio”.</p>
+<p>2. La aplicación permite introducir el tipo de socio y sus datos asociados (nombre, dni y adulto asociado en el caso de socios infantiles).</p>
+<p>3. El gerente introduce los datos solicitados.</p>
+<p>4. La aplicación añade el socio al gimnasio.</p>
+<p style="padding-left: 30px;">- En el caso de que ya exista algún socio con el mismo dni, se notifica y no se añade.</p>
+<p style="padding-left: 30px;">- En el caso de añadir un socio infantil cuyo adulto asociado no existe, se notifica y no se añade.</p>
+<p></p>
+<p><strong>Crear nuevos cursos</strong></p>
+<p>1. El gerente selecciona la opción “Añade curso”.</p>
+<p>2. La aplicación permite introducir los datos del curso (nombre, descripción, número máximo de alumnos y precio).</p>
+<p>3. El gerente introduce los datos solicitados.</p>
+<p>4. La aplicación añade el nuevo curso.</p>
+<p style="padding-left: 30px;">- En el caso de que ya exista algún curso con el mismo nombre, se notifica y no se añade.</p>
+<p></p>
+<p><strong>Matricular socios en cursos</strong></p>
+<p>1. El gerente selecciona la opción “Añade socio a curso”.</p>
+<p>2. La aplicación permite introducir el dni del socio y el nombre (o el código) del curso.</p>
+<p>3. El gerente introduce los datos solicitados.</p>
+<p>4. La aplicación añade el socio al curso indicado.</p>
+<p style="padding-left: 30px;">- En el caso de que no exista ningún socio con el dni indicado, o ningún curso con el nombre (o código) indicado, se notifica y no se añade.</p>
+<p style="padding-left: 30px;">- En el caso de que ya esté cubierto el cupo de alumnos del curso, se notifica y no se añade.</p>
+<p></p>
+<p><strong>Informe de socios.</strong></p>
+<p>1. El gerente selecciona la opción “Informe socios”.</p>
+<p>2. La aplicación muestra un informe con los datos de los socios del gimnasio parecido al siguiente formato:</p>
+<p><br />Nombre: Juan Pérez DNI: 12345678A Cuota: 130,00</p>
+<p style="padding-left: 30px;">Curso: Aerobic Precio: 50,00</p>
+<p style="padding-left: 30px;">Curso: Step-T Precio: 20,00</p>
+<p>Nombre: José María González DNI: 07898989B Cuota: 99,00</p>
+<p style="padding-left: 30px;">Curso: Aerobic Precio: 50,00</p>
+<p>Nombre: María Pérez DNI: 22222222C Cuota: 30,00</p>
+<p>Adulto: Juan Pérez</p>
+<p>Nombre: Ana Fernández DNI: 44444444F Cuota: 80,00</p>
+<p style="padding-left: 30px;">Curso: Step-M Precio: 20,00</p>
+<p>Nombre: Marcos López DNI: 23232323D Cuota: 40,00</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper RecomendacionfpdIdevice em_iDevice em_iDevice_recomendacionfpd" id="id124">
+<div class="iDevice emphasis_recomendacionfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Se prestará especial atención a</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta124_131" class="block iDevice_content">
+<ul>
+<li>Los modificadores de acceso y contenido de los atributos.</li>
+<li>Los tipos de los atributos.</li>
+<li>Los tipos que devuelven los métodos.</li>
+<li>Los parámetros (y sus tipos) de los constructores y métodos.</li>
+<li>Al tratamiento de las excepciones (solo las restricciones especificadas).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Consideraciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_125_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>Crea varios objetos precargados</strong> para mostrar el funcionamiento de la aplicación.</li>
+<li>En la clase Principal deben aparecer comentarios indicando el número del apartado que estás implementado.</li>
+<li>En la salida por consola debe aparece un mensaje indicando el número del apartado que estás implementando.</li>
+<li>Se podrán crear los atributos, constructores y métodos que se consideren necesarios.</li>
+<li>Solo se crearán los métodos getters y setters que vayan a ser utilizados.</li>
+<li>Las clases que no incluyan el nombre del autor<strong> NO se calificarán</strong>.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

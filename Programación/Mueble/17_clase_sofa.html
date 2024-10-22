@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.7.- Clase Sofa | Mobiliario </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-15"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Mobiliario</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mobiliario</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_clase_mueble.html" class="no-ch">1.1.- Clase Mueble</a></li>
+      <li><a href="12_clase_modulo.html" class="no-ch">1.2.- Clase Modulo</a></li>
+      <li><a href="13_interfaces_ajustable_y_personalizable.html" class="no-ch">1.3.- Interfaces Ajustable y Personalizable</a></li>
+      <li><a href="14_clase_asiento.html" class="no-ch">1.4.- Clase Asiento</a></li>
+      <li><a href="15_clase_silla.html" class="no-ch">1.5.- Clase Silla</a></li>
+      <li><a href="16_clase_sillon.html" class="no-ch">1.6.- Clase Sillon</a></li>
+      <li id="active"><a href="17_clase_sofa.html" class="active no-ch">1.7.- Clase Sofa</a></li>
+      <li><a href="18_clase_almacenaje.html" class="no-ch">1.8.- Clase Almacenaje</a></li>
+      <li><a href="19_clase_estanteria.html" class="no-ch">1.9.- Clase Estanteria</a></li>
+      <li><a href="110_clase_armario.html" class="no-ch">1.10.- Clase Armario</a></li>
+      <li><a href="111_clase_mesa.html" class="no-ch">1.11.- Clase Mesa</a></li>
+      <li><a href="112_documentacin_javadoc.html" class="no-ch">1.12.- Documentación javadoc</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="16_clase_sillon.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="18_clase_almacenaje.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.7.- Clase Sofa</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id35">
+<div class="iDevice emphasis0">
+<div id="ta35_154" class="block iDevice_content">
+<div class="exe-figure exe-image position-center" style="width: 340px;"><img src="sofa-6768684_640.jpg" alt="Sofá salón con chaiselongue" title="Sofá" width="340" height="191" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/illustrations/sof%C3%A1-sal%C3%B3n-dise%C3%B1o-de-interiores-6768684/" target="_blank" class="author" rel="noopener">Dx21</a> (<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)">Licencia Pixabay</a>)</span></div>
+</div>
+<p>La clase <code>Sofa</code> es otra de las posibles subclases de <code>Asiento</code>. Ésta también es <strong>instanciable</strong> y <strong>no heredable</strong> pero, a diferencia de las anteriores, esta clase <strong>no implementa ninguna interfaz</strong>. Representa también a un mueble que sirve para sentarse y puede ser de varias plazas. Estará caracterizada por las siguientes propiedades:</p>
+<ul class="lista_verificacion">
+<li>todas aquellas que herede por el hecho de ser una subclase de <strong><code>Asiento</code></strong>;</li>
+<li>la <b>composición </b>que tiene el sofá. Esta composición será una cadena de texto como <code>"3+2"</code>, <code>"2+CHAISELONGUE"</code>, <code>"3+2+CHAISELONGUE"</code>, <abbr title="etcétera">etc</abbr>. Esto implicará también la implementación de un método <strong><code>getComposición()</code></strong>.</li>
+</ul>
+<p>El único <strong>constructor</strong> de esta clase recibirá todos los parámetros que recibe un constructor de la clase <strong><code>Asiento</code></strong> más la <strong>composición</strong> del sofá. Se admiten <strong><code>null</code></strong> y la cadena vacía sin que sea un error.</p>
+<p><span style="font-size: 1em;">Como siempre, habrá que redefinir una vez más el método </span><code>toString</code><span style="font-size: 1em;"> donde </span>habrá que ampliar la información que ofrece el método homónimo de su superclase, añadiendo la información específica de esta clase para ofrecer el siguiente formato de salida:</p>
+<div class="highlighted-code language-latex">
+<pre class="  language-latex"><code class="  language-latex">Tipo:Sofa Id:YYY Precio:ZZZ,ZZ Descripción:VVV Tapicería:TTT Color:CCC Número de plazas:NNN Composición:SSS</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="16_clase_sillon.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="18_clase_almacenaje.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.12.- Documentación javadoc | Mobiliario </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Mobiliario</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mobiliario</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_clase_mueble.html" class="no-ch">1.1.- Clase Mueble</a></li>
+      <li><a href="12_clase_modulo.html" class="no-ch">1.2.- Clase Modulo</a></li>
+      <li><a href="13_interfaces_ajustable_y_personalizable.html" class="no-ch">1.3.- Interfaces Ajustable y Personalizable</a></li>
+      <li><a href="14_clase_asiento.html" class="no-ch">1.4.- Clase Asiento</a></li>
+      <li><a href="15_clase_silla.html" class="no-ch">1.5.- Clase Silla</a></li>
+      <li><a href="16_clase_sillon.html" class="no-ch">1.6.- Clase Sillon</a></li>
+      <li><a href="17_clase_sofa.html" class="no-ch">1.7.- Clase Sofa</a></li>
+      <li><a href="18_clase_almacenaje.html" class="no-ch">1.8.- Clase Almacenaje</a></li>
+      <li><a href="19_clase_estanteria.html" class="no-ch">1.9.- Clase Estanteria</a></li>
+      <li><a href="110_clase_armario.html" class="no-ch">1.10.- Clase Armario</a></li>
+      <li><a href="111_clase_mesa.html" class="no-ch">1.11.- Clase Mesa</a></li>
+      <li id="active"><a href="112_documentacin_javadoc.html" class="active no-ch">1.12.- Documentación javadoc</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="111_clase_mesa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_informacin_de_inters.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.12.- Documentación javadoc</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id41">
+<div class="iDevice emphasis0">
+<div id="ta41_154" class="block iDevice_content">
+<div class="exe-figure exe-image license-pd position-center" style="width: 349px;"><img src="javadoc.png" alt="Fragmento de ejemplo de documentación Javadoc" title="Documentación javadoc" width="349" height="187" border="1" style="border: 1px solid black; display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><span class="title"><em>Documentación javadoc</em></span> <span class="license"><span class="sep">(</span>Dominio público<span class="sep">)</span></span></span></div>
+</div>
+<p>Debes documentar apropiadamente el código con <strong>comentarios javadoc</strong> para poder generar una documentación útil y apropiada. Puedes consultar la <strong>guía-resumen</strong> que ya incluimos en los contenidos de la unidad 5 y que replicamos aquí una vez más:</p>
+<ul class="lista_verificacion">
+<li style="text-align: justify;"><strong>documentación general de la clase</strong>. Debes incluir una descripción lo más completa y detallada posible de la clase, explicando todo aquello que consideres que pueda ser de interés para otros programadores que vayan a utilizarla. Ten en cuenta que no tienen por qué conocer cómo está implementada por dentro, sino únicamente cómo utilizarla (cómo usar sus miembros que actúan como interfaz con el código externo: métodos y atributos públicos). Esta descripción se puede subdividir en:<br />
+<ul>
+<li style="text-align: justify;"><strong>descripción corta</strong> o resumen de la clase. Consiste en todo el texto que incluyas hasta el primer punto (".") que contenga el texto. Es el texto que aparecerá en la tabla resumen de clases del paquete en el que se encuentre la clase;</li>
+<li style="text-align: justify;"><strong>descripción larga</strong> de la clase. Todo el texto que haya después del primer punto. Ambas descripciones aparecerán en la descripción general de la clase;</li>
+</ul>
+</li>
+<li style="text-align: justify;"><strong>documentación de atributos públicos y protegidos</strong> indicando para cada uno de ellos una pequeña descripción;
+<ul>
+<li style="text-align: justify;">si se trata de un <strong>atributo constante</strong>, incluye su valor usando la etiqueta <code>@value</code>. <strong>Debes usar la etiqueta <code>@value</code> y no escribir un literal en el comentario javadoc</strong>. De esta manera, si se modificara el valor de la constante en el código, no habría que modificar el comentario.</li>
+</ul>
+</li>
+<li style="text-align: justify;"><strong>documentación de los métodos públicos y protegidos</strong>, incluyendo para cada método:
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;"><strong>descripción del método</strong>:
+<ul style="list-style-type: disc;">
+<li style="text-align: justify;"><strong>descripción corta</strong> o resumen del método. Consiste en todo el texto que incluyas hasta el primer punto. Es el texto que aparecerá en la tabla resumen de métodos;</li>
+<li style="text-align: justify;"><strong>descripción larga</strong> del método. Todo el texto que haya después del primer punto. Ambas descripciones aparecerán en la descripción detallada del método;</li>
+</ul>
+</li>
+<li style="text-align: justify;"><strong>descripción del valor devuelto</strong> (etiqueta <code>@return</code>), si es que devuelve algo. Esta información aparecerá en la descripción detallada del método;</li>
+<li style="text-align: justify;"><strong>descripción de cada uno de los parámetros</strong> (etiqueta <code>@param</code>);</li>
+<li style="text-align: justify;"><strong>descripción de las posibles excepciones</strong> que puede lanzar (etiqueta <code>@throws</code>);</li>
+</ul>
+</li>
+<li style="text-align: justify;"><strong>documentación de los constructores públicos</strong>, de manera similar a los métodos, salvo que nunca tendrán etiqueta <code>@return</code>.</li>
+</ul>
+<div class="destacado" style="text-align: left;"><strong>En el apartado información de interés te proporcionamos una muestra de cómo podría quedar tu documentación <em>javadoc</em>.</strong></div>
+<p style="text-align: justify;">Tus descripciones y comentarios no tienen por qué coincidir exactamente con los que se incluyen en ese modelo, pero puede servirte de guía si no tienes claro cómo enfocar tu documentación. Basándote en ese modelo y en los textos de la descripción de la tarea deberías tener más que suficiente material para elaborar una documentación detallada. En esta tarea el objetivo es que aprendas a colocar correctamente los comentarios javadoc más que el propio texto que escribas, que lo puedes copiar del modelo que se te proporciona.</p>
+<div class="destacado" style="text-align: justify;"><strong>Es importante que una vez que hayas incluido todos tus comentarios <em>javadoc</em> en el código, pruebes a generar la documentación javadoc (acción "<em>Generar Javadoc</em>" en Eclipse) y le eches un vistazo. Es habitual haber cometido pequeños fallos en la redacción de la documentación y los olvidos suelen ser frecuentes (por ejemplo, parámetros o excepciones sin documentar).</strong></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="111_clase_mesa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_informacin_de_inters.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

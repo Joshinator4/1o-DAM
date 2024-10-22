@@ -1,0 +1,28 @@
+package ejercicio1;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		try {
+		Planeta planeta1 = new Planeta();
+		Planeta planeta2 = new Planeta();
+		Planeta planeta3 = new Planeta();
+		Satelite satelite1 = new Satelite();
+		Satelite satelite2= new Satelite();
+		
+		planeta1.agregarSatelite(satelite1);
+		planeta1.agregarSatelite(satelite2);
+		System.out.println(planeta1.muestra());
+		satelite2.setPertenecePlaneta(3);
+		
+		}catch(IllegalArgumentException excepcion1){
+			System.out.println(excepcion1.getMessage());
+		}catch(IllegalStateException excepcion2){
+			System.out.println(excepcion2.getMessage());
+		}catch(Exception excepcion3){
+			System.out.println(excepcion3.getMessage());
+		}
+	}
+
+}

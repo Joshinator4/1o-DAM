@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Joshua">
+    <title>Formulario para el negocio</title>
+    <style>
+        body{ background-color: bisque;}
+        #enunciados {color: blue;}
+        #otros1 {color: rgb(0, 233, 89); background-color: rgb(243, 138, 0);}
+        #otros2 {color: rgb(0, 233, 89); background-color: rgb(243, 138, 0);}
+        #imagenes {text-align: right;}
+        #imagenes2 {text-align: right;}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Formulario</h1>
+    <h3 style="text-align: center;">A continuación le solicitamos ciertos datos para facilitarle su elección del mueble</h3>
+<div style="margin: 80px;">
+
+    <form action="página_envio_variables.html" method="post">
+        <div style="color: blue;">
+        <p><b>Seleccione idioma</b></p>
+        </div>
+
+        <select name="idioma">
+        <option value="ES">Español</option>
+        <option value="EN">English</option>
+        <option value="DE">Deutch</option>
+        </select>
+        <br>
+        <br>
+        <label for="enunciados" ><b>Introduzca su nombre</b></label>
+        <br>
+        <input type="text" name="nombreIntroducido" id="enunciados"><br><br>
+
+        <div style="color: blue;">
+        <p><b>Introduzca el tipo de mueble deseado:</b></p>
+        </div>
+
+        <input type="radio" name="tipoMueble" value="Mesa" id="mesa">
+        <label for="mesa"><i>Mesa</i></label><br>
+        <input type="radio" name="tipoMueble" value="Silla" id="silla">
+        <label for="silla"><i>Silla</i></label><br>
+        <input type="radio" name="tipoMueble" value="Estantería" id="estantería">
+        <label for="estantería"><i>Estantería</i></label><br><br>
+
+        <div style="color: blue;">
+        <p><b>Introduzca zona de entrega</b></p>
+        </div>
+
+        <input list="zonaEntrega" name="zonaEntrega">
+        <datalist id="zonaEntrega">
+            <option value="Zona norte"></option>
+            <option value="Zona centro"></option>
+            <option value="Zona sur"></option>
+        </datalist><br><br>
+
+        <div style="color: blue;">
+        <p><b>Introduzca fecha y hora deseada de entrega</b></p>
+        </div>
+
+        <label for="otros1">Entrega:</label>
+        
+        <input type="date" name="fechaEntrega" id="otros1"><br>
+
+        <div style="color: blue;">
+        <p>Elija horario de entrega</p>
+        </div>
+
+        <input type="checkbox" name="horarioEntrega1" id="horarioEntrega1">
+        <label for="horarioEntrega1">Mañana</label>
+        <input type="checkbox" name="horarioEntrega2" id="horarioEntrega2">
+        <label for="horarioEntrega2">Tarde</label>
+        <input type="checkbox" name="horarioEntrega3" id="horarioEntrega3">
+        <label for="horarioEntrega3">Noche</label><br><br>
+
+        <input type="submit" value="Enviar Datos" id="otros2"><br><br>
+
+        <img src="imagen.png" alt="Gracias por su visita" width="250"><br>
+        <p id="imagenes">Joshua Sangareau 1ºDAM<img src="ImagenIES.png" alt="Imagen Instituto"></p>
+    </form>
+</div>
+<footer>
+    Nuestros productos están hechos 100% de madera de Teca y están hechos a mano, por los mejores artesanos.
+    Tenemos importación directa. <br>
+    Información:
+    dirección de nuestra tienda : C/ Muebles, nº 7 benalmádena (Málaga)
+</footer>
+</body>
+</html>

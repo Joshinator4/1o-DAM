@@ -1,0 +1,65 @@
+
+.contenedor{
+    border: solid rgb(146, 0, 98) 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+.contenedor div{
+    flex: 1;
+}
+.item1{
+    text-align: center;
+    font-size: 25px;
+    background-color: blue;
+    color: rgb(208, 255, 0);
+}
+.item2{
+    text-align: center;
+    font-size: 25px;
+    background-color: azure;
+}
+.item3{
+    text-align: center;
+    font-size: 25px;
+    background-color: aqua;
+}
+.item4{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(114, 0, 221);
+}
+.item5{
+    order: -1;
+    background-color: chocolate;
+    text-align: center;
+    font-size: 25px;
+}
+.item6{
+    order: 10;
+    text-align: center;
+    font-size: 25px;
+    background-color: violet;    
+}
+.item7{
+    text-align: center;
+    font-size: 25px;
+    background-color: yellow;
+}
+.item8{
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+.item9{
+    text-align: center;
+    font-size: 25px;
+    background-color: crimson;
+    
+}
+.item10{
+    text-align: center;
+    font-size: 25px;
+    background-color: darkgreen;
+}

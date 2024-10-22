@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Trabajo con bombillas. | 1.1.- Ejercicio 1. Trabajo con bombillas. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">1.1.- Ejercicio 1. Trabajo con bombillas.</div></header>
+<nav id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Trabajo con bombillas.</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Trabajo con bombillas.</h1></header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id120">
+<div class="iDevice emphasis0">
+<div id="ta120_69" class="block iDevice_content">
+<div class="exe-figure exe-image license-pd position-center" style="width: 200px;"><img src="light-311119_640.png" alt="Dibujo de una bombilla" title="Bombilla" width="95" height="150" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/vectors/luz-bombilla-filamento-l%C3%A1mpara-311119/" target="_blank" class="author" title="Acceder a la web descarga de la imagen de Clker-Free-Vector-Images en Pixabay (se abre en una nueva ventana)." rel="noopener">Clker-Free-Vector-Images</a> <span class="license"><span class="sep">(</span><span class="license"><span class="license"><span class="sep"><span class="license"><span class="sep"><span class="license"><span class="sep"><a href="https://pixabay.com/es/service/license/" title="Acceder a los términos de la Licencia Pixabay. (Se abre en una nueva ventana)" target="_blank" rel="noopener">Pixabay License</a></span></span></span></span></span></span><span class="sep"></span></span><span class="sep">)</span></span></span></div>
+</div>
+<p>La clase <code>Bombilla</code> implementa un modelo básico de funcionamiento de una bombilla. Es importante que le eches un vistazo a la <strong>documentación javadoc</strong> de esta clase antes de empezar a trabajar con ella. Así podrás ver qué tipo de información contiene, qué constructores proporciona, qué restricciones se le pueden aplicar, cuáles son los métodos disponibles, qué información puedes obtener a partir de un objeto, qué información puedes obtener a partir de la clase (métodos estáticos), <abbr title="etcétera">etc</abbr>. Recuerda que tendrás que hacer el <code>import</code> correspondiente para poder usar esta clase en tu programa.</p>
+<p>Para practicar con la creación y utilización de objetos de este tipo, vamos a trabajar con <strong>tres instancias del tipo bombilla.</strong></p>
+<p>Crea un proyecto donde tendrás que llevar a cabo las siguientes acciones paso a paso:</p>
+<ol class="auto-numbered" style="list-style-type: decimal;">
+<li><strong>Declarar tres variables referencia</strong> a objetos instancia de la clase <code>Bombilla</code>. </li>
+<li>Llevar a cabo una <strong>consulta inicial de valores globales de la clase <code>Bombilla</code></strong>, de manera que muestre en pantalla la siguiente información utilizando la herramienta de <acronym title="Entrada/Salida">E/S</acronym> <code>System.out.printf</code>:<br />
+<ol>
+<li><strong>número de bombillas creadas</strong> hasta el momento (debería obtenerse cero);</li>
+<li><strong>número de bombillas encendidas</strong> en este momento (debería obtenerse cero). Ten en cuenta que aún no existen objetos de esta clase, por lo que está claro que tendrás que invocar a <strong>métodos estáticos</strong> de la clase.</li>
+</ol>
+</li>
+<li><strong>Instanciar tres objetos de la clase </strong><code>Bombilla</code> a los cuales apuntarán cada una de las variables declaradas anteriormente. Pero antes, haremos un par de intentos con errores para comprobar que funciona el lanzamiento de excepciones por parte de sus constructores:
+<ol>
+<li><strong>Intentar crear una bombilla con estado inicial "encendida" y con una potencia no válida</strong> (<strong>250 vatios</strong>). Recuerda que para instanciar un objeto de una determinada clase debes invocar a un constructor de esa clase mediante el operador <code>new<strong></strong></code>. Dado que en este caso sabes que la llamada al constructor va a fallar seguro, no tendrás más remedio que utilizar un bloque <code>try-catch</code> para capturar la excepción y gestionar ese error. Dentro del bloque <code>catch</code> deberás <strong>mostrar por pantalla el mensaje de error que te proporcione la excepción</strong> (mediante el método <code>getMessage</code> del objeto de tipo excepción que reciba el <code>catch</code>). Si no lo hace tu código, lo hará la máquina virtual de Java y tu programa se detendrá abruptamente ante el error, cosa que nunca debe suceder. <strong>Tu código siempre debe tener previsto este tipo de posibles errores</strong>.</li>
+<li><strong>Intentar instanciar otra bombilla sin estado inicial y una potencia no válida</strong> (<strong>5 vatios</strong>). Tendrás que emplear una versión del constructor diferente a la usada en el caso anterior, pues no se indica el estado inicial, de manera que el constructor asignará un estado por omisión. Nuevamente, tendrás que insertar otro bloque <code>try-catch</code> para capturar la excepción que se va a producir al invocar al constructor. Así evitarás que tu programa "aborte". No olvides mostrar el <strong>texto del error por pantalla</strong> (método <code>getMessage</code> de la excepción capturada).</li>
+<li><strong>Crear una primera bombilla encendida de 100 vatios.</strong> Utiliza para ello el <strong>constructor de dos parámetros</strong>. Lo que devuelva el operador <code>new<strong></strong></code> al invocar al constructor es lo que tendrás que asignar a la variable referencia con la cual podrás manipular el objeto. </li>
+<li><strong>Instanciar una segunda bombilla encendida sin indicar la potencia</strong>. Usa para ello el <strong>constructor de un parámetro</strong>, el cual asignará una potencia por omisión. Emplea una segunda variable para apuntar al nuevo objeto creado.</li>
+<li><strong>Crear una tercera bombilla con los valores por omisión</strong>. Utiliza para ello el <strong>constructor sin parámetros</strong>. En este caso, recurrirás a la tercera variable para apuntar al nuevo objeto instanciado. Recuerda que cuando decimos que una variable de tipo referencia va a "apuntar" a un objeto, significa simplemente que va a almacenar en una variable (de tipo referencia, obviamente) aquello que devuelva el operador <code>new</code> tras la invocación al constructor. Es decir, una referencia a la zona de memoria donde se encuentran realmente los atributos del objeto.</li>
+</ol>
+</li>
+<li>Llevar a cabo las siguientes <strong>operaciones sobre las bombillas:</strong>
+<ol>
+<li>Intentar <strong>encender</strong> la primera bombilla, que ya debería estar encendida. Eso debería provocar una excepción de tipo <code>IllegalStateException</code> que deberías controlar dentro de un bloque <code>try-catch</code>, indicando algún mensaje de error (lo más fácil es que aproveches nuevamente el texto que te devuelve el método <code>getMessage</code> de la excepción capturada).</li>
+<li><strong>Conmutar </strong>la primera bombilla<strong> seis veces </strong>(mediante un <strong>bucle</strong>). Después de cada conmutación debe realizarse una espera de un segundo (para que dé tiempo a que se produzca cierto consumo eléctrico). Eso puedes hacerlo mediante la herramienta <code>Utilidades.esperar</code>, que se proporciona también en la biblioteca que incorpora tu proyecto base (recuerda hacer su correspondiente <code>import</code>).</li>
+<li><strong>Apagar </strong>la segunda bombilla.</li>
+<li><strong>Encender </strong>la tercera bombilla.</li>
+</ol>
+</li>
+<li><strong>Obtener la siguiente información de la primera bombilla y mostrarla por pantalla</strong> (usando <code>printf</code>). Para ello tendrás que usar algunos de sus métodos <em>getter</em>:
+<ol>
+<li><strong>Potencia</strong> de la bombilla, con dos decimales.</li>
+<li><strong>Estado</strong> de la bombilla, si está encendida o apagada.</li>
+<li><b>Última vez que se encendió</b> la bombilla. El resultado (objeto <code>LocalDateTime</code>) deberá mostrarse con la fecha en formato <code>dd/mm/aaaa</code> y la hora en formato <code>hh:mm:ss</code>. Para ello estaría bien que revisaras el funcionamiento de la clase <code>DateTimeFormatter</code>, así como del método <code>format</code> de la clase <code>LocalDateTime</code>.</li>
+<li><strong>Número de veces encendida</strong>.</li>
+<li><strong>Tiempo</strong> que lleva <strong>encendida</strong> (en segundos), con dos decimales.</li>
+<li>La <strong>potencia consumida</strong>, con dos decimales.</li>
+</ol>
+</li>
+<li><strong>Consulta final de valores globales de la clase <code>Bombilla</code></strong>. Una vez finalizado el paso anterior, pasaremos a mostrar por pantalla  (usando siempre <code>printf</code>) los resultados de la misma consulta que tuviste que realizar al principio del programa, aunque ahora los resultados deberán ser muy diferentes (ya no serán cero):
+<ol>
+<li><strong>número de bombillas creadas</strong> hasta el momento;</li>
+<li><strong>número de bombillas encendidas</strong> en este momento.</li>
+</ol>
+</li>
+</ol>
+<ol></ol>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DestacadofpdIdevice" id="id121">
+<div class="iDevice emphasis0" >
+<div class="iDevice_destacadofpd">
+<div id="ta121_151" class="block iDevice_content">
+<p style="text-align: center;"><strong>IMPORTANTE: uso de <code>System.out.printf</code></strong></p>
+<p>Para la realización de <strong>este ejercicio y el resto de ejercicios de esta tarea</strong>, siempre que tengas que mostrar algo por pantalla, deberás hacerlo usando la herramienta de <acronym title="Entrada/Salida">E/S</acronym> <code>System.out.printf</code> en lugar de <code>System.out.println</code> o <code>System.out.print</code>. Es decir, tendrás que usar la salida con formato utilizando los indicadores de formato <code>%s</code>, <code>%d</code>, <code>%f</code>, <abbr title="etcétera">etc</abbr>.</p>
+<p>El único caso en el que podrás usar <code>print</code> o <code>println</code> será cuando vayas a escribir por pantalla un literal de cadena (un texto entre comillas), sin mostrar el contenido de ninguna variable. En estos casos el uso de <code>printf</code> no ofrece ninguna ventaja adicional.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id122">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Resultado del ejercicio</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta122_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b122" class="block iDevice_content">
+<p>Dado que no hay que introducir datos de entrada y todos los valores son fijos, la ejecución de tu programa siempre deberá proporcionar el mismo resultado. Aquí tienes una muestra de cómo podría quedar:</p>
+</section>
+<form name="feedback-form-quesFeedback0b122" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b122text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b122" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b122" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<div class="highlighted-code code-style-2 language-latex">
+<div>
+<pre><code>TRABAJO CON BOMBILLAS
+--------------------
+
+1.-CONSULTA INICIAL DE VALORES GLOBALES
+---------------------------------------
+
+Número de bombillas creadas hasta el momento: 0.
+Número de bombillas encendidas en este momento: 0.
+
+2.-CREACIÓN Y USO DE BOMBILLAS
+------------------------------
+
+Creación de bombillas (constructores)
+-------------------------------------
+Intentando crear una bombilla encendida con una potencia no válida.
+Error: potencia no válida: 250,00
+
+Intentando crear una bombilla con una potencia no válida.
+Error: potencia no válida: 5,00
+
+Creando bombilla encendida con una potencia válida con un constructor con dos parámetros...
+Bombilla 1 creada, estado: Bombilla encendida. Se ha encendido 1 vez
+
+Creando bombilla encendida con potencia por defecto usando un constructor con un parámetro...
+Bombilla 2 creada, estado: Bombilla encendida. Se ha encendido 1 vez
+
+Creando bombilla con valores por defecto usando un constructor sin parámetros...
+Bombilla 3 creada, estado: Bombilla apagada. Se ha encendido 0 veces
+
+Manipulación de bombillas (métodos)
+-----------------------------------
+Encendiendo la primera bombilla.
+Error: Intentando encender bombilla ya encendida
+
+Conmutando estado de la Bombilla 1.
+Estado de Bombilla 1: Bombilla apagada. Se ha encendido 1 vez.
+Esperando 1 segundo...
+
+Conmutando estado de la Bombilla 1.
+Estado de Bombilla 1: Bombilla encendida. Se ha encendido 2 veces.
+Esperando 1 segundo...
+
+Conmutando estado de la Bombilla 1.
+Estado de Bombilla 1: Bombilla apagada. Se ha encendido 2 veces.
+Esperando 1 segundo...
+
+Conmutando estado de la Bombilla 1.
+Estado de Bombilla 1: Bombilla encendida. Se ha encendido 3 veces.
+Esperando 1 segundo...
+
+Conmutando estado de la Bombilla 1.
+Estado de Bombilla 1: Bombilla apagada. Se ha encendido 3 veces.
+Esperando 1 segundo...
+
+Conmutando estado de la Bombilla 1.
+Estado de Bombilla 1: Bombilla encendida. Se ha encendido 4 veces.
+Esperando 1 segundo...
+
+Apagando la Bombilla 2...
+Encendiendo la Bombilla 3...
+
+Prueba de los getters de la primera bombilla creada:
+----------------------------------------------------
+Bombilla 1
+	Potencia:  100,00 W
+	Estado:  Encendida
+	Última vez que se encendió: 29/03/2022 12:56:25
+	Número de veces encendida:  4 veces
+	Tiempo que lleva encendida: 3,00 segundos
+	Potencia consumida: 300,00 Ws
+
+3.-CONSULTA FINAL DE VALORES GLOBALES
+-------------------------------------
+
+Número de bombillas creadas hasta el momento: 3.
+Número de bombillas encendidas en este momento: 2.</code></pre>
+</div>
+</div></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DestacadofpdIdevice" id="id123">
+<div class="iDevice emphasis0" >
+<div class="iDevice_destacadofpd">
+<div id="ta123_151" class="block iDevice_content">
+<p>Recuerda que para resolver esta actividad debes utilizar obligatoriamente instancias de la clase <code>Bombilla</code> junto con sus métodos. Y no olvides que tendrás que hacer el <code>import</code> correspondiente para poder usar esa clase en tu programa. También tendrás que hacerlo para poder utilizar la clase <code>Utilidades</code> y su método estático <code>Utilidades.esperar</code>.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Librería bombilla y javadoc</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_82" class="block iDevice_content">
+<p>En el archivo comprimido adjunto está la librería Bombilla y su documentación en formato javadoc.</p>
+<p>Descomprime el archivo e incluye la carpeta lib en el raíz de tu proyecto. A continuación, enlaza la librería tal y como has hecho en tareas anteriores para tener acceso a la librería Bombilla desde tu proyecto.</p>
+<p>Para acceder a la documentación javadoc de la librería, debes hacer doble clic en el archivo index.html de la carpeta javadoc incluida en el archivo lib.zip. Recuerda descomprimir el archivo antes.</p>
+</div>
+<ul class='exeFileList'><li><a href='lib.zip' target='_blank'>lib.zip<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_bulb" id="id1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_bulb.png)"><h1 class="iDeviceTitle">Entrega</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_124_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><span style="font-size: 14pt; color: #ff0000;">Debes entregar:</span></strong></p>
+<ul>
+<li><span style="font-size: 14pt;">Captura de ventana que muestre la ejecución de tu programa en formato PDF en la raíz de tu proyecto.</span></li>
+</ul>
+<p><span style="color: #ff0000;"><strong><span style="font-size: 24pt;">Nota importante:</span></strong></span></p>
+<ul>
+<li><span style="font-size: 14pt;">Identifica el código correspondiente a cada apartado indicando su número en un comentario.</span></li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,14 @@
+package ejercicio1;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 23 may 2024 
+Descripcion: clase Principal
+*/
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

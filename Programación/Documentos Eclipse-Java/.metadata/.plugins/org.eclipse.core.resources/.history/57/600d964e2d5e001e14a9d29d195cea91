@@ -1,0 +1,62 @@
+/*Se deberá realizar un programa en java el cual haciendo uso de la entrada estándar solicite los
+ * siguientes datos al usuario:
+ * Nombre
+ * Apellidos
+ * Sexo (M/F)
+ * Dirección
+ * Edad
+ * Altura
+ * Peso 
+ * Cada uno de los datos se almacenará en una variable del tipo correspondiente.
+ * Por último mostraremos por pantalla los valores correspondientes a cada uno de los datos introducidos por el usuario, mostrando 
+ * cada dato en una linea.
+ * Ejemplo: Nombre: Javier 
+ */
+
+package ejercicio1;
+
+// Para llamar función Scanner (se puede poner Scanner teclado=new Scanner(System.in) y dejando el ratón en Scanner nos dirá import Scanner)
+
+import java.util.Scanner;
+
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//Crearemos la entrada de Scanner asignada a una palabra (teclado en este caso)	
+		Scanner teclado = new Scanner(System.in);
+// crearemos la variable nombre en este caso 
+		
+		String nombre;
+		
+//Solicitamos datos al usuario
+		
+		System.out.println("Escriba su nombre: ");
+		
+// llamamos a la variable como teclado.next(el método que corresponda)	en este caso .nextline
+		
+		nombre = teclado.nextLine();
+		
+//Ponemos por pantalla El nombre que se ha introducido
+		
+		System.out.println("Su nombre es: " + nombre);
+		
+
+//Realizamos lo mismo para atodos los datos requeridos
+		
+		String apellidos;
+		
+		System.out.println("Escriba sus apellidos: ");
+		
+		apellidos = teclado.nextLine();
+		
+		System.out.println("Sus apellidos son: " + apellidos);
+		
+		
+		
+		
+		
+		
+				}
+
+}

@@ -1,0 +1,85 @@
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase Principal
+*/
+package ejercicio1;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		ArrayList<Socio> listaSocios = new ArrayList<Socio>();
+		ArrayList<PartidoFutbol> listaFutbol = new ArrayList<PartidoFutbol>();
+		ArrayList<PartidoBaloncesto> listaBaloncesto = new ArrayList<PartidoBaloncesto>();
+		
+		int opcionDeseada;
+		do {
+			System.out.println("Elija un opcion:\n1 - Crear socios.\n2 - Insertar la participación de los socios"
+					+ "\n3 - Mostrar los socios que practican fútbol ordenados por nombre y las actuaciones realizadas ordenadas por fecha."
+					+ "\n4 - Mostrar los socios que practican baloncesto ordenados por nombre y las actuaciones realizadas ordenadas por fecha."
+					+ "\n5 - Mostrar la información del socio que ha marcado más goles.\n6 - Mostrar la información del socio que más puntos ha conseguido."
+					+ "\n7 - Mostrar el dni y nombre de los socios que no han participado en ninguna competición\n0 - Salir del programa");
+			opcionDeseada = teclado.nextInt();
+			switch (opcionDeseada) {
+			case (1): {
+				
+				break;
+
+			}
+			case (2): {
+				
+				break;
+
+			}
+			case (3): {
+				
+				break;
+
+			}
+			case (4): {
+				
+				break;
+
+			}
+			case (0): {
+				
+				break;
+			}
+			default: {
+				System.out.println(
+						"Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+			}
+
+			}
+
+		} while (opcionDeseada != 0);
+
+	}
+	
+	public static void lectorArchivos(ArrayList<Socio> lista, File archivo, int tipo) {
+		try {
+			Scanner lector = new Scanner (archivo);
+			
+			while(lector.hasNextLine()) {
+				String linea = lector.nextLine();
+				String[] lineaSeparada = linea.split(";"); 
+				if(tipo == 1) {
+					Socio alumno = new SocioFutbol(lineaSeparada[0], lineaSeparada[1], lineaSeparada[2], lineaSeparada[3], null);
+					lista.add(alumno);
+				}
+				
+		
+			}
+			lector.close();
+		}catch(FileNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

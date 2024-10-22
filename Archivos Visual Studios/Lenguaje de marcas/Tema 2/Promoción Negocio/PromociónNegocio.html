@@ -1,0 +1,84 @@
+<!--Crea una página web  para la promocion de un negocio:
+
+Incluirá al menos los siguiente elementos HTML
+
+Metadatos mas importantes
+cabeceras h1 y h2 centradas,  para dar estructura a la página
+texto con formato variado (cursiva, negrita, subrayado,...)
+tabla con informacion general de los servicios del negocio
+otra tabla con imágenes, pequeñas a igual tamaño
+enlaces, de texto y de imagenes a otros sitios web
+Una lista numerada (A..Z que contenga sublistas en alguno de sus items)
+En las tablas usaremos atributos que mejoren el aspecto visual, como borde, color u otros
+
+para realizar el ejercicio consultaremos en w3schools u otro sitio web lasdistintas opciones que tenemos para las etiquetas, como atributos o estilos.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Joshua">
+    <meta name="Descrición" content="Esta página web esta destinada a la promoción de la empresa Bagús">
+    <meta name="Keywords" content="Sofá, cómoda, mueble, mesa, aparadore, biombo, estantería, bagús, teca">
+    <title>Tienda de muebles Bagús</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        table, th, td {
+            border: 3px solid rgba(129, 3, 108, 0.39);
+            border-radius: 15px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: blue;">&#x1f6cf;&#xfe0f; Tienda Bagús &#x1f6cf;&#xfe0f;</h1>
+    <h2 style="text-align: center; color: blueviolet;">Todos los muebles que deseas muebles a tu alcance</h2>
+
+    <p>Bienvenidos a Bagús. En nuestra tienda encontrarás los muebles idóneos para tu casa <br>
+    Todos nuestros muebles están hechos en <b>Bali (Indonesia)</b> a mano por artesanos sumamente <br>
+    especializados en creación de todo tipo de muebles. Todos nuestros muebles están fabricados en <br>
+    madera de <b>Teca</b>. <br>
+    <i>Prueba nuestra calidad y seguro que repetirás</i> <br>
+    <u>Somos importadores directos, te podemos asegurar el mejor precio que encontrarás</u>
+    </p>
+
+    <table style="background-color: chartreuse;">
+        <th style="font-size: 30px; text-align: center;">Nuestros servicios:</th>
+        <tr><th>Entrega a domicilio en 48h</th></tr>
+        <tr><th>Garantia de calidad</th></tr>
+        <tr><th>Mantenimiento de muebles comprados en nuestra tienda</th></tr>
+        <tr><th>Entrega de Certificado de calidad de madera de Teca</th></tr>
+    </table>
+
+    <p> <br> <br></p>
+
+    <table style="background-color: rgb(255, 238, 0);">
+        <th style="font-size: 30px; text-align: center;" colspan="2">Imágenes de nuestros productos</th>
+        <tr>
+            <th><a href="https://suinplas.com/blog/mantenimiento-de-muebles-de-teca/"><img src=MueblesExteriorTeca.jpg alt="Mesa Exterior" width="250" height="250"></a></th>
+            <td><a href="https://www.masferreteria.com/blog/muebles-de-teca-como-limpiarlos-y-mantenerlos/"><img src=Mantenimiento.jpg alt="Mantenimiento" width="250" height="250"></a></td>
+        </tr>
+        <tr>
+            <th><a href="https://www.pinterest.es/pin/583286589208779502/"><img src=MueblesInterior.jpg alt="Mesa Exterior" width="250" height="250"></a></th>
+            <td><a href="https://mirococo.com/muebles-madera-teca-rococo/"><img src=MesaInterior.jpg alt="Mesa Exterior" width="250" height="250"></a></td>
+        </tr>
+    </table>
+
+    <p style="font-size: 35px;"><a href="https://adirondackmuebles.co/es/blog/blog-muebles-madera-de-teca/">Por qué son especiales los muebles de Teca</a></p>
+
+    <p style="font-size: 25px;">Categorías</p>
+    <ol type="A" style="color: rgb(1, 73, 19);">
+        <li>Camas</li>
+        <li>Mesas
+            <ul>
+                <li>Altas</li>
+                <li>De café</li>
+                <li>Mesa de comedor</li>
+            </ul>
+        <li>Estanterías</li>
+        <li>Biombos</li>
+
+    </ol>
+    
+</body>

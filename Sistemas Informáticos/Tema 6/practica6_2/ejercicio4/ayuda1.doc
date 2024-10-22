@@ -1,0 +1,24 @@
+
+Estado para dispositivo COM1:
+-----------------------------
+    Baudios:             1200
+    Paridad:             None
+    Bits de datos:       7
+    Bits de paro:        1
+    Tiempo de espera:    OFF
+    XON / XOFF:          OFF
+    Protocolo CTS:       OFF
+    Protocolo DSR:       OFF
+    Sensibilidad de DSR: OFF
+    Circuito DTR:        ON
+    Circuito RTS:        ON
+
+
+Estado para dispositivo CON:
+----------------------------
+    L¡neas:              9001
+    Columnas:            120
+    Ritmo del teclado:   31
+    Retardo del teclado: 1
+    P gina de c¢digos:    850
+

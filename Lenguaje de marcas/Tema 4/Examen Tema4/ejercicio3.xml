@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio3.xsd">
+    <vehiculo>
+        <Tipo>moto</Tipo>
+        <Matricula>DTR4487</Matricula>
+        <NombreCliente>Joshua</NombreCliente>
+        <Socio>false</Socio>
+    </vehiculo>
+    <vehiculo>
+        <Tipo>coche</Tipo>
+        <Matricula>ART5789</Matricula>
+        <NombreCliente>Adolfo</NombreCliente>
+        <Socio>true</Socio>
+    </vehiculo>
+</parking>    

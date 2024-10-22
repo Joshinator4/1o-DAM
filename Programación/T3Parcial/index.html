@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>T3Parcial. Manitas a su servicio!! </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-26"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">T3Parcial. Manitas a su servicio!!</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">T3Parcial. Manitas a su servicio!!</h1></header>
+<article class="iDevice_wrapper FreeTextfpdIdevice" id="id121">
+<div class="iDevice emphasis0">
+<div id="ta121_154" class="block iDevice_content">
+<p style="text-align: center;"><img src="manitas.jpg" alt="" width="230" height="200" /></p>
+<p style="text-align: center;"><strong><span style="font-size: 14pt;">Gestión de una empresa de mantenimiento.</span></strong></p>
+<p>Diseña una aplicación que gestione los servicios de una empresa de mantenimiento.</p>
+<p>Para todos los servicios se recogerán los siguientes datos:</p>
+<ul>
+<li>trabajador.</li>
+<li>fecha del servicio.</li>
+<li>cliente.</li>
+</ul>
+<p>Cada servicio tendrá un identificador único consecutivo con el formato AAAA-XXX, donde AAAA es el año en curso y XXX es un número consecutivo que cada comienzo de año se resetea a 0. Ningún año habrá más de 999 servicios.</p>
+<p>Además, para todos los servicios se calculará: el coste del material, el coste de la mano de obra y el coste total del servicio.</p>
+<p>Los tipos de servicio ofrecidos son:</p>
+<p><strong>* Pintura</strong>, que incluirá:</p>
+<ul>
+<li>la superficie a pintar (m²) y el precio del litro de pintura.</li>
+<li>el coste del material será: (superficie * 7,8) * precio de la pintura.</li>
+<li>el coste de la mano de obra será: (superficie / 10) * 7,5. Hay que tener en cuenta que cuando la superficie a pintar es menor de 50 m² se añade un coste adicional del 15% sobre el coste de la mano de obra..</li>
+</ul>
+<p><br /><strong>* Revisión alarma</strong>, que incluirá:</p>
+<ul>
+<li>número de sensores y modelo alarma. Este trabajo siempre lo realizará el mismo trabajador ( Manuel Fernández ) porque es el especialista en alarmas.</li>
+<li>el coste del material será de 0€.</li>
+<li>el coste de la mano de obra será: (número de sensores / 3) * 40.</li>
+</ul>
+<p>La aplicación debe permitir:</p>
+<ol>
+<li><strong>Almacenar un servicio de pintura</strong>. Se solicitará la información necesaria al usuario y mostrará toda la información del servicio guardada incluyen do el coste total. El valor de la superficie no podrá ser negativo.</li>
+<li><strong>Almacenar un servicio de revisión de alarma</strong>. Se solicitará la información necesaria al usuario y mostrará toda la información del servicio incluyendo el coste total.</li>
+<li><strong>Mostrar los servicios realizados un determinado día</strong> que se solicitará al usuario incluyendo el coste de material, el coste de la mano de obra y el total del servicio.</li>
+<li><strong>Mostrar todos servicios de pintura con importe total inferior a una cantidad solicitada al usuario.</strong></li>
+<li><strong>Eliminar un servicio</strong> a partir de su identificador solicitado al usuario.</li>
+<li><strong>Exportar</strong> todos los servicios del sistema ordenados por cliente y fecha al fichero servicios.txt.</li>
+</ol>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper RecomendacionfpdIdevice em_iDevice em_iDevice_recomendacionfpd" id="id124">
+<div class="iDevice emphasis_recomendacionfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Se prestará especial atención a</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta124_131" class="block iDevice_content">
+<ul>
+<li>Los modificadores de acceso y de contenido de los atributos.</li>
+<li>Los tipos de los atributos.</li>
+<li>Los tipos que devuelven los métodos.</li>
+<li>Los parámetros (y sus tipos) de los constructores y métodos.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Consideraciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_125_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Se podrán crear los atributos, constructores y métodos que se consideren necesarios.</li>
+<li>Todos los métodos de la clase Principal tienen que llevar un comentario con la descripción de su función.</li>
+<li>Solo se crearán los métodos getters y setters que vayan a ser utilizados.</li>
+<li><strong><span style="color: #ff0000;">Para facilitar la prueba es OBLIGATORIA la creación de objetos precargados cuyos valores permitan comprobar el funcionamiento de la aplicación.</span></strong></li>
+<li>Las clases que no incluyan el nombre del autor NO se calificarán.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Entrega.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_125_2" class="block iDevice_content">
+<p>El nombre del proyecto será:</p>
+<p style="padding-left: 30px;"><strong>TuPrimerApellido+TuNombre+T3P</strong></p>
+<p>Comprime el proyecto y entrégalo.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

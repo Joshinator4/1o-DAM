@@ -1,0 +1,37 @@
+/*
+ * Objetivo:Clase Revision Alarma
+ * Autor: Joshua Sangareau Quesada
+ * fecha: 25/04/2024
+ * 
+ */
+package ejercicio1;
+
+import java.time.LocalDate;
+
+public class RevisionAlarma extends Servicio{
+	
+	private int sensores;
+	private String modelo;
+
+	
+	public RevisionAlarma(LocalDate fecha_servicio, String cliente, int sensores, String modelo) {
+		super("Manuel Fernández", fecha_servicio, cliente);
+		this.sensores = sensores;
+		this.modelo = modelo;
+		
+	}
+
+	
+	@Override
+	protected double calcularMaterial() {
+		double devolucion=0;
+		return devolucion;
+	}
+	@Override
+	protected double calcularManoObra() {
+		double devolucion;
+		devolucion = sensores/3*40;
+		
+		return devolucion;
+	}
+}

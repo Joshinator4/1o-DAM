@@ -1,0 +1,156 @@
+package ejercicio1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import ejercicio1.Coche.Estado;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 23 may 2024 
+Descripcion: clase Principal
+Incluir un estacionamiento para un vehículo si hay disponibilidad. Si no hay disponibilidad hay que indicarlo.
+Exportar todos los vehículos estacionados a un documento de texto mostrando toda la información ordenados por matrícula.
+Mostrar la información de los coches con estado de conservación “nuevo”.
+Buscar si está estacionado un vehículo a partir de su matrícula mostrando toda la información.
+Calcular el precio del estacionamiento de un vehículo a partir de su matrícula que debe existir en el sistema. El número de días se pedirá al usuario.
+Eliminar un vehículo a partir de su matrícula. Se informará en el caso de que no exista la matrícula.
+Calcular el número de estacionamientos de coches y motocicletas disponibles.
+*/
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in); 
+		ArrayList<Vehiculo> listaVehiculos = new ArrayList<>();
+		int opcionDeseada;
+	
+		
+		do {
+			System.out.println("Elija un opcion:\n1 - Mostrar Películas.\n2 - Borrar Plataforma"
+					+ "\n3 - Modificar Plataforma.\n4 - Mostrar Películas por plataformas\n0 - Salir del programa");
+			opcionDeseada = teclado.nextInt();
+			switch (opcionDeseada) {
+			case (1): {
+			
+				break;
+
+			}
+			case (2): {
+				
+				break;
+
+			}
+			case (3): {
+				
+				break;
+				
+			}
+			case (4): {
+	
+				break;
+				
+			}
+			case (0): {
+				System.out.println("Se va a proceder a cerrar el programa, ¡Hasta Pronto!");
+			
+				break;
+			}
+			default: {
+				System.out.println(
+						"Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+			}
+
+			}
+
+		} while (opcionDeseada != 0);
+
+	}
+	
+	//Este metodo convierte el string en un tipo enumerado de TipoPosicion
+		public static Estado convertirEnum(String posicion) {
+			Estado devolucion = null;
+			if(posicion.equalsIgnoreCase("NUEVO")) {
+				devolucion = Estado.NUEVO;
+			}else if(posicion.equalsIgnoreCase("DAÑADO PARCIAL")) {
+				devolucion = Estado.DAÑADO_PARCIAL;
+			}else if(posicion.equalsIgnoreCase("DAÑADO")) {
+				devolucion = Estado.DAÑADO;
+			}
+			return devolucion;
+			
+		}
+	
+	public static void crearEstacionamiento(Scanner teclado, ArrayList<Vehiculo> listaVehiculos) {
+		String matricula, dni, telefono, modelo, estadoStr;
+		Estado estado;
+		int km, tipo, espejos, casco;
+		boolean cascoBool;
+		teclado.nextLine();
+		System.out.println("Introduzca matricula del vehiculo");
+		matricula = teclado.nextLine();
+		System.out.println("Introduzca el dni del cliente");
+		dni = teclado.nextLine();
+		System.out.println("Introduzca el telefono del cliente");
+		telefono = teclado.nextLine();
+		System.out.println("Introduzca el modelo");
+		modelo = teclado.nextLine();
+		
+		System.out.println("Introduzca el tipo de vehiculo: 1 para coche, 2 para moto");
+		tipo = teclado.nextInt();
+		
+		if(tipo == 1) {
+			if(quedaEspacio(listaVehiculos, 1)) {
+				System.out.println("Introdduzca los kilometros del coche");
+				km = teclado.nextInt();
+				teclado.nextLine();
+				System.out.println("Introduzca el estado del coche siendo posible estas opciones: NUEVO, DAÑADO PARCIAL, DAÑADO");
+				estadoStr = teclado.nextLine();
+				estado = convertirEnum(estadoStr);
+				listaVehiculos.add(new Coche(matricula, dni, telefono, modelo, km, estado));
+			}else {
+				System.out.println("No queda espacio para más coches");
+			}
+			
+		}else {
+			if(quedaEspacio(listaVehiculos, 2)) {
+				System.out.println("Introduzca la cantidad de espejos");
+				espejos = teclado.nextInt();
+				teclado.nextLine();
+				System.out.println("Introduzca si contiene casco: 1 si. 2 no");
+				casco = teclado.nextInt();
+				if(casco == 1){
+					cascoBool = true;
+				}else {
+					cascoBool = false;
+				}
+				listaVehiculos.add(new Moto(matricula, dni, telefono, modelo, espejos, cascoBool));
+			}else {
+				System.out.println("No queda espacio para más motos");
+			}
+		}
+		
+	}
+	
+	private static boolean quedaEspacio(ArrayList<Vehiculo> listaVehiculos, int tipo) {
+		boolean devolucion = true;
+		int contadorMoto=0, contadorCoche=0;
+		for(Vehiculo i: listaVehiculos) {
+			if(i.getClass().getSimpleName().equalsIgnoreCase("Coche")) {
+				contadorCoche ++;
+			}else {
+				contadorMoto ++;
+			}
+		}
+		if(contadorMoto > 25 && tipo == 2) {
+			devolucion = false;
+		}else if(contadorCoche > 100 && tipo == 1) {
+			devolucion = false;
+		}
+		return devolucion;
+	}
+
+	
+
+}

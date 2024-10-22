@@ -1,0 +1,6 @@
+raul;4;985;BASE
+pablo;5;878;ALERO
+ricardo;6;2648;PIVOT
+ana;7;2648;ESCOLTA
+juana;7;2648;ESCOLTA
+juana;9;2488;ESCOLTA

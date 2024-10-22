@@ -1,0 +1,76 @@
+<catalogo>
+  <artistas>
+    <artista id="uno">
+      <nombre>Carlos Jean</nombre>
+      <nacionalidad>España</nacionalidad>
+    </artista>
+    <artista id="dos">
+      <nombre>Miguel Rios</nombre>
+      <nacionalidad>España</nacionalidad>
+    </artista>
+    <artista id="tres">
+      <nombre>La Mala</nombre>
+      <nacionalidad>España</nacionalidad>
+    </artista>
+    <artista id="cuatro">
+      <nombre>Etta James</nombre>
+      <nacionalidad>USA</nacionalidad>
+    </artista>
+  </artistas>
+  <discograficas>
+    <discografica id="uno">
+      <nombre>Motown</nombre>
+      <nacionalidad>USA</nacionalidad>
+    </discografica>
+    <discografica id="dos">
+      <nombre>Subterfuge</nombre>
+      <nacionalidad>España</nacionalidad>
+    </discografica>
+    <discografica id="tres">
+      <nombre>Sony</nombre>
+      <nacionalidad>USA</nacionalidad>
+    </discografica>
+  </discograficas>
+  <cds>
+    <cd autor="uno" disc="dos">
+      <titulo>Bad Jean</titulo>
+      <precio>15</precio>
+      <año>2000</año>
+    </cd>
+    <cd autor="dos" disc="tres">
+      <titulo>Rock and Rios</titulo>
+      <precio>12</precio>
+      <año>1982</año>
+    </cd>
+    <cd autor="tres" disc="tres">
+      <titulo>Malamarismo</titulo>
+      <precio>10.90</precio>
+      <año>2008</año>
+    </cd>
+    <cd autor="cuatro" disc="uno">
+      <titulo>At last</titulo>
+      <precio>13</precio>
+      <año>1979</año>
+    </cd>
+    <cd autor="cuatro" disc="uno">
+      <titulo>Chess soul sisters</titulo>
+      <precio>16</precio>
+      <año>1980</año>
+    </cd>
+    <cd autor="dos" disc="dos">
+      <titulo>Michael Rios</titulo>
+      <precio>10</precio>
+      <año>1973</año>
+    </cd>
+    <cd autor="uno" disc="dos">
+      <titulo>Party Stereo</titulo>
+      <precio>13</precio>
+      <año>2009</año>
+    </cd>
+    <cd autor="tres" disc="tres">
+      <titulo>Dirty Bailarina</titulo>
+      <precio>13</precio>
+      <año>1979</año>
+    </cd>
+  </cds>
+</catalogo>

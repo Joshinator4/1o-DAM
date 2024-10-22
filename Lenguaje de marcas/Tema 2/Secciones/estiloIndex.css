@@ -1,0 +1,39 @@
+header{
+    border: 5px;
+    color: rgb(0, 235, 78);
+    background-color: rgba(2, 2, 2, 0.918);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    height: 25%;
+}
+main{
+    height: 60%;
+}
+article{
+    font-family: Arial;
+    float: left;
+    font-size: 25px;
+    background-color: crimson;
+    color: aliceblue;
+    width: 70%;
+    text-align: center;
+    height: 600px
+}
+nav{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    background-color: chartreuse;
+    color: black;
+    float: left;
+    width: 30%;
+    height: 600px
+}
+footer{
+    background-color: aquamarine;
+    color: blueviolet;
+    text-align: center;
+    margin: 0;
+    font-size:80px;
+}

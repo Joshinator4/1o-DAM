@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.2.- Excepciones | Computador vuelo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-21"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Computador vuelo</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Computador de vuelo</a></li>
+   <li><a href="1_descripcin_de_la_tarea.html" class="daddy">1.- Descripción de la tarea</a>
+   <ul class="other-section">
+      <li><a href="11_ejercicio_01_atributos_de_la_clase_estado.html" class="no-ch">1.1.- Ejercicio 01: Atributos de la clase (estado)</a></li>
+      <li><a href="12_ejercicio_02_constructores_y_mtodo_fbrica.html" class="no-ch">1.2.- Ejercicio 02: Constructores y método fábrica</a></li>
+      <li><a href="13_ejercicio_03_mtodos_de_consulta_getters_y_modificacin_setters.html" class="no-ch">1.3.- Ejercicio 03: Métodos de consulta (getters) y modificación (setters)</a></li>
+      <li><a href="14_ejercicio_04_iniciando_un_nuevo_vuelo_despegue.html" class="no-ch">1.4.- Ejercicio 04: Iniciando un nuevo vuelo (despegue)</a></li>
+      <li><a href="15_ejercicio_05_finalizando_el_vuelo_aterrizaje.html" class="no-ch">1.5.- Ejercicio 05: Finalizando el vuelo (aterrizaje)</a></li>
+      <li><a href="16_ejercicio_06_mtodo_tostring_estado_de_la_aeronave.html" class="no-ch">1.6.- Ejercicio 06: Método toString (estado de la aeronave)</a></li>
+      <li><a href="17_ejercicio_07_documentando_la_clase_javadoc.html" class="no-ch">1.7.- Ejercicio 07: Documentando la clase (javadoc)</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_informacin_de_inters.html" class="current-page-parent daddy">2.- Información de interés</a>
+   <ul>
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+      <li id="active"><a href="22_excepciones.html" class="active no-ch">2.2.- Excepciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="21_programas_de_pruebas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_evaluacin_de_la_tarea.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">2.2.- Excepciones</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id23">
+<div class="iDevice emphasis0">
+<div id="ta23_69" class="block iDevice_content">
+<div class="exe-figure exe-image license-custom position-center" style="width: 400px;"><img src="error.jpg" alt="Error" title="Error" width="400" height="266" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/photos/osito-de-goma-soportar-dulzura-359950/" target="_blank" class="author" rel="noopener">Ronile</a>. <span class="title"><em>Error</em></span> <span class="license"><span class="sep">(</span><span class="custom-license"><a href="https://pixabay.com/es/service/license/" title="Acceder a los términos de la licencia Pixabay License (Se abre en nueva ventana)" target="_blank" rel="noopener">Pixabay License</a></span><span class="sep">)</span></span></span></div>
+</div>
+<p><br />Uno de los puntos clave en esta tarea se encuentra en la <strong>comprobación y gestión de posibles errores</strong> en los métodos de la clase que tienes que implementar. Eso significa que debes prestar atención a cada uno de los posibles fallos que se detallan en la descripción de los métodos que hemos hecho en los apartados anteriores.</p>
+<p>Según el tipo de error que se pueda producir, el método tendrá que lanzar (<code><strong><span style="background-color: #ccffff; font-family: Courier New;">throw</span></strong></code>) una excepción del tipo que se especifique en la descripción del método incluyendo el <strong>texto de error</strong> que se indique en cada caso. Además, el método deberá incluir en su cabecera la cláusula <code><strong><span style="background-color: #ccffff; font-family: Courier New;">throws</span></strong></code> con la excepción o excepciones que puede lanzar.</p>
+<p>En algunos casos, la herramienta <strong><span lang="en">Eclipse</span> </strong>puede ayudarte a generar automáticamente métodos que aún no has implementado. Debes tener cuidado con esto, pues es posible que no se genere exactamente lo que realmente necesitas y que además falten los <code><strong><span style="background-color: #ccffff; font-family: Courier New;">throws</span></strong></code> de la cabecera. El esqueleto de los métodos debe ser escrito por ti, y no de manera automática por la herramienta. No es admisible que en el código de la clase que se presente como solución a la tarea incluya fragmentos de código como este:</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em; font-family: Courier New;">
+<pre style="margin: 0; line-height: 125%;">    <span style="font-family: Courier New; color: #0066bb; font-weight: bold;">String <span style="color: #000000;">getMatricula</span></span><span style="font-family: Courier New; color: #333333;">()</span> <span style="font-family: Courier New; color: #333333;">{</span>
+        <span style="font-family: Courier New; color: #008800; font-weight: bold;">throw</span> <span style="color: #008800; font-weight: bold;">new</span> <span style="font-family: Courier New; color: #0066bb; font-weight: bold;">UnsupportedOperationException</span><span style="font-family: Courier New; color: #333333;">(</span><span style="font-family: Courier New; background-color: #fff0f0;">"Not supported yet."</span><span style="color: #333333;">);</span> <span style="font-family: Courier New; color: #888888;">//To change body of generated methods...</span>
+    <span style="font-family: Courier New; color: #333333;">}</span>
+</pre>
+</div>
+<p><br /><br /></p>
+<p style="text-align: center;"><strong><span class="destacado_inline">Eso, además de quedar bastante mal en el código de tu clase, será penalizado en la corrección.</span></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="21_programas_de_pruebas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_evaluacin_de_la_tarea.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

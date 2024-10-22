@@ -1,0 +1,15 @@
+package ejercicio2;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+		}catch(IllegalArgumentException exception1) {
+			System.out.println(exception1.getMessage());
+		}
+
+	}
+
+}

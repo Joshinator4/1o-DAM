@@ -1,0 +1,8 @@
+package ejercicio2;
+
+public class Mascota {
+	protected String nombre;
+	protected int edad;
+	protected String estado;
+	protected fechaNacimiento
+}

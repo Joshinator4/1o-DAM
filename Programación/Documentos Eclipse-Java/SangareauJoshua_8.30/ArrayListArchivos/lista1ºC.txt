@@ -1,0 +1,17 @@
+1º ESO C;Wilson , Luke;1;2;4;3;1
+1º ESO C;Villatoro Postigo, Adrián;4;6;7;3;4
+1º ESO C;Villar Risco, Omar;8;8;8;3;9
+1º ESO C;Vegas Carrasco, María Encarnación;3;2;2;1;3
+1º ESO C;Ruiz Rueda, Sebastián;3;3;6;3;3
+1º ESO C;Rueda Vega, Ana Carmen;3;6;4;3;5
+1º ESO C;Roberto Jaimes, Neila Fernanda;3;5;4;5;4
+1º ESO C;Roberto Jaimes, Kelly Ximena;5;5;5;5;3
+1º ESO C;Recchia , María Fiorella;4;3;3;1;5
+1º ESO C;Ramírez Pérez, David;4;3;4;3;3
+1º ESO C;Mora Castillo, Paola;5;4;5;5;4
+1º ESO C;Menaique Álvarez, Celia María;3;4;5;5;5
+1º ESO C;Martín Soler, José Manuel;3;4;5;3;4
+1º ESO C;Mantero González, Juan;8;4;5;1;5
+1º ESO C;Cordón López, Rocío;3;3;4;1;2
+1º ESO C;Castillo Alcázar, Alejandro;4;7;5;3;5
+1º ESO C;Aranda Vázquez, José;3;3;3;1;2

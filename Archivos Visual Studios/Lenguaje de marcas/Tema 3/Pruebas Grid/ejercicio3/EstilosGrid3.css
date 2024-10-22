@@ -1,0 +1,39 @@
+body, html{
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+}
+.contenedor-grid {
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    display: grid;
+    grid-template-rows:  17.5% 20% 20% 30% 10%;
+    grid-template-columns: 20% 40% 40%;
+    grid-gap: 20px;
+}
+.contenedor-grid div{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.item1{
+    border: black 5px solid;
+    grid-column: 1/4;
+    background-color: blueviolet;
+}
+.item2{
+    border: rgb(253, 152, 0) 5px solid;
+    background-color: darkcyan;
+    grid-row: 2/5;
+}
+.item3{
+    border: rgb(0, 194, 253) 5px solid;
+    background-color: rgb(51, 255, 0);
+    grid-row: 2/5;
+}
+.item4{
+    border: rgb(253, 0, 0) 5px solid;
+    background-color: rgb(187, 255, 0);
+    grid-column: 1/4;
+    
+}

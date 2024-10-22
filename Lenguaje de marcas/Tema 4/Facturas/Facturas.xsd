@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="facturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" name="cliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="1" name="codigoCliente" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z]{1}[0-9]{4}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>    
+                            <xs:element minOccurs="1" name="direccion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" name="tipoDeVia" type="xs:string" />
+                                        <xs:element minOccurs="1" name="numeroDeVia" type="xs:integer" />
+                                        <xs:element minOccurs="1" name="localidad" type="xs:string" />
+                                        <xs:element minOccurs="1" name="provincia" type="xs:string" />
+                                        <xs:element minOccurs="1" name="codigoPostal" type="xs:integer" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="telefonoContacto">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" name="telefono" type="xs:unsignedInt" />
+                                        <xs:element minOccurs="1" name="tipo">
+                                            <xs:complexType>
+                                                    <xs:choice>
+                                                        <xs:element name="particular" type="xs:string"/>
+                                                        <xs:element name="direccion" type="xs:string"/>
+                                                        <xs:element name="rrhh" type="xs:string"/>
+                                                        <xs:element name="contabilidad" type="xs:string"/>
+                                                    </xs:choice>          
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="1" name="factura" type="xs:string" />
+                            <xs:element minOccurs="1" name="tipoCliente">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:choice>
+                                            <xs:element minOccurs="0" name="empresa">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element minOccurs="0" name="nombre" type="xs:string" />
+                                                        <xs:element minOccurs="0" name="razonSocial" type="xs:string" />
+                                                        <xs:element minOccurs="0" name="web" type="xs:string" />
+                                                        <xs:element minOccurs="0" name="cif" type="xs:string" />
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>  
+                                            <xs:element minOccurs="0" name="paricular">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element minOccurs="0" name="nombre" type="xs:string" />
+                                                        <xs:element minOccurs="0" name="nif" type="xs:string" />
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:choice>     
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="factura">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="1" name="fecha" type="xs:date" />
+                            <xs:element minOccurs="1" name="numeroFactura" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="^EMP[-]{1}[0-9]{2}[-]{1}[0-9]{4}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="1" name="formaDePago" >
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:choice>
+                                            <xs:element name="paypal" type="xs:string" />
+                                            <xs:element name="bizum" type="xs:string" />
+                                            <xs:element name="efectivo" type="xs:string" />
+                                        </xs:choice> 
+                                    </xs:sequence>       
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="observaciones" />
+                            <xs:element minOccurs="1" name="productos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" name="nombre" type="xs:string" />
+                                        <xs:element minOccurs="1" name="codigoProducto" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[a-zA-Z]{3}[-]{1}[a-zA-Z]{3}[-]{1}[a-zA-Z]{3}" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element minOccurs="1" name="precio" type="xs:decimal" />
+                                        <xs:element minOccurs="1" name="cantidad" type="xs:integer" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="1" name="cuantia">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" name="iva" type="xs:integer" />
+                                        <xs:element minOccurs="1" name="total" type="xs:decimal" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

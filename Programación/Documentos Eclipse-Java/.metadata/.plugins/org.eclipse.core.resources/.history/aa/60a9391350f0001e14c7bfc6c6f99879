@@ -1,0 +1,24 @@
+package lectura;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class PrincipalLectura {
+
+	public static void main(String[] args) {
+	
+		
+		File archivo = new File("Empleado2.txt");
+		
+		try {
+			Scanner lector = new Scanner(archivo);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+
+	}
+
+}

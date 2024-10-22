@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<almacen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="almacen.xsd">
+    <articulo>
+        <nombreArticulo>Manzana</nombreArticulo>
+        <precio>2.5</precio>
+        <existencias>5</existencias>
+        <seccion>a1</seccion>
+    </articulo>
+
+    <articulo>
+        <nombreArticulo>Lámpara techo</nombreArticulo>
+        <precio>199.95</precio>
+        <existencias>50</existencias>
+        <seccion>b3</seccion>
+    </articulo>
+</almacen>

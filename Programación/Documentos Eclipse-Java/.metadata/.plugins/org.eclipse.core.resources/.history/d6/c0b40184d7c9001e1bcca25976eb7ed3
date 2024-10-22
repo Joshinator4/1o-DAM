@@ -1,0 +1,29 @@
+package ejercicio2;
+
+import java.time.LocalDate;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		LocalDate fecha = LocalDate.now();
+		
+		try {
+			
+			Coche choche1 = new Coche ("5567DTL", "Joshua", fecha, 1800, 105);
+			
+		}catch(IllegalArgumentException exception1) {
+			System.out.println(exception1.getMessage());
+		}
+		
+		try {
+			
+			Coche choche2 = new Coche ("556DTL", "Joshua", fecha, 1800, 105);
+			
+		}catch(IllegalArgumentException exception2) {
+			System.out.println(exception2.getMessage());
+		}
+
+
+	}
+
+}

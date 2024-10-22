@@ -1,0 +1,73 @@
+package ejercicio1;
+
+import java.time.LocalDate;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase PartidoFutbol
+*/
+public class PartidoFutbol {
+	
+	private LocalDate fecha;
+	private int minutosJugados;
+	private int goles;
+	private int kmRecorridos;
+	
+	
+	public PartidoFutbol(LocalDate fecha, int minutosJugados, int goles, int kmRecorridos) {
+		this.fecha = fecha;
+		this.minutosJugados = minutosJugados;
+		this.goles = goles;
+		this.kmRecorridos = kmRecorridos;
+	}
+
+
+	public LocalDate getFecha() {
+		return fecha;
+	}
+
+
+	public int getMinutosJugados() {
+		return minutosJugados;
+	}
+
+
+	public int getGoles() {
+		return goles;
+	}
+
+
+	public int getKmRecorridos() {
+		return kmRecorridos;
+	}
+
+
+	public void setFecha(LocalDate fecha) {
+		this.fecha = fecha;
+	}
+
+
+	public void setMinutosJugados(int minutosJugados) {
+		this.minutosJugados = minutosJugados;
+	}
+
+
+	public void setGoles(int goles) {
+		this.goles = goles;
+	}
+
+
+	public void setKmRecorridos(int kmRecorridos) {
+		this.kmRecorridos = kmRecorridos;
+	}
+
+
+	@Override
+	public String toString() {
+		return "PartidoFutbol [fecha=" + fecha + ", minutosJugados=" + minutosJugados + ", goles=" + goles
+				+ ", kmRecorridos=" + kmRecorridos + "]";
+	}
+	
+	
+	
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.8.- Clase Almacenaje | Mobiliario </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Mobiliario</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mobiliario</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_clase_mueble.html" class="no-ch">1.1.- Clase Mueble</a></li>
+      <li><a href="12_clase_modulo.html" class="no-ch">1.2.- Clase Modulo</a></li>
+      <li><a href="13_interfaces_ajustable_y_personalizable.html" class="no-ch">1.3.- Interfaces Ajustable y Personalizable</a></li>
+      <li><a href="14_clase_asiento.html" class="no-ch">1.4.- Clase Asiento</a></li>
+      <li><a href="15_clase_silla.html" class="no-ch">1.5.- Clase Silla</a></li>
+      <li><a href="16_clase_sillon.html" class="no-ch">1.6.- Clase Sillon</a></li>
+      <li><a href="17_clase_sofa.html" class="no-ch">1.7.- Clase Sofa</a></li>
+      <li id="active"><a href="18_clase_almacenaje.html" class="active no-ch">1.8.- Clase Almacenaje</a></li>
+      <li><a href="19_clase_estanteria.html" class="no-ch">1.9.- Clase Estanteria</a></li>
+      <li><a href="110_clase_armario.html" class="no-ch">1.10.- Clase Armario</a></li>
+      <li><a href="111_clase_mesa.html" class="no-ch">1.11.- Clase Mesa</a></li>
+      <li><a href="112_documentacin_javadoc.html" class="no-ch">1.12.- Documentación javadoc</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="17_clase_sofa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="19_clase_estanteria.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.8.- Clase Almacenaje</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id32">
+<div class="iDevice emphasis0">
+<div id="ta32_154" class="block iDevice_content">
+<div class="exe-figure exe-image position-center" style="width: 240px;"><img src="almacenaje.jpg" alt="Estancia con muebles de almacenaje" title="Muebles de almacenaje" width="240" height="137" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/illustrations/ai-generado-oficina-casa-biblioteca-8507478/" target="_blank" class="author" rel="noopener">Nice2PleaseU</a>(<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)">Licencia Pixabay</a>)</span></div>
+</div>
+<p>La clase <code>Almacenaje</code> será una heredera directa de la clase <strong><code>Mueble</code></strong>. Representa el concepto abstracto de un mueble de tipo almacenaje, es decir, que sirve para guardar y almacenar libros, ropa, <abbr title="etcétera">etc.</abbr> Los objetos de esta clase estarán caracterizados por las siguientes propiedades:</p>
+<ul class="lista_verificacion">
+<li>todas aquellas que herede por el hecho de ser una subclase de <strong><code>Mueble</code></strong>;</li>
+<li><strong>anchura</strong> del mueble de almacenaje, en <abbr title="centímetros">cm.</abbr> (<strong>real</strong>);</li>
+<li><strong>altura</strong> del mueble de almacenaje, en <abbr title="centímetros">cm.</abbr> (<strong>real</strong>);</li>
+<li><strong>número máximo de módulos que se le pueden añadir </strong>al mueble de almacenaje (<strong>entero</strong>). Este atributo no se podrá cambiar una vez creado el objeto.</li>
+<li><strong>array</strong> de elementos de tipo <code>Modulo</code>.</li>
+<li><strong>número de módulos añadidos</strong> (<strong>entero</strong>). Este atributo servirá como contador de elementos añadidos al array. </li>
+</ul>
+<p>Además de los atributos anteriores, esta clase también dispondrá de un par de <strong>atributos estáticos constantes públicos</strong> que servirán para establecer el rango del número de módulos permitidos:</p>
+<ul class="lista_verificacion">
+<li><strong>número mínimo de módulos del mueble de almacenaje</strong> (<code>MIN_MODULOS</code>): 1;</li>
+<li><strong>número máximo de módulos del mueble de almacenaje </strong>(<code>MAX_MODULOS</code>): 20.</li>
+</ul>
+<p>La clase dispondrá de <strong>un único constructor</strong> que recibirá todos los parámetros que recibe un constructor de la clase <strong><code>Mueble</code></strong> más los atributos de <strong>anchura</strong>, <strong>altura</strong> y <strong>número máximo de módulos</strong> que se le pueden añadir al mueble. Este constructor deberá <strong>hacer uso del constructor de su clase padre</strong> para evitar cualquier redundancia de código. Si el número máximo de módulos no se encuentra dentro del rango permitido, se lanzará una excepción de tipo <code>IllegalArgumentException</code> con el mensaje de error "<code>ERROR: No se puede crear el mueble de Almacenaje. El número de módulos no está en el rango permitido: XXX</code>", donde XXX es el número máximo de módulos no válido. Una vez comprobado este atributo, se pasará a actualizar todos los atributos específicos de esta clase. Además, deberá crearse el array, reservando un espacio para almacenar la cantidad de módulos máxima pasado como parámetro. Puesto que el número mínimo de módulos es 1, habrá que añadir el primer módulo al array, siendo este primer módulo del tipo "<code>BALDA</code>" (recuerda que este tipo estará entre los valores del <code>enum</code> definido en la clase <code>Modulo</code>).</p>
+<p><strong>El número de módulos añadidos al mueble de almacenaje puede variar a lo largo de su vida</strong>, como veremos más adelante. Por tanto, debe ser modificable. También debe ser accesible desde sus descendientes (atributo de tipo <strong><code>protected</code></strong>), para que algunos de éstos puedan llevar a cabo esa modificación. Cualquier otro atributo de objeto que tengamos, procuraremos siempre que sea privado para aislarlo lo máximo posible dentro de la clase y evitar posibles daños al objeto desde fuera.</p>
+<p>Habrá que implementar también métodos <code>getter</code> para poder obtener el valor de los atributos específicos que incorpore esta clase: <strong>anchura</strong>, <strong>altura</strong>, <strong>número máximo de módulos</strong> y <strong>número de módulos añadidos</strong>.</p>
+<p><span style="font-size: 1em;">Como en cualquier nueva clase, habrá que retocar una vez más el método </span><code>toString</code><span style="font-size: 1em;"> donde </span>habrá que ampliar la información que ofrece el método homónimo de su superclase, añadiendo la información específica de la clase <code>Almacenaje</code> para ofrecer el siguiente formato de salida:</p>
+<p>Donde WWW,WW es la anchura del mueble, HHH,HH la altura, NNN los módulos máximos que puede tener un mueble de almacenaje concreto, AAA será el contenido del array donde se almacenan los módulos añadidos. </p>
+<div class="highlighted-code language-latex">
+<div>
+<pre><code>Tipo:Estanteria Id:YYY Precio:ZZZ,ZZ Descripción:VVV Anchura:WWW,WW Altura:HHH,HH Módulos máximos:NNN Módulos añadidos:AAA </code></pre>
+</div>
+</div>
+<div class="exe-figure exe-image position-center" style="width: 161px;"><img src="building-blocks-2026726_640.png" alt="Icono de bloques de construcción" title="Personalizable" width="161" height="160" hspace="12" style="margin-left: auto; margin-right: auto; display: block;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/vectors/bloques-de-construcci%C3%B3n-tetris-3d-2026726/" target="_blank" class="author" rel="noopener">OpenClipart-Vectors</a> (<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)">Licencia Pixabay</a>)</span></div>
+</div>
+<p>Además de todo lo anterior, hemos de tener en cuenta que la clase <code>Almacenaje</code> debe implementar la <strong>interfaz <code>Personalizable</code></strong>, de manera que habrá que escribir el código correspondiente a los siguientes métodos:</p>
+<ul class="lista_verificacion">
+<li><code>obtenerModulos()</code>, que devolverá en una cadena el contenido del array de módulos;</li>
+<li><code>anyadirModulo(Modulo modulo)</code>, que añadirá al array un elemento de tipo <code>Modulo</code>. Ten en cuenta que deberá comprobarse antes si el parámetro <code>modulo</code> no es nulo. En caso de ser nulo, deberá lanzar una excepción del tipo <code>NullPointerException</code> con el mensaje de error <code>"Error: el módulo a añadir no puede ser nulo"</code>. Además, deberá comprobarse si es posible añadir más módulos al mueble. En caso de no poder añadirse, el método deberá lanzar una excepción de tipo <code>IllegalStateException</code> con el mensaje de error "<code>Error: no se puede añadir el módulo XXX. El número de módulos no puede superar el máximo permitido: YYY</code>", siendo XXX el módulo que se ha intentado añadir e YYY el número máximo de módulos que puede tener el mueble de almacenaje concreto;</li>
+<li><code>extraerModulo()</code>, que extraerá del array un elemento de tipo <code>Modulo</code>, devolviéndolo. Este elemento deberá ser el módulo que está almacenado en la última posición del array de módulos. Igualmente, se deberá comprobar antes si es posible extraer el módulo. En caso de no poder extraerse, deberá lanzarse una excepción de tipo <code>IllegalStateException</code> con el mensaje "<code>Error: no se puede quitar el módulo. El número de módulos no puede ser inferior a XXX</code>", siendo XXX el número mínimo de módulos añadidos.</li>
+</ul>
+<p><strong>Esta clase no debe ser instanciable</strong>, pues es necesario definir con más precisión de qué tipo de mueble de almacenaje estamos hablando, es decir, si se trata de un <code>Armario</code>, <code>Estanteria</code>, <abbr title="etcétera">etc.</abbr>, que son formas diferentes de representar un mueble de almacenaje. Eso significa que es posible que más adelante haya que "retocar" esos métodos dotándoles de alguna funcionalidad más específica. De hecho, dado que se trata de una clase abstracta, podría incluso no haberse implementado estos métodos y haber dejado el trabajo a sus clases "descendientes" que fueran instanciables, pero dado que la funcionalidad anterior habrá que hacerla siempre, es más productivo escribirla aquí una sola vez para evitar tener que escribirla en todas las clases que hereden de ésta.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="17_clase_sofa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="19_clase_estanteria.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

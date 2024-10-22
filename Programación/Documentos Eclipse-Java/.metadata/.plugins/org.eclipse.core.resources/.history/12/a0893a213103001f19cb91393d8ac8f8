@@ -1,0 +1,128 @@
+/*
+ * Objetivo:Clase principal del ejercicio
+ * Autor: Joshua Sangareau Quesada
+ * fecha: 25/04/2024
+ * 
+ */
+package ejercicio1;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		ArrayList<Servicio> listaServicios = new ArrayList<>();
+		int opcionDeseada;
+		
+		
+		do {
+			System.out.println("Elija un opcion:\n1.-Almacenar un servicio de pintura.\n2.-Almacenar un servicio de revisión de alarma."
+					+ "\n3.-Mostrar los servicios realizados un determinado día.\n4.-Mostrar todos servicios de pintura con importe total inferior a una cantidad solicitada al usuario."
+					+ "\n5.-Eliminar un servicio.\n"
+					+ "6.-Exportar todos los servicios del sistema ordenados por cliente y fecha al fichero\n0.-Salir del programa");
+			opcionDeseada = teclado.nextInt();
+			switch (opcionDeseada) {
+				case(1):{
+					Servicio servicio = incluirPintura(teclado, listaServicios);
+					System.out.println("Mostrando si se ha añadido el servicio: " +  listaServicios.add(servicio));	
+					System.out.println("Mostrando la información del servicio almacenada: " + servicio.toString());
+					break;
+					
+				}case(2):{
+					Servicio servicio = incluirRevisionAlarma(teclado, listaServicios);
+					System.out.println("Mostrando si se ha añadido el servicio: " +  listaServicios.add(servicio));	
+					System.out.println("Mostrando la información del servicio almacenada: " + servicio.toString());
+					
+					break;
+					
+				}case(3):{
+					
+					
+				}case(4):{
+					
+					
+				}case(5):{
+					
+					
+				}case(6):{
+					
+					
+				}case(0):{
+					System.out.println("Se va a proceder a cerrar el programa, ¡Hasta Pronto!");
+					break;
+				}default:{
+					System.out.println("Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+				}
+
+			}
+				
+		}while(opcionDeseada != 0);
+
+	}
+	
+	
+	public static Pintura incluirPintura(Scanner teclado, ArrayList<Servicio> lista){
+		Pintura devolucion = null;
+		String  trabajador, cliente;
+		int dia, mes, anho, superficie;
+		double precioPint;
+		LocalDate fecha;
+		teclado.nextLine();
+		System.out.println("Introduzca el nombre del trabajador");
+		trabajador = teclado.nextLine();
+		
+			System.out.println("Introduzca el nombre del cliente");
+			cliente = teclado.nextLine();
+			System.out.println("Introduzca el dia del servicio");
+			dia = teclado.nextInt();
+			System.out.println("Introduzca el mes del servicio");
+			mes = teclado.nextInt();
+			System.out.println("Introduzca el año del servicio");
+			anho = teclado.nextInt();
+			fecha = LocalDate.of(anho, mes, dia);
+			System.out.println("Introduzca la superficie");
+			superficie = teclado.nextInt();
+			System.out.println("Introduzca el precio de la pintura");
+			precioPint = teclado.nextDouble();
+			try{
+				devolucion = new Pintura(trabajador, fecha, cliente, superficie, precioPint);
+			}catch(IllegalArgumentException excepcion1) {
+				System.out.println(excepcion1.getMessage());
+				System.out.println("No se creará el servicio");
+			}
+		
+		return devolucion;
+		
+	}
+	
+	public static RevisionAlarma incluirRevisionAlarma(Scanner teclado, ArrayList<Servicio> lista) {
+		RevisionAlarma devolucion;
+		String  cliente, modelo;
+		int dia, mes, anho, sensores;
+		LocalDate fecha;
+		teclado.nextLine();
+			System.out.println("Introduzca el nombre del cliente");
+			cliente = teclado.nextLine();
+			System.out.println("Introduzca el dia del servicio");
+			dia = teclado.nextInt();
+			System.out.println("Introduzca el mes del servicio");
+			mes = teclado.nextInt();
+			System.out.println("Introduzca el año del servicio");
+			anho = teclado.nextInt();
+			fecha = LocalDate.of(anho, mes, dia);
+			teclado.nextLine();
+			System.out.println("Introduzca el modelo");
+			modelo = teclado.nextLine();
+			System.out.println("Introduzca el precio de la pintura");
+			sensores = teclado.nextInt();
+			devolucion = new RevisionAlarma(fecha, cliente, sensores, modelo);
+		
+		return devolucion;
+		
+	}
+
+}

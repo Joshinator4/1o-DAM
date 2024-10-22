@@ -1,0 +1,74 @@
+package ejercicio2;
+
+import java.time.LocalDate;
+
+public class Canario extends Ave{
+	private String color;
+	private boolean canta;
+	
+	public Canario(String nombre, int edad, String estado, LocalDate fechaNacimiento, String pico, boolean vuela, String color, boolean canta) {
+		super(nombre, edad, estado, fechaNacimiento, pico, vuela);
+		setColor(color);
+		setCanta(canta);
+	}
+	
+	public Canario(String pico, boolean vuela, String color, boolean canta) {
+		super(pico, vuela);
+		setColor(color);
+		setCanta(canta);
+	}
+	
+	public Canario(String nombre) {
+		super(nombre);
+		setColor("Color Desconocido");
+		setCanta(false);
+	}
+	
+	public Canario() {
+		super();
+		setColor("Color Desconocido");
+		setCanta(false);
+	}
+	
+	
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public boolean isCanta() {
+		return canta;
+	}
+
+	public void setCanta(boolean canta) {
+		this.canta = canta;
+	}
+
+	@Override
+	public void volar() {
+		if(this.vuela == false) {
+			throw new IllegalStateException("El canario no puede volar");
+		}else if(this.estaVolando == true){
+			throw new IllegalStateException("El canario ya está volando");
+		}else {
+			this.estaVolando = true;
+		}
+	}
+
+	@Override
+	protected String habla() {
+		return "El canario dice: ¡Pio, Pio!";
+	}
+
+	@Override
+	public String muestra() {
+		return super.muestra() + "Canario [color=" + color + ", canta=" + canta + "]";
+	}
+	
+	
+	
+}

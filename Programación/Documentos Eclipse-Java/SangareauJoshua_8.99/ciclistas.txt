@@ -1,0 +1,9 @@
+Ciclista [dni=a, nombre=nombre1, fechaNacimineto=2024-04-16, modelo=ModeloA, listaRutas=[Ruta [nombreRuta=adfsdf, fecha=2024-01-01, kilometros=50, tiempo=12], Ruta [nombreRuta=jyukukuj, fecha=0002-03-02, kilometros=100, tiempo=60]]]
+
+Kilometros recorridos: 150
+Ciclista [dni=b, nombre=nombre2, fechaNacimineto=2024-04-16, modelo=ModeloB, listaRutas=[Ruta [nombreRuta=adfsdf, fecha=2024-01-01, kilometros=50, tiempo=12]]]
+
+Kilometros recorridos: 50
+Ciclista [dni=c, nombre=nombre3, fechaNacimineto=2024-04-16, modelo=ModeloC, listaRutas=[Ruta [nombreRuta=adfsdf, fecha=2024-01-01, kilometros=50, tiempo=12]]]
+
+Kilometros recorridos: 50

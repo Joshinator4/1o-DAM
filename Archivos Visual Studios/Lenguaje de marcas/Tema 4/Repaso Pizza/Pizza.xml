@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  pizzeria [
+    <!ELEMENT pizzeria(pizza*)>
+    <!ELEMENT pizza (onion?, cheese*)>
+    <!ELEMENT cheese ((veg|noveg) + | topping)>
+
+    <!ELEMENT veg EMPTY>
+    <!ELEMENT noveg EMPTY>
+    <!ELEMENT topping (#PCDATA)>
+    <!ELEMENT onion EMPTY>
+]>
+<pizzeria>
+    <pizza>
+        <onion>
+        <cheese>
+            <veg/>
+        </cheese>
+        <cheese>
+            <noveg/>
+        </cheese>
+        <cheese>
+            <topping>Piña</topping>
+        </cheese>
+    </pizza>
+    <pizza>
+        <onion>
+        <cheese>
+            <noveg/>
+        </cheese>
+        <cheese>
+            <topping>Anchoas</topping>
+        </cheese>
+    </pizza>
+</pizzeria>

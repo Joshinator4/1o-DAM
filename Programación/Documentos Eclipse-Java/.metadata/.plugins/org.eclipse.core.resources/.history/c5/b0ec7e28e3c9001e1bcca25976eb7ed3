@@ -1,0 +1,128 @@
+package ejercicio3;
+
+import java.time.LocalDate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Personal {
+	enum Genero {masculino, femenino}
+	
+	protected String dni;
+	protected String nombre;
+	protected String apellidos;
+	protected LocalDate fechaNacimiento;
+	protected Genero genero;
+	protected double salario;
+	protected String telefono;
+	protected String email;
+	
+	public Personal (String dni, String nombre, String apellidos, LocalDate fechaNacimiento, Genero genero, double salario, String telefono, String email) throws IllegalArgumentException {
+		if(isDniCorrecto(dni)) {
+			this.dni=dni;
+		}
+		setNombre(nombre);
+		setApellidos(apellidos);
+		this.fechaNacimiento= fechaNacimiento;
+		this.genero = genero;
+		se
+		
+	}
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) throws IllegalArgumentException {
+		if(nombre.isEmpty() || nombre == null) {
+			throw new IllegalArgumentException("El nombre debe estar rellenado");
+		}
+		this.nombre = nombre;
+	}
+
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+
+	public double getSalario() {
+		return salario;
+	}
+
+
+	public void setSalario(double salario) {
+		if(salario > 0) {
+			this.salario = salario;
+		}
+	}
+
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getDni() {
+		return dni;
+	}
+
+
+	public LocalDate getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+
+	public Genero getGenero() {
+		return genero;
+	}
+
+
+
+
+
+	private boolean isDniCorrecto (String dniAlumno) throws IllegalArgumentException{
+		boolean devolucion;
+		Pattern patDni = Pattern.compile("[0-9]{1,8}[a-zA-Z]");
+	    Matcher matDni = patDni.matcher(dniAlumno);
+		if(matDni.matches()) {
+			devolucion = true;
+			
+			String numeroDni = dniAlumno.substring(0, 8);
+			int numeroDniComprobar = Integer.parseInt(numeroDni);
+			char [] letraDni =  {'T', 'R', 'w', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+		    int operacion;
+		    operacion = numeroDniComprobar % 23;
+		    if (letraDni[operacion] == dniAlumno.toUpperCase().charAt(8)) {
+		    	devolucion = true;
+		    }else {
+		    	devolucion = false;
+				throw new IllegalArgumentException ("ERROR: en la letra del dni introducido");
+		    }
+		}else {
+			devolucion = false;
+			throw new IllegalArgumentException ("ERROR: en el patrón del dni introducido");
+		}
+	    return devolucion;
+		
+	}
+}

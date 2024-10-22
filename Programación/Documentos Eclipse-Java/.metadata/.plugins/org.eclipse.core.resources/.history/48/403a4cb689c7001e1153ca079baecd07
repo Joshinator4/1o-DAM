@@ -1,0 +1,277 @@
+/**
+ * Nombre: Daniel Josue Janssen Gil
+ * Fecha: 30 ene 2024
+ * Ejercicio: Vehiculo
+ * Hora: 19:39:46
+ */
+package Vehiculo;
+
+/**
+ * {@summary} Clase de vehiculo
+ */
+public class Vehiculo
+{
+	private double capDeposito;
+	private double consumoMed;
+	private boolean estadoMotor;
+	private double nivelDeposito, kmRecorArranque, consumoRealiArranque, kmRecorTotal, consumoRealiTotal;
+	private double distRecorTotalVehiculos = 0, consumoTotalVehiculos = 0;
+	private int numVehiculosEncendidos = 0;
+	private static final double MIN_CONSU_MED = 2.0, MAX_CONSU_MED = 20.0, MIN_CAP_DEP = 10.0, MAX_CAP_DEP = 120, CONSUMO_ARRANQUE = 0.02, VAL_OMISION_CONS_MED = 5.0, VAL_OMISION_CAP = 50.0;
+	
+	/**
+	 * {@summary} Crea un vehiculo con valores por defecto.
+	 */
+	public Vehiculo()
+	{
+		this.consumoMed = VAL_OMISION_CONS_MED;
+		this.capDeposito = VAL_OMISION_CAP;
+		this.estadoMotor = false;
+		this.nivelDeposito = 0;
+		this.kmRecorArranque = 0;
+		this.kmRecorTotal = 0;
+		this.consumoRealiArranque = 0;
+		this.kmRecorTotal = 0;
+		this.consumoRealiTotal = 0;
+	}
+	
+	/**
+	 * {@summary} Crea un vehiculo con la capacidad de deposito y consumo medio que introduzca el usuario.
+	 * @param capDeposito - Capacidad deposito.
+	 * @param consumoMed - Consumo medio.
+	 */
+	public Vehiculo(double capDeposito, double consumoMed)
+	{
+		setCapDeposito(capDeposito);
+		setConsumoMed(consumoMed);
+		this.estadoMotor = false;
+		this.nivelDeposito = 0;
+		this.kmRecorArranque = 0;
+		this.kmRecorTotal = 0;
+		this.consumoRealiArranque = 0;
+		this.kmRecorTotal = 0;
+		this.consumoRealiTotal = 0;
+	}
+	
+	/**
+	 * {@summary} Establece la capacidad del deposito
+	 * @param num Capacidad de deposito a establecer
+	 * @throws IllegalArgumentException - Si el numero está fuera de los limites de la capacidad
+	 */
+	private void setCapDeposito(double num) throws IllegalArgumentException
+	{
+		if (num < MIN_CAP_DEP || num > MAX_CAP_DEP)
+			throw new IllegalArgumentException("Error, capacidad de deposito fuera de los límites.");
+		this.capDeposito = num;
+	}
+	
+	/**
+	 * {@summary} Establece el consumo medio
+	 * @param num - Consumo medio a estsablecer
+	 * @throws IllegalArgumentException - Si el numero está fuera de los limites de la capacidad
+	 */
+	private void setConsumoMed(double num) throws IllegalArgumentException
+	{
+		if (num < MIN_CONSU_MED || num > MAX_CONSU_MED)
+			throw new IllegalArgumentException("Error, consumo medio fuera de los límites.");
+		this.consumoMed = num;
+	}
+	
+	/**
+	 * {@summary} Devuelve el estado del motor
+	 * @return true si el vehiculo esta arrancado o false si esta apagado
+	 */
+	public boolean isArrancado()
+	{
+		return estadoMotor;
+	}
+	
+	/**
+	 * {@summary} Devuelve el consumo medio de un vehiculo
+	 * @return consumo medio de un vehiculo
+	 */
+	public double getConsumoMedio()
+	{
+		return consumoMed;
+	}
+	
+	/**
+	 * {@summary} Devuelve la capacidad de deposito de un vehiculo
+	 * @return capacidad de deposito de un vehiculo
+	 */
+	public double getCapacidadDeposito()
+	{
+		return capDeposito;
+	}
+	
+	/**
+	 * {@summary} Devuelve el nivel de deposito de un vehiculo
+	 * @return nivel de deposito de un vehiculo
+	 */
+	public double getNivelDeposito()
+	{
+		return nivelDeposito;
+	}
+	
+	/**
+	 * {@summary} Devuelve la distancia recorrida por todos los vehiculos
+	 * @return distancia recorrida por todos los vehiculos
+	 */
+	public double getDistanciaRecorridaFlota()
+	{
+		return distRecorTotalVehiculos;
+	}
+	
+	/**
+	 * {@summary} Devuelve la distancia recorrida por un vehiculo
+	 * @return distancia recorrida por un vehiculo
+	 */
+	public double getDistanciaRecorrida()
+	{
+		return kmRecorArranque;
+	}
+	
+	/**
+	 * {@summary} Devuelve los kilometros totales recorridos por un vehiculo
+	 * @return kilometros totales recorridos por un vehiculo
+	 */
+	public double getDistanciaRecorridaTotal()
+	{
+		return kmRecorTotal;
+	}
+	
+	/**
+	 * {@summary} Devuelve el combustible consumido de un vehiculo
+	 * @return combustible consumido de un vehiculo
+	 */
+	public double getCombustibleConsumido()
+	{
+		return consumoRealiTotal;
+	}
+	
+	/**
+	 * {@summary} Devuelve el combustible consumido total de TODOS los vehiculos
+	 * @return combustible consumido total de TODOS los vehiculos
+	 */
+	public double getCombustibleConsumidoTotal()
+	{
+		return consumoTotalVehiculos;
+	}
+	
+	/**
+	 * {@summary} Devuelve la distancia total recorrida por todos los coches
+	 * @return distancia total recorrida por todos los coches
+	 */
+	public double getDistanciaRecorridaTotalFlota()
+	{
+		return distRecorTotalVehiculos;
+	}
+	
+	/**
+	 * {@summary} Devuelve consumo total de todos los vehiculos
+	 * @return consumo total de todos los vehiculos
+	 */
+	public double getCombustibleConsumidoFlota()
+	{
+		return consumoTotalVehiculos;
+	}
+	
+	/**
+	 * {@summary} Devuelve el número de vehiculos arrancados en la flota.
+	 * @return - Número de Vehiculos Arrancados Totales
+	 */
+	public double getNumVehiculosArrancadosFlota()
+	{
+		return numVehiculosEncendidos;
+	}
+	
+	/**
+	 * {@summary} Añade combustible al deposito del coche
+	 * @param num - Litros de combustible a repostar
+	 * @throws IllegalStateException - Si el motor se encuentra encendido.
+	 * @throws IllegalArgumentException - Si el deposito ya está lleno.
+	 */
+	public void repostar(double num) throws IllegalStateException, IllegalArgumentException
+	{
+		if (this.estadoMotor == true)
+			throw new IllegalStateException("se intentó repostar con el motor encendido. No se ha repostado.");
+		if (this.getNivelDeposito() + num > this.getCapacidadDeposito())
+		{
+			double tmp = this.getCapacidadDeposito() - (this.getNivelDeposito() + num);
+			this.nivelDeposito = this.capDeposito;
+			throw new IllegalArgumentException("depósito lleno. Se ha sobrepasado la capaciad del depósito de combustible en " + tmp + " litros.");
+		}
+		this.nivelDeposito += num;
+	}
+	
+	/**
+	 * {@summary} Arranca el motor
+	 * @throws IllegalStateException - Si el motor ya se encontraba encendido o no hay suficiente combustible para arrancar.
+	 */
+	public void arrancar() throws IllegalStateException
+	{
+		if (this.getNivelDeposito() < CONSUMO_ARRANQUE)
+			throw new IllegalStateException("depósito vacío. Se intentó arrancar sin combustible suficiente.");
+		if (this.estadoMotor == true)
+			throw new IllegalStateException("Error: El motor ya se encuentra arrancado.");
+		this.estadoMotor = true;
+		this.nivelDeposito -= CONSUMO_ARRANQUE;	
+		this.consumoRealiArranque += CONSUMO_ARRANQUE;
+		this.consumoRealiTotal += CONSUMO_ARRANQUE;
+		consumoTotalVehiculos += CONSUMO_ARRANQUE;
+		numVehiculosEncendidos++;
+	}
+	
+	/**
+	 * {@summary} Realiza un trayecto con los NUM kilometros que se le introduzcan.
+	 * @param num - Kilometros a recorrer
+	 * @throws IllegalStateException - Si los kilometros son negativos o el motor estaba apagado.
+	 * @throws IllegalArgumentException - Si no hay suficiente combustible para hacer el trayecto.
+	 */
+	public void realizarTrayecto(double num) throws IllegalStateException, IllegalArgumentException
+	{
+		if (num < 0)
+			throw new IllegalArgumentException("Error: Se intentó realizar un trayecto negativo.");
+		if (this.estadoMotor == false)
+			throw new IllegalStateException("Error: Se intentó realizar un trayecto con el motor apagado. No se ha avanzado.");
+		if (this.nivelDeposito < (num * (this.consumoMed/100)))
+		{
+			this.kmRecorArranque += (num * (this.consumoMed/100));
+			this.kmRecorTotal += (num * (this.consumoMed/100));
+			distRecorTotalVehiculos += (num * (this.consumoMed/100));
+			this.consumoRealiTotal += this.nivelDeposito;
+			this.consumoTotalVehiculos += this.nivelDeposito;
+			this.apagar();
+			this.nivelDeposito = 0;
+			throw new IllegalArgumentException("no se ha podido finalizar el trayecto completamente. Depósito vacío. Han faltado por recorrer " + (num - (num * (0.05))) + " km.");
+		}
+		this.kmRecorArranque += (num * (this.consumoMed/100));
+		this.kmRecorTotal += (num * (this.consumoMed/100));
+		distRecorTotalVehiculos += (num * (this.consumoMed/100));
+		this.consumoRealiTotal += this.nivelDeposito;
+		this.consumoTotalVehiculos += this.nivelDeposito;
+		this.nivelDeposito -= num * (this.consumoMed/100);
+	}
+	
+	/**
+	 * {@summary} Apaga el motor del coche, reiniciando los contadores de consumo y kilometros recorridos desde el arranque.
+	 * @throws IllegalStateException - "el motor ya se encuentra apagado."
+	 */
+	public void apagar() throws IllegalStateException
+	{
+		if (this.estadoMotor == false)
+			throw new IllegalStateException("el motor ya se encuentra apagado.");
+		this.estadoMotor = false;
+		numVehiculosEncendidos--;
+		this.consumoRealiArranque = 0;
+		this.kmRecorArranque = 0;
+	}
+	
+	/**
+	 * {@summary}Devuelve una String que representa la información del vehiculo (estado del motor, nivel de deposito, distancia recorrida desde el arranque y consumo realizado.)
+	 */
+	public String toString()
+	{
+		return String.format("Estado motor: %s - Nivel de deposito: %.2fL - Distancia recorrida desde arranque: %.2fkm - Consumo realizado: %.2fL", ((this.estadoMotor == true)? "encendido.":"apagado."), this.nivelDeposito, this.kmRecorArranque, this.consumoRealiArranque);
+	}
+}

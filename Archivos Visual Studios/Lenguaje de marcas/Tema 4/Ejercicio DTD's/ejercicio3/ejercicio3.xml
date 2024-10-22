@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pizzas SYSTEM "ejercicio3.dtd">
+<articles>
+    <article id="1">
+        <name>El Lobo
+        </name>
+        <month>Enero
+        </month>
+        <autor name="Félix Rodriguez de la Fuente">
+        </autor>
+        <feedback>Bueno
+        </feedback>
+        <feedback>Bastante bueno
+        </feedback>
+    </article>
+    <article id="2">
+        <name>El Mozárabe
+        </name>
+        <month>febrero
+        </month>
+        <autor name="Jesús Sánchez Adalid">
+        </autor>
+        <reviews lang="español">Un libro
+        </reviews>
+        <reviews lang="inglés">Que explica la españa de los árabes
+        </reviews>
+    </article>
+</articles>

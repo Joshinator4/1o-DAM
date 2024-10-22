@@ -1,0 +1,125 @@
+package ejercicio2;
+
+import java.util.Scanner;
+
+public class Principal extends Inventario {
+
+	public static void main(String[] args) {
+		 Scanner teclado = new Scanner(System.in);
+		String nombreIntroducido, nombreMascota;
+		int opcionDeseada, opcionDeseadaCrear;
+		
+		try {
+			Perro perro1 = new Perro();
+			Gato gato1 = new Gato();
+			Loro loro1 = new Loro();
+			Canario canario1 = new Canario();
+			perro1.setNombre("PePito");
+			guardarMascotas.add(perro1);
+			guardarMascotas.add(gato1);
+			guardarMascotas.add(loro1);
+			guardarMascotas.add(canario1);
+			do {
+				System.out.println("Elija un opcion:\n1.-Mostrar Lista(tipo y nombre).\n2.-Mostrar los datos de una Mascota a partir de su nombre."
+						+ "\n3.-Mostrar todos los datos de todos los animales.\n4.-Insertar animales en el inventario.\n5.-Eliminar animales del inventario."
+						+ "\n6.-Vaciar el inventario.\n0.-Salir del programa");
+				opcionDeseada = teclado.nextInt();
+				switch (opcionDeseada) {
+				case(1):{
+					for(Mascota i: guardarMascotas) {
+						if(i instanceof Perro) {
+							System.out.println("Es de tipo Perro, y su nombre es: " + i.getNombre()); 
+						}else if(i instanceof Gato) {
+							System.out.println("Es de tipo Gato, y su nombre es: " + i.getNombre()); 
+						}else if(i instanceof Loro) {
+							System.out.println("Es de tipo Loro, y su nombre es: " + i.getNombre()); 
+						}else if(i instanceof Canario) {
+							System.out.println("Es de tipo Canario, y su nombre es: " + i.getNombre()); 
+						}
+					}
+					break;
+					
+				}case(2):{
+					teclado.nextLine();
+					System.out.println("Introduzca el nombre de la mascota");
+					nombreIntroducido = teclado.nextLine().toLowerCase();
+					for(Mascota i: guardarMascotas) {
+						if(i.getNombre().equals(nombreIntroducido)) {
+							System.out.println(i.muestra());
+						}
+					}
+					break;
+					
+				}case(3):{
+					for(Mascota i: guardarMascotas) {
+						/*if(i instanceof Perro) {
+							System.out.println(i.muestra()); 
+						}else if(i instanceof Gato) {
+							System.out.println(i.muestra()); 
+						}else if(i instanceof Loro) {
+							System.out.println(i.muestra()); 
+						}else if(i instanceof Canario) {
+							System.out.println(i.muestra()); 
+						}*/
+						System.out.println(i.muestra()); 
+					}
+					break;
+					
+				}case(4):{
+					System.out.println("Elija que Mascota nueva desea guardar: 1.-Perro 2.-Gato 3.-Loro 4.-Canario");
+					opcionDeseadaCrear = teclado.nextInt();
+					teclado.nextLine();
+					System.out.println("Introduzca el nombre de la Mascota a crear");
+					nombreMascota = teclado.nextLine().toLowerCase();
+					if(opcionDeseadaCrear == 1) {
+						guardarMascotas.add(new Perro(nombreMascota));
+					}else if(opcionDeseadaCrear == 2) {
+						guardarMascotas.add(new Gato(nombreMascota));
+					}else if(opcionDeseadaCrear == 3) {
+						guardarMascotas.add(new Loro(nombreMascota));
+					}else if(opcionDeseadaCrear == 4) {
+						guardarMascotas.add(new Canario(nombreMascota));
+					}
+					break;
+					
+				}case(5):{
+					teclado.nextLine();
+					System.out.println("Introduzca el nombre de la mascota a eliminar");
+					nombreIntroducido = teclado.nextLine().toLowerCase();
+					for(Mascota i: guardarMascotas) {
+						if(i.getNombre().equals(nombreIntroducido)) {
+							guardarMascotas.remove(i);
+						}
+					}
+					break;
+					
+				}case(6):{
+					System.out.println("Se va a proceder a vaciar el inventario");
+					guardarMascotas.clear();
+					break;
+					
+				}case(0):{
+					System.out.println("Se va a proceder a cerrar el programa, ¡Hasta Pronto!");
+					break;
+				}default:{
+					System.out.println("Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+				}
+				
+				
+				}
+					
+				
+			}while(opcionDeseada != 0);
+			
+
+		} catch (IllegalArgumentException excepcion1) {
+			System.out.println(excepcion1.getMessage());
+		} catch(IllegalStateException excepcion2) {
+			System.out.println(excepcion2.getMessage());
+		}catch(Exception excepcion3) {
+			System.out.println(excepcion3.getMessage());
+		}
+		
+		
+	}
+}

@@ -1,0 +1,36 @@
+package ejercicio1;
+
+import java.util.ArrayList;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase SocioBaloncesto
+*/
+public class SocioBaloncesto extends Socio implements Comparable{
+	
+	enum TipoPosicion{BASE, ESCOLTA, ALERO, PIVOT};
+	
+	private TipoPosicion posicion;
+	
+	
+	private ArrayList<PartidoBaloncesto> partidosBaloncesto;
+
+
+	public SocioBaloncesto(String nombre, String dni, String telefono, TipoPosicion posicion, ArrayList<PartidoBaloncesto> partidosBaloncesto) {
+		super(nombre, dni, telefono);
+		this.posicion = posicion;
+		this.partidosBaloncesto = partidosBaloncesto;
+	}
+
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	
+
+}

@@ -1,0 +1,35 @@
+body {
+    background-color:rgb(255, 183, 0);
+}
+header {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: cadetblue;
+    color: crimson;
+    text-align: center;
+}
+main {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    border-style: none;
+    background-color: bisque;
+    color: black;
+}
+section{
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(44, 3, 226);
+    text-align: center;
+}
+h2 {
+    background-color: aliceblue;
+    color: rgb(175, 3, 175);
+}
+footer {
+    margin-top: 100px;
+    margin-left: 80px;
+    border-style: dashed;
+    border-color: crimson;
+    background-color: deepskyblue;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Joshua">
+    <title>Contenerdores HTML</title>
+    <link type="text/css" rel="stylesheet" href="contenedorExtra.css">
+</head>
+<body>
+    <div class="titulos">
+        <h1 id="Titulo1"> El Primer HTML.</h1>
+
+        <img src="imagenhtml.jfif" alt="imagenhtml">
+    </div>
+    <div class="principio">
+        <h3><b> El Comienzo del HTML. </b></h3>
+        <br><br>
+        <p>El origen de HTML se remonta a 1980, cuando el físico Tim Berners-Lee, investigador del CERN (Organización Europea para la Investigación Nuclear) propuso un nuevo sistema de “hipertexto” para compartir documentos.</p>
+        <div class="imagenes">  
+            <img src="primerosHTML.png" alt="primerosHTML">
+        </div>
+    </div>
+    <div class="secundario">
+        <h3 style="text-align:center"><i> Años siguientes </i></h3>
+
+        <p>A partir de 1996, los estándares de HTML los publica otro organismo de estandarización, el W3C. La versión HTML 3.2 se publicó el 14 de Enero de 1997 y es la primera recomendación de HTML publicada por el W3C. Esta revisión incorpora 
+            los últimos avances de las páginas web desarrolladas hasta 1996, como applets de Java y texto que fluye alrededor de las imágenes.
+        HTML 4.0 se publicó el 24 de Abril de 1998 (versión corregida de la publicación del 18 de Diciembre de 1997) y supuso un gran salto desde las versiones anteriores.
+         Entre sus novedades más destacadas se encuentran las hojas de estilos CSS, la posibilidad de incluir pequeños programas o scripts en las páginas web, mejora de la accesibilidad de las páginas diseñadas, tablas complejas y mejoras en los formularios.
+        La última especificación oficial de HTML se publicó el 24 de diciembre de 1999 y se denomina HTML 4.01. Se trata de una revisión y actualización de la versión HTML 4.0, por lo que no incluye novedades significativas.</p>
+        <div class="imagenes">
+            <img src="imagenIntermedio.jfif" alt="imagenIntermedio">
+        </div>
+        <div class="imagenes">
+            <a style="font-size: 200%;" id="enlace" href="https://www.um.es/docencia/barzana/DAWEB/Introduccion-a-html-y-css.html#:~:text=El%20origen%20de%20HTML%20se,hab%C3%ADan%20sido%20desarrollados%20a%C3%B1os%20antes.">Si quieres más información picha aquí</a>
+        </div>
+    </div>
+    <div class="tercero">
+        <h3 style="text-align: center; color: ghostwhite;"> La Actualidad </h3>
+
+        <p>HTML5 ya es un estándar (recomendado), el consorcio W3C, con el inventor de la Web Sir Tim Berners-Lee, presentó el 27 de octubre de 2014 la versión final.
+         Su intención es que se construya lo que se ha llamado Plataforma Web abierta, donde el HTML5, junto a Javascript y CSS3, se podrá utilizar para el desarrollo 
+         de aplicaciones multiplataforma (Linux, Windows, Android, iOS..).</p>
+         <div class="imagenes">
+            <img src="HTML5.png" alt="HTML5">
+         </div>
+    </div>
+    <footer>
+        <div class="piepagina">
+            <p>Autor: Joshua Sangareau Quesada</p>
+            <p>Curso: 1ª DAM</p><br>
+            <img src="IESplayamar.png" alt="IES"><br>
+        </div>
+    </footer> 
+    <div class="imagenes">
+    <a style="font-size: 500%; color: chartreuse;" href="#Titulo1"><b>Volver al incio</b></a> 
+    </div>
+    <button style="font-size: 150%;" type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Haz click en mi para saber la fecha de hoy.
+    </button>
+
+        <p id="demo" style="color: aliceblue; font-size: 150%;"></p>
+</body>
+</html>

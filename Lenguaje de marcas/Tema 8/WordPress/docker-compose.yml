@@ -1,0 +1,28 @@
+services:
+  db:
+    image: mysql:8
+    volumes:
+      - C:/Users/DAM!/Desktop/WOrdPress/mysql:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Passw0rd
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: usuario
+      MYSQL_PASSWORD: Passw0rd
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes:
+      - C:/Users/DAM!/Desktop/WOrdPress/wpdata:/var/www/html
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: usuario
+      WORDPRESS_DB_PASSWORD: Passw0rd
+      WORDPRESS_DB_NAME: wordpress
+volumes:
+  db_data: {}
+  wordpress_data: {}

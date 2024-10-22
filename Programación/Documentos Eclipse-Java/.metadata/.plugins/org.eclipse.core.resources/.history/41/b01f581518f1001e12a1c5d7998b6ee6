@@ -1,0 +1,21 @@
+package lectura;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class PrincipalEscritura {
+
+	public static void main(String[] args) {
+		FileWriter archivoEscritura;
+		
+		try {
+			archivoEscritura = new FileWriter("EmpleadoEscibir.txt");
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

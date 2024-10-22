@@ -1,0 +1,83 @@
+/*
+ * Objetivo:Clase Revision Alarma hereda de Servicio
+ * Autor: Joshua Sangareau Quesada
+ * fecha: 25/04/2024
+ * 
+ */
+package ejercicio1;
+
+import java.time.LocalDate;
+
+import operacionesArrayList.Alumno;
+
+public class RevisionAlarma extends Servicio{
+	
+	private int sensores;
+	private String modelo;
+
+	
+	public RevisionAlarma(LocalDate fecha_servicio, String cliente, int sensores, String modelo) {
+		super("Manuel Fernández", fecha_servicio, cliente);
+		this.sensores = sensores;
+		this.modelo = modelo;
+		this.material = calcularMaterial();
+		this.manoObra = calcularManoObra();
+		
+	}
+
+	
+	@Override
+	protected double calcularMaterial() {
+		double devolucion=0;
+		return devolucion;
+	}
+	@Override
+	protected double calcularManoObra() {
+		double devolucion;
+		devolucion = sensores/3*40;
+		
+		return devolucion;
+	}
+
+
+	public int getSensores() {
+		return sensores;
+	}
+
+
+	public String getModelo() {
+		return modelo;
+	}
+
+
+	public void setSensores(int sensores) {
+		this.sensores = sensores;
+	}
+
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+
+	@Override
+	public String toString() {
+		return super.toString() + "RevisionAlarma [sensores=" + sensores + ", modelo=" + modelo +  ", material=" + material
+				+ ", manoObra=" + manoObra + "]\n";
+	}
+	@Override
+	@Override
+	public int compareTo(Servicio o) {
+		int devolucion = 0;
+		if(cliente.compareTo(o.getCliente())<0) {
+			devolucion = -1;
+		}else if(cliente.compareTo(o.getCliente())>0) {
+			devolucion = 1;
+		}else {
+			devolucion = 0;
+		}
+		return devolucion;
+	}
+	
+	
+}

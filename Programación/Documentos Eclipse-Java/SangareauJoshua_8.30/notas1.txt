@@ -1,0 +1,129 @@
+1º ESO D;Vargas Santiago, Samuel;1;1;3;1;1
+1º ESO D;López Muro, Rosario;3;3;4;4;3
+1º ESO C;Rendón Alba, Jorge Luis;3;3;5;1;2
+1º ESO D;Sánchez López, Alba;3;2;4;3;4
+1º ESO D;Cruz Portillo, Francisco;2;3;4;4;3
+1º ESO C;Romero Farfán, Estefanía;2;2;3;1;1
+1º ESO D;Serrano Castillo, José Antonio;2;4;9;3;5
+1º ESO A;Cotilla Florido, Alberto;1;3;3;1;2
+1º ESO B;Guerra Cano, Tamara;1;3;3;5;2
+1º ESO B;Requena Carrasco, Rafael;1;4;4;5;2
+1º ESO D;Álvarez Rodríguez, Dayana Vanessa;6;5;6;5;6
+1º ESO D;Castillo Viñolo, Francisco;3;3;4;1;4
+1º ESO C;Cordón López, Rocío;3;3;4;1;2
+1º ESO B;El Mazani , Mohammed;3;4;5;5;3
+1º ESO D;García Romero, Álvaro;3;4;6;5;4
+1º ESO E;Muñoz Bellido, Sandra;3;2;4;1;3
+1º ESO D;Núñez Ramírez, Paula;3;2;4;4;4
+1º ESO C;Álvarez López, Nohemi;2;2;2;5;2
+1º ESO B;Salado Arcas, María del Carmen;2;3;4;1;3
+1º ESO B;Morales Flores, Víctor;1;2;1;1;1
+1º ESO B;Martínez Calderero, Aarón;6;4;5;1;6
+1º ESO E;Solano Garrido, Alberto;5;3;4;2;3
+1º ESO A;Bintana , Esteban Martín;4;3;4;4;5
+1º ESO E;Bravo Guzmán, Mireya;4;4;6;5;5
+1º ESO D;Sales Briales, Paloma;4;4;6;1;4
+1º ESO A;Heredia Mesa, Pablo;3;4;5;5;6
+1º ESO E;Moreno Santamaría, José Luis;3;3;6;4;3
+1º ESO C;Benedetti , Débora;2;2;4;5;2
+1º ESO C;Caro Ruiz, Melany;2;2;5;1;4
+1º ESO B;Cordero Benítez, Alejandro;2;3;2;1;4
+1º ESO B;Martín Aguilar, Paula María;2;3;5;4;4
+1º ESO B;Martínez Martín, Fabiola;2;2;4;1;5
+1º ESO A;Martínez Ruiz, Mónica;1;2;3;4;3
+1º ESO B;Salas Márquez, Jennifer;1;3;4;1;3
+1º ESO E;Romero González, Nazaret;7;4;6;4;7
+1º ESO D;García López, Elena;6;7;6;5;7
+1º ESO E;Becerra García, Javier;5;5;7;3;5
+1º ESO A;Rielves Barea, Manuel;5;6;7;1;5
+1º ESO E;Farfán González, María de la Paloma;4;4;7;5;5
+1º ESO D;García Sánchez, Carmen;4;3;4;1;7
+1º ESO B;Lima Franco, Laura;4;2;5;1;3
+1º ESO D;Navarro García, María Azahara;4;3;5;3;7
+1º ESO E;Rodríguez Baro, Irene;4;6;6;5;7
+1º ESO A;Farfán Aguilar, Francisco;3;4;4;1;4
+1º ESO B;Garrido Delgado, Pablo;3;4;7;3;6
+1º ESO C;Rueda Vega, Ana Carmen;3;6;4;3;5
+1º ESO B;Duarte Durán, Alba;2;3;4;1;3
+1º ESO A;Farfán Aguilar, Juan José;2;3;4;1;4
+1º ESO C;Jiménez Rueda, Marina;2;4;5;1;3
+1º ESO C;Rodríguez Arroyo, Alba María;2;3;4;1;2
+1º ESO C;Salas Márquez, Desiree;2;3;4;1;4
+1º ESO C;Salazar Carrera, Juana María;2;3;3;1;3
+1º ESO C;Tomé Cordero, Virginia;2;3;4;1;2
+1º ESO C;Zoodsma Villalón, Natali;2;3;4;5;3
+1º ESO D;Reina Romero, José Daniel;8;6;9;4;4
+1º ESO E;Abdeselam Blanco, Hillary;7;4;8;5;6
+1º ESO D;Fontaneda Macías, Borja;7;7;7;5;4
+1º ESO B;Ramírez Farfán, Carmen;7;7;4;4;6
+1º ESO B;Sánchez Ortiz, Álvaro José;6;6;9;3;6
+1º ESO B;Domínguez Tirado, José;5;6;9;5;6
+1º ESO C;Roberto Jaimes, Kelly Ximena;5;5;5;5;3
+1º ESO E;Solera Benítez, Paola;5;5;6;4;5
+1º ESO E;Cecilio Gibaja, Sara;4;3;4;2;3
+1º ESO A;García Benítez, Nazareth;4;3;2;7;4
+1º ESO B;Hurtado García, Carmen María;4;4;4;5;3
+1º ESO A;Peralta , Maximiliano;4;2;3;1;3
+1º ESO E;Perea Sierra, Antonio Mateo;4;5;7;3;3
+1º ESO E;Prieto Granja, Alicia;4;3;4;4;3
+1º ESO A;Virella Robles, Carolina;4;4;5;4;5
+1º ESO C;Martín Soler, José Manuel;3;4;5;3;4
+1º ESO C;Menaique Álvarez, Celia María;3;4;5;5;5
+1º ESO E;Postigo Vázquez, Salvador;3;6;5;3;4
+1º ESO C;Ruiz Rueda, Sebastián;3;3;6;3;3
+1º ESO C;Vegas Carrasco, María Encarnación;3;2;2;1;3
+1º ESO C;Fernández Rico, Paula;2;3;3;1;3
+1º ESO C;Mantero González, Juan;8;4;5;1;5
+1º ESO D;Benítez Maya, Luciana;7;6;7;6;8
+1º ESO A;Carrillo Segura, Félix;6;6;8;2;8
+1º ESO B;Durán , Mariano;6;4;6;2;3
+1º ESO A;Pérez Pellisero, Braian;6;4;6;5;7
+1º ESO A;Rueda Cruz, María;6;5;6;5;5
+1º ESO E;Vega Jiménez, Ana María;6;7;6;4;3
+1º ESO B;Robles Ortiz, Sofía;5;4;6;5;7
+1º ESO A;Ruiz Jiménez, Rafael;5;1;7;5;6
+1º ESO C;Castillo Alcázar, Alejandro;4;7;5;3;5
+1º ESO B;Cruz Pino, Raquel;4;6;4;5;4
+1º ESO D;González Bernal, Cristóbal;4;6;7;5;7
+1º ESO D;Hernández Jack, Irene;4;4;6;5;8
+1º ESO C;Ramírez Pérez, David;4;3;4;3;3
+1º ESO C;Recchia , María Fiorella;4;3;3;1;5
+1º ESO C;Aranda Vázquez, José;3;3;3;1;2
+1º ESO C;Roberto Jaimes, Neila Fernanda;3;5;4;5;4
+1º ESO A;Jiménez Benítez, Francheska;2;1;4;5;3
+1º ESO D;García Bernal, María Esther;9;8;9;5;8
+1º ESO B;Aguilera Delgado, Enrique;8;8;9;6;8
+1º ESO E;Delgado Rodríguez, Daniel;8;6;6;5;6
+1º ESO A;González Pérez, Antonio;8;9;8;5;6
+1º ESO E;Bernat Rodríguez, Sandra;7;4;6;1;7
+1º ESO E;Cañas Arcos, Esther;7;6;7;5;9
+1º ESO E;Rueda Blanco, Oscar;7;8;8;5;8
+1º ESO E;Artacho Silva, Mar;6;6;8;6;8
+1º ESO B;Donaire Rodríguez, Miguel Ángel;6;4;8;2;7
+1º ESO B;Donaire Vergara, Eva María;6;5;5;3;7
+1º ESO A;Gallego Arellano, Daniela;6;6;8;5;6
+1º ESO A;González Pérez, Laura;6;8;8;7;6
+1º ESO E;Moreno Vázquez, Tomás;6;7;7;5;6
+1º ESO E;Plaza Pérez, Nuria María;6;4;8;3;6
+1º ESO E;Puertas Moreno, Andrea;6;6;6;3;6
+1º ESO E;Amaya Guillén, José Pablo;5;6;4;5;5
+1º ESO B;Benítez Gaitán, Juan Cruz;5;6;8;3;6
+1º ESO A;García Navarro, Macarena;5;3;6;7;6
+1º ESO A;González Pereau, Saray;5;6;6;4;7
+1º ESO C;Mora Castillo, Paola;5;4;5;5;4
+1º ESO B;Peula Cordero, Yazmina;5;6;4;5;5
+1º ESO A;Balbuena Martín, Paola;3;3;7;3;4
+1º ESO C;Wilson , Luke;1;2;4;3;1
+1º ESO B;Luque González, Christian;10;9;9;5;6
+1º ESO E;Rico Pinazo, Pedro;9;9;10;5;10
+1º ESO B;Rueda Calzada, Laura;9;8;9;5;7
+1º ESO E;Rodríguez Horcajo, Noelia;8;9;7;4;9
+1º ESO E;Rodríguez Márquez, Ezequiel;8;8;8;5;9
+1º ESO C;Villar Risco, Omar;8;8;8;3;9
+1º ESO E;Serrano Doña, Ismael;7;8;7;6;7
+1º ESO A;Russell , Natalie;4;4;4;5;5
+1º ESO C;Villatoro Postigo, Adrián;4;6;7;3;4
+1º ESO E;Benítez Berenjeno, Laura;9;8;7;6;9
+1º ESO E;Sánchez Solano, Ana Tadea;7;8;7;4;9
+1º ESO A;Vilches Moreno, Lola Isabel;9;9;7;6;9
+1º ESO A;Plaza Gallego, Juan;1;1;3;1;1

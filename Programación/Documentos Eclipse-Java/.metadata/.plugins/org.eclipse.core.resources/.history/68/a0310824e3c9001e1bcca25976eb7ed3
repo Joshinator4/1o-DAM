@@ -1,0 +1,18 @@
+package ejercicio3;
+
+import java.time.LocalDate;
+
+public class Personal {
+	enum Genero {masculino, femenino}
+	
+	protected String dni;
+	protected String nombre;
+	protected String apellidos;
+	protected LocalDate fechaNacimiento;
+	protected Genero genero;
+	protected double salario;
+	protected String telefono;
+	protected String email;
+	
+	
+}

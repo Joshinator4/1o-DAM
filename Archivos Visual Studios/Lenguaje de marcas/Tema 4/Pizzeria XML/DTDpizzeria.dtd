@@ -1,0 +1,9 @@
+<!ELEMENT pizzas (pizza*)>
+<!ELEMENT pizza (ingrediente+, masa, horneado, salsas*)>
+<!ELEMENT ingrediente EMPTY>
+<!ELEMENT masa (#PCDATA)>
+<!ELEMENT horneado (#PCDATA)>
+<!ELEMENT salsas (#PCDATA)>
+<!ATTLIST pizza nombre CDATA #REQUIRED>
+<!ATTLIST pizza precio CDATA #REQUIRED>
+<!ATTLIST ingrediente nombre CDATA #REQUIRED>

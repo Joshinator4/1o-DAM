@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.6.- Clase Sillon | Mobiliario </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Mobiliario</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mobiliario</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_clase_mueble.html" class="no-ch">1.1.- Clase Mueble</a></li>
+      <li><a href="12_clase_modulo.html" class="no-ch">1.2.- Clase Modulo</a></li>
+      <li><a href="13_interfaces_ajustable_y_personalizable.html" class="no-ch">1.3.- Interfaces Ajustable y Personalizable</a></li>
+      <li><a href="14_clase_asiento.html" class="no-ch">1.4.- Clase Asiento</a></li>
+      <li><a href="15_clase_silla.html" class="no-ch">1.5.- Clase Silla</a></li>
+      <li id="active"><a href="16_clase_sillon.html" class="active no-ch">1.6.- Clase Sillon</a></li>
+      <li><a href="17_clase_sofa.html" class="no-ch">1.7.- Clase Sofa</a></li>
+      <li><a href="18_clase_almacenaje.html" class="no-ch">1.8.- Clase Almacenaje</a></li>
+      <li><a href="19_clase_estanteria.html" class="no-ch">1.9.- Clase Estanteria</a></li>
+      <li><a href="110_clase_armario.html" class="no-ch">1.10.- Clase Armario</a></li>
+      <li><a href="111_clase_mesa.html" class="no-ch">1.11.- Clase Mesa</a></li>
+      <li><a href="112_documentacin_javadoc.html" class="no-ch">1.12.- Documentación javadoc</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="15_clase_silla.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="17_clase_sofa.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.6.- Clase Sillon</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id45">
+<div class="iDevice emphasis0">
+<div id="ta45_170" class="block iDevice_content">
+<div class="exe-figure exe-image position-center" style="width: 240px;"><img src="sofa-575774_640.png" alt="Sillón relax" title="Sillón relax" width="240" height="181" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/vectors/sof%C3%A1-silla-chico-perezoso-reclinar-575774/" target="_blank" class="author" rel="noopener">OpenClipart-Vectors</a> (<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)">Licencia Pixabay</a>)</span></div>
+</div>
+<p>La clase <code>Sillon</code> es otra de las posibles subclases de <code>Asiento</code>. Esta clase, al igual que la clase <code>Silla</code>, también representa a un <strong>mueble </strong>que sirve para sentarse, de una plaza. Pero, en esta ocasión, estará caracterizada por las siguientes propiedades o atributos:</p>
+<ul class="lista_verificacion">
+<li>todas aquellas que herede por el hecho de ser una subclase de <strong><code>Asiento</code></strong>;</li>
+<li><strong>número de posición de los pies del sillón</strong> (número entero positivo, que solo podrá tener dos valores posibles: 0 (bajado) y 1 (subido));</li>
+<li>atributos estáticos constantes públicos que marcan las dos <strong>posiciones posibles</strong> (<code>POS_BAJADO</code> y <code>POS_SUBIDO</code>).</li>
+</ul>
+<p>En cuanto al comportamiento de esta clase (métodos), tendremos:</p>
+<ul>
+<li><strong>Constructor</strong> que reciba todos los parámetros que recibe un constructor de la clase <strong><code>Asiento,</code></strong> <strong>salvo el número de plazas del asiento que, en el caso del <code>Sillon</code>, siempre será 1 <code>(Asiento.MIN_PLAZAS)</code></strong>. El <strong>número de posición de los pies del sillón </strong>se inicializará a la posición bajada. Este constructor deberá <strong>hacer uso del constructor de su clase padre</strong> para evitar posibles redundancias e inconsistencias. </li>
+</ul>
+<p><span style="font-size: 1em;">Como en cualquier nueva clase, habrá que implementar un método </span><code>toString</code><span style="font-size: 1em;"> donde </span>habrá que ampliar la información que ofrece el método homónimo de su superclase, añadiendo la información específica de la clase <code>Sillon</code> para ofrecer el siguiente formato de salida:</p>
+<div class="highlighted-code language-latex">
+<div>
+<pre><code>Tipo:Sillón Id:YYY Precio:ZZZ,ZZ Descripción:VVV Tapicería:TTT Color:CCC Número de plazas:1 Posición actual de los pies:PPP</code></pre>
+</div>
+</div>
+<p>donde PPP representará la posición actual en la que se encuentran ajustados los pies: "bajada" si es 0 y "subida" si es 1.</p>
+<p>Un ejemplo de salida podría ser:</p>
+<div class="highlighted-code language-latex">
+<pre><code>Tipo:Sillon     Id: 2 Precio:239,00 Descripción:Sillón tapizado orejero             Tapicería: poliéster      Color:amarillo   Número de plazas:1  Posición actual de los pies:bajada</code></pre>
+</div>
+<div class="exe-figure exe-image position-center" style="width: 160px;"><img src="gear-1077550_640.png" alt="Icono de configuración" title="Ajuste" width="160" height="160" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/vectors/engranaje-configuraci%C3%B3n-opciones-1077550/" target="_blank" class="author" rel="noopener">IO-Images</a> (<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)">Licencia Pixabay</a>)</span></div>
+</div>
+<p>Además de todo lo anterior, hemos de tener en cuenta que la clase <code>Sillon</code> debe implementar también la interfaz <code>Ajustable</code>, de manera que habrá que escribir el código correspondiente a los siguientes métodos:</p>
+<ul class="lista_verificacion">
+<li><code>obtenerPosicion()</code>, que devolverá el valor del atributo específico de la clase que contiene la posición de los pies del sillón;</li>
+<li><code>subirPosicion()</code>, que actualizará la posición de los pies a una posición de subido y devolverá esa posición actualizada. Habrá que tener en cuenta que, para poder llevar a cabo esta acción, el sillón debe estar en una posición de bajado. Si no es así, se lanzará una excepción de tipo <code>IllegalStateException</code> con el mensaje de error <code>"Error: no se pueden subir los pies del sillón. Ya están subidos"</code>;</li>
+<li><code>bajarPosicion()</code>, que actualizará la posición de los pies a una posición de bajado y devolverá esa posición actualizada. Habrá que tener en cuenta que, para poder llevar a cabo esta acción, el sillón debe estar en una posición de subido. Si no es así, se lanzará una excepción de tipo <code>IllegalStateException</code> con el mensaje de error <code>"Error: no se pueden bajar los pies del sillón. Ya están bajados"</code>.</li>
+</ul>
+<p>Esta clase también es <strong>instanciable</strong> y se utilizará para representar a muebles concretos y reales que se pueden comprar. De igual modo, <strong>tampoco se permitirá que se pueda heredar de ella</strong> (no "heredable"). Se trata de un elemento "terminal" en el árbol genealógico de la jerarquía de mueble: una clase que no puede tener descendencia (clases hijas).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="15_clase_silla.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="17_clase_sofa.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

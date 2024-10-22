@@ -1,0 +1,45 @@
+<!DOCTYPE  informacion [
+    <!ELEMENT informacion (pais+)>
+    <!ELEMENT pais (nombre, tipo, superficie, frontera+, moneda)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT superficie (#PCDATA)>
+    <!ELEMENT frontera (#PCDATA)>
+    <!ELEMENT moneda (actual, antigua?)>
+    <!ELEMENT actual (#PCDATA)>
+    <!ELEMENT antigua (#PCDATA)>
+
+]>
+
+<informacion>
+    <pais>
+        <nombre>España</nombre>
+        <tipo>monarquía</tipo>
+        <superficie>504.645 km²</superficie>
+        <frontera>Francia</frontera>
+        <moneda>
+            <actual>Euro</actual>
+            <antigua>Peseta</antigua>
+        </moneda>
+    </pais>
+    <pais>
+        <nombre>Francia</nombre>
+        <tipo>República</tipo>
+        <superficie>675.417 km²</superficie>
+        <frontera>España</frontera>
+        <frontera>Suiza</frontera>
+        <moneda>
+            <actual>Euro</actual>
+            <antigua>Franco francés</antigua>
+        </moneda>
+    </pais>
+    <pais>
+        <nombre>Suiza</nombre>
+        <tipo>República</tipo>
+        <superficie>41.290 km²</superficie>
+        <frontera>Francia</frontera>
+        <moneda>
+            <actual>Franco suizo</actual>
+        </moneda>
+    </pais>
+</informacion>

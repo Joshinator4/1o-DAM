@@ -1,0 +1,48 @@
+<!DOCTYPE  elementos [
+    <!ELEMENT elementos (elemento*)>
+    <!ELEMENT elemento (a, (b | c)*, d+, e?)>
+    <!ELEMENT a (#PCDATA)>
+    <!ELEMENT b (#PCDATA)>
+    <!ELEMENT c (#PCDATA)>
+    <!ELEMENT d (#PCDATA)>
+    <!ELEMENT e (#PCDATA)>
+]>
+<elementos>
+    <elemento>
+        <a></a>
+        <b></b>
+        <b></b>
+        <b></b>
+        <d></d>
+        <e></e>
+    </elemento>
+
+    <elemento>
+        <a></a>
+        <c></c>
+        <d></d>
+    </elemento>
+
+    <elemento>
+        <a></a>
+        <d></d>
+        <d></d>
+        <d></d>
+    </elemento>
+
+    <elemento>
+        <a></a>
+        <c></c>
+        <c></c>
+        <d></d>
+        <d></d>
+        <e></e>
+    </elemento>
+
+    <elemento>
+        <a></a>
+        <b></b>
+        <d></d>
+        <d></d>
+    </elemento>
+</elementos>

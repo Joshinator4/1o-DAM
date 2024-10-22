@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSLlibro.xsd">
+    <libro>
+        <titulo>El Mozárabe</titulo>
+        <autor>Jesús Sánchez Adalid</autor>
+        <precio>27.55</precio>
+        <nPag>1336</nPag>
+        <ISBN>9857-422-4751</ISBN>
+    </libro>
+
+    <libro>
+        <titulo>La Sombra del Viento</titulo>
+        <autor>Carlos Ruiz Zafón</autor>
+        <precio>29.35</precio>
+        <nPag>1436</nPag>
+        <ISBN>9857-422-4741</ISBN>
+    </libro>
+</libros>

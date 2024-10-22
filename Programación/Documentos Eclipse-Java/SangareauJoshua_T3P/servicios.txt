@@ -1,0 +1,6 @@
+Servicio [trabajador=Manuel Fernández, fecha_servicio=2024-04-26, cliente=cliente2, Identificador=2024-1]RevisionAlarma [sensores=6, modelo=modelo2, material=0.0, manoObra=80.0]
+Servicio [trabajador=Manuel Fernández, fecha_servicio=2024-04-26, cliente=cliente3, Identificador=2024-2]RevisionAlarma [sensores=9, modelo=modelo3, material=0.0, manoObra=120.0]
+Servicio [trabajador=Pepito, fecha_servicio=2024-04-26, cliente=cliente4, Identificador=2024-3]Pintura [superficie=100, precioPint=10.3, material=8034.000000000001, manoObra=75.0]
+Servicio [trabajador=Juanito, fecha_servicio=2024-04-26, cliente=cliente5, Identificador=2024-4]Pintura [superficie=150, precioPint=9.0, material=10530.0, manoObra=112.5]
+Servicio [trabajador=Antonio, fecha_servicio=2024-04-26, cliente=cliente6, Identificador=2024-5]Pintura [superficie=40, precioPint=12.5, material=3900.0, manoObra=34.5]
+Servicio [trabajador=Manuel Fernández, fecha_servicio=2024-04-26, cliente=vcliente1, Identificador=2024-0]RevisionAlarma [sensores=3, modelo=modelo1, material=0.0, manoObra=40.0]

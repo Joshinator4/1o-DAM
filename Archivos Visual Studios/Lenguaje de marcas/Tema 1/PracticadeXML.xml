@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!-- Vamos a realizar una práctica de XML, creando una entidad con tres subniveles distintos-->
+    <IESPlayamar>
+        <Curso nombre="Desarrollador de aplicaciones multiplataforma" duración="2 años">
+            <Asignatura nombre="lenguaje de marcas" cant.horas="4h semanales"/>
+            <Asignatura nombre="programación" cant.horas="8h semanales"/>
+            <Asignatura nombre="base de datos" cant.horas="6h semanales"/>
+        </Curso>
+        <Curso nombre= "Automoción" duracion= "1,5 años">
+            <Asignatura nombre="automoción" cant.horas= "10h semanales"/>
+            <Asignatura nombre="electrónica" cant.horas="3h semanales"/>
+            <Asignatura nombre="carrocería" cant.horas="5h semanales"/>
+        </Curso>
+        <Curso nombre="Desarrollador de aplicaciones web" duración= "3 años">
+            <Asignatura nombre="páginas web" cant.horas="15h semanales"/>
+            <Asignatura nombre="diseño web" cant.horas="5h semanales"/>
+            <Asignatura nombre ="sistemas informáticos" cant.horas="1h semanal"/>
+        </Curso>
+        <Curso nombre="Administración y gestión de empresas" duración= "1 año">
+            <Asignatura nombre="matemáticas estadísticas" cant.horas="7h semanales"/>
+            <Asignatura nombre="economía" cant.horas="10h semanales"/>
+            <Asignatura nombre="derecho mercantil" cant.horas="4h semanales"/>
+        </Curso> 
+    </IESPlayamar>
+
+        

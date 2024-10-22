@@ -1,0 +1,131 @@
+body {
+	--fsAddBuffer: 0px;
+}
+[id='codebeautify_leaderboard_atf'],
+[id='codebeautify_billboard_1'],
+[id='codebeautify_DMPU'],
+[id='codebeautify_billboard_2'],
+[id='codebeautify_billboard_6'],
+[id='codebeautify_billboard_3'],
+[id='codebeautify_billboard_5'],
+[id='codebeautify_mrec_atf'],
+[id='codebeautify_billboard_4'] {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: calc(var(--height) + var(--fsAddBuffer));
+	width: 100%;
+}
+[id='codebeautify_DMPU'] {
+		--height: 600px;
+}
+[id='codebeautify_billboard_1'] {
+		--height: 280px;
+}
+[id='codebeautify_billboard_2'] {
+		--height: 280px;
+}
+[id='codebeautify_billboard_3'] {
+		--height: 280px;
+}
+[id='codebeautify_billboard_4'] {
+		--height: 280px;
+}
+[id='codebeautify_billboard_5'] {
+		--height: 280px;
+}
+[id='codebeautify_billboard_6'] {
+		--height: 280px;
+}
+[id='codebeautify_leaderboard_atf'] {
+		--height: 100px;
+}
+[id='codebeautify_mrec_atf'] {
+		--height: 250px;
+}
+@media only screen and (min-width: 768px) {
+	[id='codebeautify_DMPU'] {
+		--height: 600px;
+	}
+	[id='codebeautify_billboard_1'] {
+		--height: 250px;
+	}
+	[id='codebeautify_billboard_2'] {
+		--height: 280px;
+	}
+	[id='codebeautify_billboard_3'] {
+		--height: 280px;
+	}
+	[id='codebeautify_billboard_4'] {
+		--height: 280px;
+	}
+	[id='codebeautify_billboard_5'] {
+		--height: 280px;
+	}
+	[id='codebeautify_billboard_6'] {
+		--height: 280px;
+	}
+	[id='codebeautify_leaderboard_atf'] {
+		--height: 90px;
+	}
+	[id='codebeautify_mrec_atf'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 970px) {
+	[id='codebeautify_billboard_1'] {
+		--height: 250px;
+	}
+	[id='codebeautify_mrec_atf'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	[id='codebeautify_billboard_1'] {
+		--height: 400px;
+	}
+	[id='codebeautify_mrec_atf'] {
+		--height: 240px;
+	}
+}
+@media only screen and (min-width: 1150px) {
+	[id='codebeautify_billboard_1'] {
+		--height: 400px;
+	}
+}
+@media only screen and (min-width: 1250px) {
+	[id='codebeautify_mrec_atf'] {
+		--height: 200px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	[id='codebeautify_billboard_1'] {
+		--height: 400px;
+	}
+}
+@media only screen and (min-width: 1550px) {
+	[id='codebeautify_mrec_atf'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 1620px) {
+	[id='codebeautify_billboard_1'] {
+		--height: 400px;
+	}
+}
+@media only screen and (min-width: 1800px) {
+	[id='codebeautify_mrec_atf'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 1900px) {
+	[id='codebeautify_mrec_atf'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 2000px) {
+	[id='codebeautify_mrec_atf'] {
+		--height: 280px;
+	}
+}

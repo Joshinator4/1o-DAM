@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://codebeautify.org/Xpath-Tester -->
+<html lang="en" class="" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="error_marker.css">
+    .error_widget_wrapper {
+        background: inherit;
+        color: inherit;
+        border:none
+    }
+    .error_widget {
+        border-top: solid 2px;
+        border-bottom: solid 2px;
+        margin: 5px 0;
+        padding: 10px 40px;
+        white-space: pre-wrap;
+    }
+    .error_widget.ace_error, .error_widget_arrow.ace_error{
+        border-color: #ff5a5a
+    }
+    .error_widget.ace_warning, .error_widget_arrow.ace_warning{
+        border-color: #F1D817
+    }
+    .error_widget.ace_info, .error_widget_arrow.ace_info{
+        border-color: #5a5a5a
+    }
+    .error_widget.ace_ok, .error_widget_arrow.ace_ok{
+        border-color: #5aaa5a
+    }
+    .error_widget_arrow {
+        position: absolute;
+        border: solid 5px;
+        border-top-color: transparent!important;
+        border-right-color: transparent!important;
+        border-left-color: transparent!important;
+        top: -5px;
+    }
+
+/*# sourceURL=ace/css/error_marker.css */</style><style id="ace-tm">.ace-tm .ace_gutter {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.ace-tm .ace_print-margin {
+  width: 1px;
+  background: #e8e8e8;
+}
+
+.ace-tm .ace_fold {
+    background-color: #6B72E6;
+}
+
+.ace-tm {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.ace-tm .ace_cursor {
+  color: black;
+}
+        
+.ace-tm .ace_invisible {
+  color: rgb(191, 191, 191);
+}
+
+.ace-tm .ace_storage,
+.ace-tm .ace_keyword {
+  color: blue;
+}
+
+.ace-tm .ace_constant {
+  color: rgb(197, 6, 11);
+}
+
+.ace-tm .ace_constant.ace_buildin {
+  color: rgb(88, 72, 246);
+}
+
+.ace-tm .ace_constant.ace_language {
+  color: rgb(88, 92, 246);
+}
+
+.ace-tm .ace_constant.ace_library {
+  color: rgb(6, 150, 14);
+}
+
+.ace-tm .ace_invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+}
+
+.ace-tm .ace_support.ace_function {
+  color: rgb(60, 76, 114);
+}
+
+.ace-tm .ace_support.ace_constant {
+  color: rgb(6, 150, 14);
+}
+
+.ace-tm .ace_support.ace_type,
+.ace-tm .ace_support.ace_class {
+  color: rgb(109, 121, 222);
+}
+
+.ace-tm .ace_keyword.ace_operator {
+  color: rgb(104, 118, 135);
+}
+
+.ace-tm .ace_string {
+  color: rgb(3, 106, 7);
+}
+
+.ace-tm .ace_comment {
+  color: rgb(76, 136, 107);
+}
+
+.ace-tm .ace_comment.ace_doc {
+  color: rgb(0, 102, 255);
+}
+
+.ace-tm .ace_comment.ace_doc.ace_tag {
+  color: rgb(128, 159, 191);
+}
+
+.ace-tm .ace_constant.ace_numeric {
+  color: rgb(0, 0, 205);
+}
+
+.ace-tm .ace_variable {
+  color: rgb(49, 132, 149);
+}
+
+.ace-tm .ace_xml-pe {
+  color: rgb(104, 104, 91);
+}
+
+.ace-tm .ace_entity.ace_name.ace_function {
+  color: #0000A2;
+}
+
+
+.ace-tm .ace_heading {
+  color: rgb(12, 7, 255);
+}
+
+.ace-tm .ace_list {
+  color:rgb(185, 6, 144);
+}
+
+.ace-tm .ace_meta.ace_tag {
+  color:rgb(0, 22, 142);
+}
+
+.ace-tm .ace_string.ace_regex {
+  color: rgb(255, 0, 0)
+}
+
+.ace-tm .ace_marker-layer .ace_selection {
+  background: rgb(181, 213, 255);
+}
+.ace-tm.ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px 0px white;
+}
+.ace-tm .ace_marker-layer .ace_step {
+  background: rgb(252, 255, 0);
+}
+
+.ace-tm .ace_marker-layer .ace_stack {
+  background: rgb(164, 229, 101);
+}
+
+.ace-tm .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.ace-tm .ace_marker-layer .ace_active-line {
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.ace-tm .ace_gutter-active-line {
+    background-color : #dcdcdc;
+}
+
+.ace-tm .ace_marker-layer .ace_selected-word {
+  background: rgb(250, 250, 255);
+  border: 1px solid rgb(200, 200, 250);
+}
+
+.ace-tm .ace_indent-guide {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;
+}
+
+.ace-tm .ace_indent-guide-active {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAZSURBVHjaYvj///9/hivKyv8BAAAA//8DACLqBhbvk+/eAAAAAElFTkSuQmCC") right repeat-y;
+}
+
+/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">
+.ace_br1 {border-top-left-radius    : 3px;}
+.ace_br2 {border-top-right-radius   : 3px;}
+.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}
+.ace_br4 {border-bottom-right-radius: 3px;}
+.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}
+.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}
+.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}
+.ace_br8 {border-bottom-left-radius : 3px;}
+.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}
+.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}
+.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}
+.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}
+.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}
+.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}
+.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+
+
+.ace_editor {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'Source Code Pro', 'source-code-pro', monospace;
+    direction: ltr;
+    text-align: left;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.ace_scroller {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    background-color: inherit;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: text;
+}
+
+.ace_content {
+    position: absolute;
+    box-sizing: border-box;
+    min-width: 100%;
+    contain: style size layout;
+    font-variant-ligatures: no-common-ligatures;
+}
+
+.ace_keyboard-focus:focus {
+    box-shadow: inset 0 0 0 2px #5E9ED6;
+    outline: none;
+}
+
+.ace_dragging .ace_scroller:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgba(250, 250, 250, 0.01);
+    z-index: 1000;
+}
+.ace_dragging.ace_dark .ace_scroller:before{
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.ace_gutter {
+    position: absolute;
+    overflow : hidden;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    cursor: default;
+    z-index: 4;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    contain: style size layout;
+}
+
+.ace_gutter-active-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.ace_scroller.ace_scroll-left:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;
+    pointer-events: none;
+}
+
+.ace_gutter-cell, .ace_gutter-cell_svg-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 19px;
+    padding-right: 6px;
+    background-repeat: no-repeat;
+}
+
+.ace_gutter-cell_svg-icons .ace_gutter_annotation {
+    margin-left: -14px;
+    float: left;
+}
+
+.ace_gutter-cell .ace_gutter_annotation {
+    margin-left: -19px;
+    float: left;
+}
+
+.ace_gutter-cell.ace_error, .ace_icon.ace_error, .ace_icon.ace_error_fold {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+.ace_gutter-cell.ace_warning, .ace_icon.ace_warning, .ace_icon.ace_warning_fold {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+.ace_gutter-cell.ace_info, .ace_icon.ace_info {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+.ace_dark .ace_gutter-cell.ace_info, .ace_dark .ace_icon.ace_info {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");
+}
+
+.ace_icon_svg.ace_error {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAxNiI+CjxnIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSJyZWQiIHNoYXBlLXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIj4KPGNpcmNsZSBmaWxsPSJub25lIiBjeD0iOCIgY3k9IjgiIHI9IjciIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPGxpbmUgeDE9IjExIiB5MT0iNSIgeDI9IjUiIHkyPSIxMSIvPgo8bGluZSB4MT0iMTEiIHkxPSIxMSIgeDI9IjUiIHkyPSI1Ii8+CjwvZz4KPC9zdmc+");
+    background-color: crimson;
+}
+.ace_icon_svg.ace_warning {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAxNiI+CjxnIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSJkYXJrb3JhbmdlIiBzaGFwZS1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiI+Cjxwb2x5Z29uIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbGw9Im5vbmUiIHBvaW50cz0iOCAxIDE1IDE1IDEgMTUgOCAxIi8+CjxyZWN0IHg9IjgiIHk9IjEyIiB3aWR0aD0iMC4wMSIgaGVpZ2h0PSIwLjAxIi8+CjxsaW5lIHgxPSI4IiB5MT0iNiIgeDI9IjgiIHkyPSIxMCIvPgo8L2c+Cjwvc3ZnPg==");
+    background-color: darkorange;
+}
+.ace_icon_svg.ace_info {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAxNiI+CjxnIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSJibHVlIiBzaGFwZS1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiI+CjxjaXJjbGUgZmlsbD0ibm9uZSIgY3g9IjgiIGN5PSI4IiByPSI3IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjxwb2x5bGluZSBwb2ludHM9IjggMTEgOCA4Ii8+Cjxwb2x5bGluZSBwb2ludHM9IjkgOCA2IDgiLz4KPGxpbmUgeDE9IjEwIiB5MT0iMTEiIHgyPSI2IiB5Mj0iMTEiLz4KPHJlY3QgeD0iOCIgeT0iNSIgd2lkdGg9IjAuMDEiIGhlaWdodD0iMC4wMSIvPgo8L2c+Cjwvc3ZnPg==");
+    background-color: royalblue;
+}
+
+.ace_icon_svg.ace_error_fold {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAxNiIgZmlsbD0ibm9uZSI+CiAgPHBhdGggZD0ibSAxOC45Mjk4NTEsNy44Mjk4MDc2IGMgMC4xNDYzNTMsNi4zMzc0NjA0IC02LjMyMzE0Nyw3Ljc3Nzg0NDQgLTcuNDc3OTEyLDcuNzc3ODQ0NCAtMi4xMDcyNzI2LC0wLjEyODc1IDUuMTE3Njc4LDAuMzU2MjQ5IDUuMDUxNjk4LC03Ljg3MDA2MTggLTAuNjA0NjcyLC04LjAwMzk3MzQ5IC03LjA3NzI3MDYsLTcuNTYzMTE4OSAtNC44NTczLC03LjQzMDM5NTU2IDEuNjA2LC0wLjExNTE0MjI1IDYuODk3NDg1LDEuMjYyNTQ1OTYgNy4yODM1MTQsNy41MjI2MTI5NiB6IiBmaWxsPSJjcmltc29uIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0ibSA4LjExNDc1NjIsMi4wNTI5ODI4IGMgMy4zNDkxNjk4LDAgNi4wNjQxMzI4LDIuNjc2ODYyNyA2LjA2NDEzMjgsNS45Nzg5NTMgMCwzLjMwMjExMjIgLTIuNzE0OTYzLDUuOTc4OTIwMiAtNi4wNjQxMzI4LDUuOTc4OTIwMiAtMy4zNDkxNDczLDAgLTYuMDY0MTc3MiwtMi42NzY4MDggLTYuMDY0MTc3MiwtNS45Nzg5MjAyIDAuMDA1MzksLTMuMjk5ODg2MSAyLjcxNzI2NTYsLTUuOTczNjQwOCA2LjA2NDE3NzIsLTUuOTc4OTUzIHogbSAwLC0xLjczNTgyNzE5IGMgLTQuMzIxNDgzNiwwIC03LjgyNDc0MDM4LDMuNDU0MDE4NDkgLTcuODI0NzQwMzgsNy43MTQ3ODAxOSAwLDQuMjYwNzI4MiAzLjUwMzI1Njc4LDcuNzE0NzQ1MiA3LjgyNDc0MDM4LDcuNzE0NzQ1MiA0LjMyMTQ0OTgsMCA3LjgyNDY5OTgsLTMuNDU0MDE3IDcuODI0Njk5OCwtNy43MTQ3NDUyIDAsLTIuMDQ2MDkxNCAtMC44MjQzOTIsLTQuMDA4MzY3MiAtMi4yOTE3NTYsLTUuNDU1MTc0NiBDIDEyLjE4MDIyNSwxLjEyOTk2NDggMTAuMTkwMDEzLDAuMzE3MTU1NjEgOC4xMTQ3NTYyLDAuMzE3MTU1NjEgWiBNIDYuOTM3NDU2Myw4LjI0MDU5ODUgNC42NzE4Njg1LDEwLjQ4NTg1MiA2LjAwODY4MTQsMTEuODc2NzI4IDguMzE3MDAzNSw5LjYwMDc5MTEgMTAuNjI1MzM3LDExLjg3NjcyOCAxMS45NjIxMzgsMTAuNDg1ODUyIDkuNjk2NTUwOCw4LjI0MDU5ODUgMTEuOTYyMTM4LDYuMDA2ODA2NiAxMC41NzMyNDYsNC42Mzc0MzM1IDguMzE3MDAzNSw2Ljg3MzQyOTcgNi4wNjA3NjA3LDQuNjM3NDMzNSA0LjY3MTg2ODUsNi4wMDY4MDY2IFoiIGZpbGw9ImNyaW1zb24iIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4=");
+    background-color: crimson;
+}
+.ace_icon_svg.ace_warning_fold {
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC43NzY5IDE0LjczMzdMOC42NTE5MiAyLjQ4MzY5QzguMzI5NDYgMS44Mzg3NyA3LjQwOTEzIDEuODM4NzcgNy4wODY2NyAyLjQ4MzY5TDAuOTYxNjY5IDE0LjczMzdDMC42NzA3NzUgMTUuMzE1NSAxLjA5MzgzIDE2IDEuNzQ0MjkgMTZIMTMuOTk0M0MxNC42NDQ4IDE2IDE1LjA2NzggMTUuMzE1NSAxNC43NzY5IDE0LjczMzdaTTMuMTYwMDcgMTQuMjVMNy44NjkyOSA0LjgzMTU2TDEyLjU3ODUgMTQuMjVIMy4xNjAwN1pNOC43NDQyOSAxMS42MjVWMTMuMzc1SDYuOTk0MjlWMTEuNjI1SDguNzQ0MjlaTTYuOTk0MjkgMTAuNzVWNy4yNUg4Ljc0NDI5VjEwLjc1SDYuOTk0MjlaIiBmaWxsPSIjRUM3MjExIi8+CjxwYXRoIGQ9Ik0xMS4xOTkxIDIuOTUyMzhDMTAuODgwOSAyLjMxNDY3IDEwLjM1MzcgMS44MDUyNiA5LjcwNTUgMS41MDlMMTEuMDQxIDEuMDY5NzhDMTEuNjg4MyAwLjk0OTgxNCAxMi4zMzcgMS4yNzI2MyAxMi42MzE3IDEuODYxNDFMMTcuNjEzNiAxMS44MTYxQzE4LjM1MjcgMTMuMjkyOSAxNy41OTM4IDE1LjA4MDQgMTYuMDE4IDE1LjU3NDVDMTYuNDA0NCAxNC40NTA3IDE2LjMyMzEgMTMuMjE4OCAxNS43OTI0IDEyLjE1NTVMMTEuMTk5MSAyLjk1MjM4WiIgZmlsbD0iI0VDNzIxMSIvPgo8L3N2Zz4=");
+    background-color: darkorange;
+}
+
+.ace_scrollbar {
+    contain: strict;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.ace_scrollbar-inner {
+    position: absolute;
+    cursor: text;
+    left: 0;
+    top: 0;
+}
+
+.ace_scrollbar-v{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 0;
+}
+
+.ace_scrollbar-h {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    left: 0;
+}
+
+.ace_print-margin {
+    position: absolute;
+    height: 100%;
+}
+
+.ace_text-input {
+    position: absolute;
+    z-index: 0;
+    width: 0.5em;
+    height: 1em;
+    opacity: 0;
+    background: transparent;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    font: inherit;
+    padding: 0 1px;
+    margin: 0 -1px;
+    contain: strict;
+    -ms-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+    /*with `pre-line` chrome inserts &nbsp; instead of space*/
+    white-space: pre!important;
+}
+.ace_text-input.ace_composition {
+    background: transparent;
+    color: inherit;
+    z-index: 1000;
+    opacity: 1;
+}
+.ace_composition_placeholder { color: transparent }
+.ace_composition_marker { 
+    border-bottom: 1px solid;
+    position: absolute;
+    border-radius: 0;
+    margin-top: 1px;
+}
+
+[ace_nocontext=true] {
+    transform: none!important;
+    filter: none!important;
+    clip-path: none!important;
+    mask : none!important;
+    contain: none!important;
+    perspective: none!important;
+    mix-blend-mode: initial!important;
+    z-index: auto;
+}
+
+.ace_layer {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    /* workaround for chrome bug https://github.com/ajaxorg/ace/issues/2312*/
+    word-wrap: normal;
+    white-space: pre;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    /* setting pointer-events: auto; on node under the mouse, which changes
+        during scroll, will break mouse wheel scrolling in Safari */
+    pointer-events: none;
+}
+
+.ace_gutter-layer {
+    position: relative;
+    width: auto;
+    text-align: right;
+    pointer-events: auto;
+    height: 1000000px;
+    contain: style size layout;
+}
+
+.ace_text-layer {
+    font: inherit !important;
+    position: absolute;
+    height: 1000000px;
+    width: 1000000px;
+    contain: style size layout;
+}
+
+.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {
+    contain: style size layout;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.ace_hidpi .ace_text-layer,
+.ace_hidpi .ace_gutter-layer,
+.ace_hidpi .ace_content,
+.ace_hidpi .ace_gutter {
+    contain: strict;
+}
+.ace_hidpi .ace_text-layer > .ace_line, 
+.ace_hidpi .ace_text-layer > .ace_line_group {
+    contain: strict;
+}
+
+.ace_cjk {
+    display: inline-block;
+    text-align: center;
+}
+
+.ace_cursor-layer {
+    z-index: 4;
+}
+
+.ace_cursor {
+    z-index: 4;
+    position: absolute;
+    box-sizing: border-box;
+    border-left: 2px solid;
+    /* workaround for smooth cursor repaintng whole screen in chrome */
+    transform: translatez(0);
+}
+
+.ace_multiselect .ace_cursor {
+    border-left-width: 1px;
+}
+
+.ace_slim-cursors .ace_cursor {
+    border-left-width: 1px;
+}
+
+.ace_overwrite-cursors .ace_cursor {
+    border-left-width: 0;
+    border-bottom: 1px solid;
+}
+
+.ace_hidden-cursors .ace_cursor {
+    opacity: 0.2;
+}
+
+.ace_hasPlaceholder .ace_hidden-cursors .ace_cursor {
+    opacity: 0;
+}
+
+.ace_smooth-blinking .ace_cursor {
+    transition: opacity 0.18s;
+}
+
+.ace_animate-blinking .ace_cursor {
+    animation-duration: 1000ms;
+    animation-timing-function: step-end;
+    animation-name: blink-ace-animate;
+    animation-iteration-count: infinite;
+}
+
+.ace_animate-blinking.ace_smooth-blinking .ace_cursor {
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-name: blink-ace-animate-smooth;
+}
+    
+@keyframes blink-ace-animate {
+    from, to { opacity: 1; }
+    60% { opacity: 0; }
+}
+
+@keyframes blink-ace-animate-smooth {
+    from, to { opacity: 1; }
+    45% { opacity: 1; }
+    60% { opacity: 0; }
+    85% { opacity: 0; }
+}
+
+.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {
+    position: absolute;
+    z-index: 3;
+}
+
+.ace_marker-layer .ace_selection {
+    position: absolute;
+    z-index: 5;
+}
+
+.ace_marker-layer .ace_bracket {
+    position: absolute;
+    z-index: 6;
+}
+
+.ace_marker-layer .ace_error_bracket {
+    position: absolute;
+    border-bottom: 1px solid #DE5555;
+    border-radius: 0;
+}
+
+.ace_marker-layer .ace_active-line {
+    position: absolute;
+    z-index: 2;
+}
+
+.ace_marker-layer .ace_selected-word {
+    position: absolute;
+    z-index: 4;
+    box-sizing: border-box;
+}
+
+.ace_line .ace_fold {
+    box-sizing: border-box;
+
+    display: inline-block;
+    height: 11px;
+    margin-top: -2px;
+    vertical-align: middle;
+
+    background-image:
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");
+    background-repeat: no-repeat, repeat-x;
+    background-position: center center, top left;
+    color: transparent;
+
+    border: 1px solid black;
+    border-radius: 2px;
+
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.ace_dark .ace_fold {
+}
+
+.ace_fold:hover{
+    background-image:
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");
+}
+
+.ace_tooltip {
+    background-color: #f5f5f5;
+    border: 1px solid gray;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: black;
+    max-width: 100%;
+    padding: 3px 4px;
+    position: fixed;
+    z-index: 999999;
+    box-sizing: border-box;
+    cursor: default;
+    white-space: pre;
+    word-wrap: break-word;
+    line-height: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    pointer-events: none;
+}
+
+.ace_tooltip.ace_dark {
+    background-color: #636363;
+    color: #fff;
+}
+
+.ace_tooltip:focus {
+    outline: 1px solid #5E9ED6;
+}
+
+.ace_icon {
+    display: inline-block;
+    width: 18px;
+    vertical-align: top;
+}
+
+.ace_icon_svg {
+    display: inline-block;
+    width: 12px;
+    vertical-align: top;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 12px;
+    -webkit-mask-position: center;
+}
+
+.ace_folding-enabled > .ace_gutter-cell, .ace_folding-enabled > .ace_gutter-cell_svg-icons {
+    padding-right: 13px;
+}
+
+.ace_fold-widget {
+    box-sizing: border-box;
+
+    margin: 0 -12px 0 1px;
+    display: none;
+    width: 11px;
+    vertical-align: top;
+
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 3px;
+    
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.ace_folding-enabled .ace_fold-widget {
+    display: inline-block;   
+}
+
+.ace_fold-widget.ace_end {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");
+}
+
+.ace_fold-widget.ace_closed {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");
+}
+
+.ace_fold-widget:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.ace_fold-widget:active {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+/**
+ * Dark version for fold widgets
+ */
+.ace_dark .ace_fold-widget {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");
+}
+.ace_dark .ace_fold-widget.ace_end {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");
+}
+.ace_dark .ace_fold-widget.ace_closed {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");
+}
+.ace_dark .ace_fold-widget:hover {
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.ace_dark .ace_fold-widget:active {
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.ace_inline_button {
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin: -1px 8px;
+    padding: 0 5px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.ace_inline_button:hover {
+    border-color: gray;
+    background: rgba(200,200,200,0.2);
+    display: inline-block;
+    pointer-events: auto;
+}
+
+.ace_fold-widget.ace_invalid {
+    background-color: #FFB4B4;
+    border-color: #DE5555;
+}
+
+.ace_fade-fold-widgets .ace_fold-widget {
+    transition: opacity 0.4s ease 0.05s;
+    opacity: 0;
+}
+
+.ace_fade-fold-widgets:hover .ace_fold-widget {
+    transition: opacity 0.05s ease 0.05s;
+    opacity:1;
+}
+
+.ace_underline {
+    text-decoration: underline;
+}
+
+.ace_bold {
+    font-weight: bold;
+}
+
+.ace_nobold .ace_bold {
+    font-weight: normal;
+}
+
+.ace_italic {
+    font-style: italic;
+}
+
+
+.ace_error-marker {
+    background-color: rgba(255, 0, 0,0.2);
+    position: absolute;
+    z-index: 9;
+}
+
+.ace_highlight-marker {
+    background-color: rgba(255, 255, 0,0.2);
+    position: absolute;
+    z-index: 8;
+}
+
+.ace_mobile-menu {
+    position: absolute;
+    line-height: 1.5;
+    border-radius: 4px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background: white;
+    box-shadow: 1px 3px 2px grey;
+    border: 1px solid #dcdcdc;
+    color: black;
+}
+.ace_dark > .ace_mobile-menu {
+    background: #333;
+    color: #ccc;
+    box-shadow: 1px 3px 2px grey;
+    border: 1px solid #444;
+
+}
+.ace_mobile-button {
+    padding: 2px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.ace_mobile-button:hover {
+    background-color: #eee;
+    opacity:1;
+}
+.ace_mobile-button:active {
+    background-color: #ddd;
+}
+
+.ace_placeholder {
+    font-family: arial;
+    transform: scale(0.9);
+    transform-origin: left;
+    white-space: pre;
+    opacity: 0.7;
+    margin: 0 10px;
+}
+
+.ace_ghost_text {
+    opacity: 0.5;
+    font-style: italic;
+    white-space: pre;
+}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace_scrollbar.css">.ace_editor>.ace_sb-v div, .ace_editor>.ace_sb-h div{
+  position: absolute;
+  background: rgba(128, 128, 128, 0.6);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  z-index: 8;
+}
+.ace_editor>.ace_sb-v, .ace_editor>.ace_sb-h {
+  position: absolute;
+  z-index: 6;
+  background: none;
+  overflow: hidden!important;
+}
+.ace_editor>.ace_sb-v {
+  z-index: 6;
+  right: 0;
+  top: 0;
+  width: 12px;
+}
+.ace_editor>.ace_sb-v div {
+  z-index: 8;
+  right: 0;
+  width: 100%;
+}
+.ace_editor>.ace_sb-h {
+  bottom: 0;
+  left: 0;
+  height: 12px;
+}
+.ace_editor>.ace_sb-h div {
+  bottom: 0;
+  height: 100%;
+}
+.ace_editor>.ace_sb_grabbed {
+  z-index: 8;
+  background: #000;
+}
+/*# sourceURL=ace/css/ace_scrollbar.css */</style> <title>XPath Tester and Evaluator online</title> <meta http-equiv="content-language" content="en-US"> <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">   <meta name="description" content="Best XPath tester is free online tool helps to test your expressions/queries against an XML data, file, url"> <meta name="author" content="Jimmy"> <meta name="keywords" content="XPath Tester,Free Online XPath Tester and Evaluator,xpath example"> <meta property="og:image" content="https://codebeautify.org/img/cb/logo.png"> <meta property="og:url" content="https://codebeautify.org/Xpath-Tester"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="XPath Tester and Evaluator online"> <meta name="twitter:description" content="Best XPath tester is free online tool helps to test your expressions/queries against an XML data, file, url"> <meta name="twitter:image" content="https://codebeautify.org/img/cb/logo.png"> <meta name="twitter:url" content="https://codebeautify.org/Xpath-Tester"> <meta name="twitter:creator" content="@codebeautify"> <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="preconnect" href="https://a.pub.network/" crossorigin=""> <link rel="preconnect" href="https://b.pub.network/" crossorigin=""> <link rel="preconnect" href="https://c.pub.network/" crossorigin=""> <link rel="preconnect" href="https://d.pub.network/" crossorigin=""> <link rel="preconnect" href="https://secure.quantserve.com/" crossorigin=""> <link rel="preconnect" href="https://rules.quantcount.com/" crossorigin=""> <link rel="preconnect" href="https://pixel.quantserve.com/" crossorigin=""> <link rel="preconnect" href="https://cmp.quantcast.com/" crossorigin=""> <link rel="preconnect" href="https://btloader.com/" crossorigin=""> <link rel="preconnect" href="https://api.btloader.com/" crossorigin=""> <link rel="preconnect" href="https://confiant-integrations.global.ssl.fastly.net/" crossorigin="">    <link rel="stylesheet" href="./XPath Tester and Evaluator online_files/cls.css"> <script data-cfasync="false" type="text/javascript">
+  var freestar = freestar || {};
+  freestar.queue = freestar.queue || [];
+  freestar.config = freestar.config || {};
+  freestar.config.enabled_slots = [];
+  freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }
+</script> <script src="./XPath Tester and Evaluator online_files/pubfig.min.js.descarga" data-cfasync="false" async=""></script> <meta http-equiv="X-UA-Compatible" content="IE=10">  <link rel="canonical" href="https://codebeautify.org/Xpath-Tester"> <link href="https://codebeautify.org/img/cb.png" rel="icon">  <link href="./XPath Tester and Evaluator online_files/formatter-min.css" rel="stylesheet"> <script src="./XPath Tester and Evaluator online_files/jquery.min.js.descarga"></script><script data-owner="freestar" type="text/javascript">window._sp_queue = [];window._sp_ = {
+          config: {
+              accountId: 1638,
+              baseEndpoint: 'https://cdn.privacy-mgmt.com',
+              propertyHref: 'https://codebeautify.org',
+              gdpr: {},
+              
+              events: {
+                  onMessageChoiceSelect: function() {
+                      console.log('[event] onMessageChoiceSelect', arguments);
+                  },
+                  onMessageReady: function() {
+                      console.log('[event] onMessageReady', arguments);
+                  },
+                  onMessageChoiceError: function() {
+                      console.log('[event] onMessageChoiceError', arguments);
+                  },
+                  onPrivacyManagerAction: function() {
+                      console.log('[event] onPrivacyManagerAction', arguments);
+                  },
+                  onPMCancel: function() {
+                      console.log('[event] onPMCancel', arguments);
+                  },
+                  onMessageReceiveData: function() {
+                      console.log('[event] onMessageReceiveData', arguments);
+                  },
+                  onSPPMObjectReady: function() {
+                      console.log('[event] onSPPMObjectReady', arguments);
+                  },
+                  /* Function required for resurfacing links */
+                  onConsentReady: function (message_type, uuid, string, info) {
+                      if (document.getElementById("pmLink")) {
+                          if ((message_type == "ccpa") && (info.applies)) {
+                              /* code to insert the CCPA footer link */
+                              document.getElementById("pmLink").style.visibility = "visible";
+                              document.getElementById("pmLink").innerHTML = "Do Not Sell or Share My Personal Information";
+                              document.getElementById("pmLink").onclick = function () {
+                                  /* Set CCPA ID */
+                                  window._sp_.ccpa.loadPrivacyManagerModal('899036');
+                              }
+                          }
+                          if ((message_type == "gdpr") && (info.applies)) {
+                              /* code to insert the GDPR footer link */
+                              document.getElementById("pmLink").style.visibility = "visible";
+                              document.getElementById("pmLink").innerHTML = "Privacy Preferences";
+                              document.getElementById("pmLink").onclick = function () {
+                                  /* Set GDPR ID */
+                                  window._sp_.gdpr.loadPrivacyManagerModal('899033');
+                              }
+                          }
+                      }
+                  },
+                  onError: function() {
+                      console.log('[event] onError', arguments);
+                  },
+              }
+            }
+        }</script><script data-owner="freestar" type="text/javascript">function _typeof(t){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}!function(){var t=function(){var t,e,o=[],n=window,r=n;for(;r;){try{if(r.frames.__tcfapiLocator){t=r;break}}catch(t){}if(r===n.top)break;r=r.parent}t||(!function t(){var e=n.document,o=!!n.frames.__tcfapiLocator;if(!o)if(e.body){var r=e.createElement("iframe");r.style.cssText="display:none",r.name="__tcfapiLocator",e.body.appendChild(r)}else setTimeout(t,5);return!o}(),n.__tcfapi=function(){for(var t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];if(!n.length)return o;"setGdprApplies"===n[0]?n.length>3&&2===parseInt(n[1],10)&&"boolean"==typeof n[3]&&(e=n[3],"function"==typeof n[2]&&n[2]("set",!0)):"ping"===n[0]?"function"==typeof n[2]&&n[2]({gdprApplies:e,cmpLoaded:!1,cmpStatus:"stub"}):o.push(n)},n.addEventListener("message",(function(t){var e="string"==typeof t.data,o={};if(e)try{o=JSON.parse(t.data)}catch(t){}else o=t.data;var n="object"===_typeof(o)&&null!==o?o.__tcfapiCall:null;n&&window.__tcfapi(n.command,n.version,(function(o,r){var a={__tcfapiReturn:{returnValue:o,success:r,callId:n.callId}};t&&t.source&&t.source.postMessage&&t.source.postMessage(e?JSON.stringify(a):a,"*")}),n.parameter)}),!1))};"undefined"!=typeof module?module.exports=t:t()}()</script><script data-owner="freestar" src="./XPath Tester and Evaluator online_files/wrapperMessagingWithoutDetection.js.descarga" async="" type="text/javascript"></script><script data-owner="freestar" src="./XPath Tester and Evaluator online_files/f.txt" async="" type="text/javascript"></script>  <script src="./XPath Tester and Evaluator online_files/mode-xml.js.descarga"></script><script charset="utf-8" src="./XPath Tester and Evaluator online_files/gdpr-tcf.d303699d85882226ea37.bundle.js.descarga"></script><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./XPath Tester and Evaluator online_files/f(1).txt" async=""></script><style type="text/css">#sp_message_iframe_1061741 { display:block; width: 100%; height: 100%; border: 0 none; } #sp_message_container_1061741 { overflow:auto;-webkit-overflow-scrolling:touch; display: none; position: fixed; z-index: 2147483647; left: 0; right: 0; bottom: 0; top: 0; height: 100%; width: 100%; max-width: 100%; max-height: 100vh;}.sp-message-open { height: 100vh !important; width: 100vw !important } .sp-message-open body { overflow: hidden !important; position: fixed !important; margin-top: 0px !important; top: 0px !important; left: 0px !important; right: 0px !important; }</style><style type="text/css">#sp_message_iframe_1061640 { display:block; width: 100%; height: 100%; border: 0 none; } #sp_message_container_1061640 { overflow:auto;-webkit-overflow-scrolling:touch; display: none; position: fixed; z-index: 2147483647; left: 0; right: 0; bottom: 0; top: 0; height: 100%; width: 100%; max-width: 100%; max-height: 100vh;}.sp-message-open { height: 100vh !important; width: 100vw !important } .sp-message-open body { overflow: hidden !important; position: fixed !important; margin-top: 0px !important; top: 0px !important; left: 0px !important; right: 0px !important; }</style><script data-owner="freestar" src="./XPath Tester and Evaluator online_files/beacon.js.descarga" async="" type="text/javascript"></script></head><body id="cbBody" class="intro"><input type="hidden" id="viewName" value="Xpath-Tester"> <input type="hidden" id="isLogin" value=""> <input type="hidden" id="isFavTool" value="not-fav">   <script>
+
+$(document).ready(function(){
+	    $("body").addClass("intro");
+	});
+
+</script>  <script async="" src="./XPath Tester and Evaluator online_files/js"></script> <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S01YJXGZPD');
+</script> <div class="navbar navbar-inverse navbar-fixed-top"> <div class="navbar-inner"> <div class="container-fluid"> <div class="mainheader"> <div class="logo"> <a href="https://codebeautify.org/" class="brand"> <div class="cblogoimage" title="Code Beautify"></div> </a> </div> <div class="headerMenu"> <div class="nav-collapse collapse"> <ul class="nav"> <li class="dropdown pull-right margin-last-li"> <a href="https://jsonformatter.org/" target="_blank" title="JSON Formatter">&nbsp;JSON Formatter</a> </li> <li class="dropdown pull-right margin-last-li"> <a href="https://hexcolorcodes.org/" target="_blank" title="Hex Color Codes">&nbsp;Hex Color Codes</a> </li> <li class="dropdown pull-right margin-last-li"> <a href="https://codebeautify.org/hmac-generator" title="HMAC Generator">&nbsp;HMAC Generator</a> </li> <li class="dropdown pull-right"> <a href="https://codebeautify.org/ipcheck-weatherinfo-latestnews">&nbsp;My Ip</a> </li> <li class="dropdown pull-right"> <a href="https://codebeautify.org/">Search</a> </li> <li class="dropdown pull-right"> <a href="https://codebeautify.org/recentLinksPage">Recent Links</a> </li> <li class="dropdown pull-right" id="moreMenu"> <a href="https://codebeautify.org/Xpath-Tester#" id="more">More <b class="caret"></b></a> </li> <li> </li><li id="loggedin" class="dropdown" onclick="toggleOpenClass()" style="display:none"> <a id="username" class="dropbtn" data-toggle="dropdown"> <b id="usernamelable" class="dropbtn"></b> <b class="caret"></b> </a> <div id="myDropdown" class="dropdown-content"> <a class="leftText" style="float: none" href="https://codebeautify.org/userSaveLinkPage">Links</a> <a class="leftText" href="https://codebeautify.org/userSaveOldLinkPage">Archived</a> <a class="leftText" href="https://codebeautify.org/profile">Profile</a> <a class="leftText" href="https://codebeautify.org/myFavouriteTools">Favourites</a> <a class="leftText" href="https://codebeautify.org/logout">Logout</a> </div> </li>  <li id="notloggedin"> <a href="https://codebeautify.org/login" rel="nofollow">Sign in</a> </li> </ul> <div id="copy-note-msg" class="hide"> Copied to Clipboard. </div> </div> </div> </div> </div> </div> </div> <div class="some_other_box"></div> <div class="containe-fluid headerEditorContainer"> <div class="row-fluid"> <div class="span12 subTitleDiv"> <div class="span6"> <h1 id="subTitle" title="XPath Tester">XPath Tester<i id="favToolImg" aria-hidden="true" class="icon-star-empty" title="make it favourite" style="cursor: pointer;"></i></h1> </div> <div class="span6" id="permalinkDiv"> <div class="permalinkButtonDiv"> <input type="button" value="Save &amp; Share" class="btn permalinkButton btn-inverse span11" onclick="openSavedialog(true);" id="plinkBtn"> </div> <div class="permalinkDiv"> <label id="permalink" class="permaLinkLabel"> </label> </div> </div> </div> </div> </div>   <div align="center" data-freestar-ad="__320x100 __970x90" id="codebeautify_leaderboard_atf"> <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "codebeautify_leaderboard_atf", slotId: "codebeautify_leaderboard_atf" });
+  </script> </div> <div id="fbpost" class="hide"> <div id="shareDiv"> </div> </div>   <div align="center" data-freestar-ad="__336x280 __580x400" id="codebeautify_billboard_1"> <script data-cfasync="false" type="text/javascript">
+          freestar.config.enabled_slots.push({ placementName: "codebeautify_billboard_1", slotId: "codebeautify_billboard_1" });
+          </script> </div> <div id="innerBody" class="innerBody setBgImage"> <div class="containe-fluid viewerInnerBodyDiv"> <div class="row-fluid back"> <div class="span12 viewerInnerBodyDiv1 xpathMainContainer"> <div class="xpathLeftContainer"> <div class="form-wrapper"> <h2>XML Input</h2> <div class="mainInputSectionDiv"> <span><b>Option 1:</b> </span> <span>Copy-paste your XML string here</span><span><a class="option-text" href="https://codebeautify.org/Xpath-Tester#" onclick="getSampleData()" id="sampleDataBtn" title="Load Sample Data"><b>Sample</b> </a> </span> </div> <textarea rows="" cols="" id="xmlString" name="xmlString"></textarea> <div class="mainInputSectionDiv"> <span><b>Option 2:</b> </span> <span>Or Load your XML file</span> </div> <div class="permalinkButtonDiv"> <input type="button" value="Load Url" title="Load From Url" onclick="loadFromURL(&#39;XML&#39;);" class="btn span4 span11"> <input type="button" value="Browse" id="me" onclick="openFile(&#39;me&#39;,&#39;any&#39;)" class="btn span4 span11                            " title="OpenFile"><br> </div> <div class="mainInputSectionDiv"> <span> <h2>XPath Expression</h2> </span> </div> <textarea type="text" id="xpath" name="xpath" value="" rows="3" style="height:auto !important" autocomplete="off"></textarea><br> <div id="buttonDiv" class="actionButton"> <input type="button" value="TEST XPATH" onclick="xpath1()" class="btn span11" title="Test the XPath expression"> <input type="button" value="RESET" class="btn span11" title="Reset" onclick="clearall()"><br> </div> </div> <span id="hResult" class="error validatorResultDiv hide" style="display: none;">TypeError: The result type is not an iterator.</span> <a href="https://codebeautify.org/Xpath-Tester#" id="closemsg" class="closemsg" style="display: none;">Close</a> </div> <div class="span5 mainLeftInputDiv" id="mainLeftDiv" style="display: none;"> <div class="span12 mainLeftInputDiv1"> Input <a id="fs" class="fullScreen" href="https://codebeautify.org/Xpath-Tester#" onclick="fullScreenLeft();" style="margin-left: 5px;"><span id="fsimg" class="icon-enlarge2"></span></a> <a id="clearImg" class="clearImage" href="https://codebeautify.org/Xpath-Tester#"><a href="https://codebeautify.org/Xpath-Tester#" id="sampleDataBtn" style="margin-right: 5px;" onclick="getSampleData()">sample</a><b onclick="clearEditorInput()" style="color: red;"><span class="icon-bin"></span></b></a> <a href="https://codebeautify.org/Xpath-Tester#copy1" id="copy-dynamic1" style="float: right;  margin-right: 7px;" title="Copy"><span class="icon-copy"></span></a></div> <div class="span12 viewerInnerBodyDiv1"> <div id="editor" class="viewerEditor ace_editor ace-tm" style="font-size: small;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-haspopup="false" aria-autocomplete="both" role="textbox" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 19px; left: 46px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 42px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="height: 1e+06px; top: 0px; left: 0px; width: 42px;"><div class="ace_gutter-cell ace_gutter-active-line " aria-hidden="true" style="height: 19px; top: 0px;">1<span tabindex="0" style="display: none;"></span><span tabindex="0" style="display: none;"><span></span></span></div></div></div><div class="ace_scroller " style="line-height: 19px; left: 41.7969px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 832.203px; height: 800px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 708px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height: 19px; top: 0px; left: 0px; right: 0px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line_group" style="height: 19px; top: 0px;"><div class="ace_line" style="height: 19px;"></div></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; top: 0px; left: 4px; width: 9px; height: 19px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; height: 762px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 19px;">&nbsp;</div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 41.7969px; right: 0px; width: 832.203px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 874px;">&nbsp;</div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div> </div> </div> <div class="span5 mainLeftInputDiv" id="mainRightDiv"> <div class="span12 mainLeftInputDiv1"> <span id="outputMsg">Result : Generated XPath</span> <a id="fs1" class="fullScreen" href="https://codebeautify.org/Xpath-Tester#" onclick="fullScreenRight();"><span id="fs1img" class="icon-enlarge2"></span></a> <a href="https://codebeautify.org/Xpath-Tester#copy" id="copy-dynamic" style="float: right;  margin-right: 7px;" title="Copy"><span class="icon-copy"></span></a></div> <div class="span12 viewerInnerBodyDiv1 xpathDiv"> <div id="result" class="viewerEditor ace_editor ace-tm" style="font-size: small;" draggable="false"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-haspopup="false" aria-autocomplete="both" role="textbox" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 15px; left: 109px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 41px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="height: 1e+06px; top: 0px; left: 0px; width: 41px;"><div class="ace_gutter-cell ace_gutter-active-line " aria-hidden="true" style="height: 15px; top: 0px;">1<span tabindex="0" style="display: none;"></span><span tabindex="0" style="display: none;"><span></span></span></div></div></div><div class="ace_scroller " style="line-height: 15px; left: 41px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 833px; height: 792px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 576px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_selected-word" style="height: 15px; width: 64.3359px; top: 0px; left: 4px;"></div><div class="ace_active-line" style="height: 15px; top: 0px; left: 0px; right: 0px;"></div><div class="ace_selection ace_start ace_br15" style="height: 15px; width: 64.3359px; top: 0px; left: 4px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line_group" style="height: 15px; top: 0px;"><div class="ace_line" style="height: 15px;"><span class="ace_text ace_xml">No Match!</span></div></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; top: 0px; left: 68px; width: 7px; height: 15px; animation-duration: 1000ms;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; height: 762px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 15px;">&nbsp;</div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 41px; right: 0px; width: 833px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 833px;">&nbsp;</div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div> <div id="Result1" class="error viewerEditor hide"></div> </div> </div> <div class="xpathMainContainer"> <div class="xpathLeftContainer"> <div class="span12"> <h2 class="XpathExampleHead" id="subTitle">XPATH EXAMPLE</h2> </div> <pre><span class="darkBlue">&lt;root</span><span class="black"> </span><span class="darkPink">xmlns:foo</span><span class="lightGreen">=</span><span class="green">"http://www.foo.org/"</span><span class="black"> </span><span class="darkPink">xmlns:bar</span><span class="lightGreen">=</span><span class="green">"http://www.bar.org"</span><span class="darkBlue">&gt;</span><span class="black">
+	</span><span class="darkBlue">&lt;employees&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;employee</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"1"</span><span class="darkBlue">&gt;</span><span class="black">Johnny Dapp</span><span class="darkBlue">&lt;/employee&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;employee</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"2"</span><span class="darkBlue">&gt;</span><span class="black">Al Pacino</span><span class="darkBlue">&lt;/employee&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;employee</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"3"</span><span class="darkBlue">&gt;</span><span class="black">Robert De Niro</span><span class="darkBlue">&lt;/employee&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;employee</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"4"</span><span class="darkBlue">&gt;</span><span class="black">Kevin Spacey</span><span class="darkBlue">&lt;/employee&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;employee</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"5"</span><span class="darkBlue">&gt;</span><span class="black">Denzel Washington</span><span class="darkBlue">&lt;/employee&gt;</span><span class="black">
+		
+	</span><span class="darkBlue">&lt;/employees&gt;</span><span class="black">
+	</span><span class="darkBlue">&lt;foo:companies&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;foo:company</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"6"</span><span class="darkBlue">&gt;</span><span class="black">Tata Consultancy Services</span><span class="darkBlue">&lt;/foo:company&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;foo:company</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"7"</span><span class="darkBlue">&gt;</span><span class="black">Wipro</span><span class="darkBlue">&lt;/foo:company&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;foo:company</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"8"</span><span class="darkBlue">&gt;</span><span class="black">Infosys</span><span class="darkBlue">&lt;/foo:company&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;foo:company</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"9"</span><span class="darkBlue">&gt;</span><span class="black">Microsoft</span><span class="darkBlue">&lt;/foo:company&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;foo:company</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"10"</span><span class="darkBlue">&gt;</span><span class="black">IBM</span><span class="darkBlue">&lt;/foo:company&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;foo:company</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"11"</span><span class="darkBlue">&gt;</span><span class="black">Apple</span><span class="darkBlue">&lt;/foo:company&gt;</span><span class="black">
+		</span><span class="darkBlue">&lt;foo:company</span><span class="black"> </span><span class="darkPink">id</span><span class="lightGreen">=</span><span class="green">"12"</span><span class="darkBlue">&gt;</span><span class="black">Oracle</span><span class="darkBlue">&lt;/foo:company&gt;</span><span class="black">
+	</span><span class="darkBlue">&lt;/foo:companies&gt;</span><span class="black">
+</span><span class="darkBlue">&lt;/root&gt;</span>
+						</pre> </div> <div class="xpathLeftContainer" id="testCase1"> <div class="span12"> <h2 class="XpathExampleHead" id="subTitle">XPATH TEST CASES</h2> </div> <div id="testcase" class="testCase"> <span class="testCaseHead"><b>1. Select the document node</b> </span> <em class="testCaseHeadValue">/</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>2. Select the 'root' element</b> </span> <em class="testCaseHeadValue">/root</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>3. Select all 'employee' elements that are direct children of the 'employees' element.</b> </span> <em class="testCaseHeadValue">/root/employees/employee</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>4. Select all 'company' elements regardless of their positions in the document.</b> </span> <em class="testCaseHeadValue">//foo:company</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>5. Select the 'id' attributes of the 'company' elements regardless of their positions in the document.</b> </span> <em class="testCaseHeadValue">//foo:company/@id</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>6. Select the textual value of first 'employee' element.</b> </span> <em class="testCaseHeadValue">//employee[1]/text()</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>7. Select the last 'employee' element.</b> </span> <em class="testCaseHeadValue">//employee[last()]</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>8. Select the first and second 'employee' elements using their position.</b> </span> <em class="testCaseHeadValue">//employee[position() &lt; 3]</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>9. Select all 'employee' elements that have an 'id' attribute.</b> </span> <em class="testCaseHeadValue">//employee[@id]</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>10. Select the 'employee' element with the 'id' attribute value of '3'.</b> </span> <em class="testCaseHeadValue">//employee[@id='3']</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>11. Select all 'employee' nodes with the 'id' attribute value lower or equal to '3'.</b> </span> <em class="testCaseHeadValue">//employee[@id&lt;=3]</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>12. Select all the children of the 'companies' node.</b> </span> <em class="testCaseHeadValue">/root/foo:companies/*</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>13. Select all the elements in the document.</b> </span> <em class="testCaseHeadValue">//*</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>14. Select all the 'employee' elements AND the 'company' elements.</b> </span> <em class="testCaseHeadValue">//employee|//foo:company</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>15. Select the name of the first element in the document.</b> </span> <em class="testCaseHeadValue">name(//*[1])</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>16. Select the numeric value of the 'id' attribute of the first 'employee' element.</b> </span> <em class="testCaseHeadValue">number(//employee[1]/@id)</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>17. Select the string representation value of the 'id' attribute of the first 'employee' element.</b> </span> <em class="testCaseHeadValue">string(//employee[1]/@id)</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>18. Select the length of the first 'employee' element's textual value.</b> </span> <em class="testCaseHeadValue">string-length(//employee[1]/text())</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>19. Select the local name of the first 'company' element, i.e. without the namespace.</b> </span> <em class="testCaseHeadValue">local-name(//foo:company[1])</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>20. Select the number of 'company' elements.</b> </span> <em class="testCaseHeadValue">count(//foo:company)</em> <div class="borderbottom"></div> <span class="testCaseHead"><b>21. Select the sum of the 'id' attributes of the 'company' elements.</b> </span> <em class="testCaseHeadValue">sum(//foo:company/@id)</em> </div> </div> </div> </div> </div> </div> </div>    <div align="center" data-freestar-ad="__336x280 __580x400" id="codebeautify_billboard_1"> <script data-cfasync="false" type="text/javascript">
+          freestar.config.enabled_slots.push({ placementName: "codebeautify_billboard_1", slotId: "codebeautify_billboard_1" });
+          </script> </div> <div class="container-fluid infoSection"> <div class="row-fluid footerpart"> <div class="span12"> <div class="span6 infoDiv"> <h3>What else can I do with XPATH TESTER ?</h3> <ul class="infoFeatureDiv"> <li> <strong>The XPath tester fully supports XML namespaces, but the declarations MUST be explicit and MUST be on the root XML element. See the <a id="xpath-examples" href="https://codebeautify.org/Xpath-Tester#xpath-examples">XPath Examples</a> section for details. </strong> </li> <li>Allows you to test your XPath expressions/queries against an XML file. This tool runs better than other existing XPath online tools as it supports most of the XPath functions (string(), number(), name(), string-length() etc.) and does not limit you to working against nodes. </li> <li>You can choose to also include the XML item type (Attribute, Element, Text, etc.) as part of the output. This allows you to better understand which parts were matched. </li> </ul> </div> <div class="span6 infoTools" id="relatedTools"> <h3>Do you know..?</h3> <ul> <li> <a href="https://codebeautify.org/xmlviewer">XML Viewer </a> </li> <li> <a href="https://codebeautify.org/Xpath-Tester">Xpath Tester </a> </li> </ul> <h3>Recently Used Tools</h3><ul><li><a href="https://codebeautify.org/Xpath-Tester">XPath Tester</a></li></ul></div> </div> </div> </div> <script src="./XPath Tester and Evaluator online_files/common_load_with_home.js.descarga"></script> <script src="./XPath Tester and Evaluator online_files/vkbeautify.js.descarga"></script> <script src="./XPath Tester and Evaluator online_files/ace.js.descarga"></script> <iframe name="__tcfapiLocator" style="display: none;" src="./XPath Tester and Evaluator online_files/saved_resource.html"></iframe><script src="./XPath Tester and Evaluator online_files/converttocsv-underscore-lib.js.descarga"></script> <script src="./XPath Tester and Evaluator online_files/allviewer.js.descarga"></script> <script>
+
+    $(document).ready(function() {
+        //called after everything loaded
+        setDefaultData();
+        conditionalCode();
+        $("#me").click();
+    });
+
+</script> <div class="container-fluid"> <div class="row-fluid footerpart"> <div class="footer_container"> <div class="footer_map" id="footer_map"> <div class="footerhead"> <div class="footerheadimg"> <div class="logo"> <a href="https://codebeautify.org/" class="cblogoimage"></a> </div> </div> </div> <div class="footersub1"> <h4>Unit Converter</h4> <ul> <li><a href="https://codebeautify.org/length-converter">Length Converter</a></li> <li><a href="https://codebeautify.org/weight-converter">Weight Converter</a></li> <li><a href="https://codebeautify.org/volume-converter">Volume Converter</a></li> <li><a href="https://codebeautify.org/area-converter">Area Converter</a></li> <li><a href="https://codebeautify.org/temperature-converter">Temperature Converter</a></li> <li><a href="https://codebeautify.org/density-converter">Density Converter</a></li> <li><a href="https://codebeautify.org/electric-current-converter">Electric Current Converter</a></li> <li><a href="https://codebeautify.org/speed-converter">Speed Converter</a></li> <li><a href="https://codebeautify.org/angle-converter">Angle Converter</a></li> <li><a href="https://codebeautify.org/bytes-converter">Bytes/Bits Converter</a></li> <li><a href="https://codebeautify.org/energy-converter">Energy Converter</a></li> <li><a href="https://codebeautify.org/force-converter">Force Converter</a></li> <li><a href="https://codebeautify.org/fuel-converter">Fuel Converter</a></li> <li><a href="https://codebeautify.org/mass-converter">Mass Converter</a></li> <li><a href="https://codebeautify.org/power-converter">Power Converter</a></li> <li><a href="https://codebeautify.org/pressure-converter">Pressure Converter</a></li> <li><a href="https://codebeautify.org/time-converter">Time Converter</a></li> <li><a href="https://codebeautify.org/astronomical-converter">Astronomical Converter</a></li> <li><a href="https://codebeautify.org/frequency-converter">Frequency Converter</a></li> <li><a href="https://codebeautify.org/unix-time-stamp-converter">Unix Timestamp Converter</a></li> </ul> </div> <div class="footersub1"> <h4>Converters</h4> <ul> <li><a href="https://codebeautify.org/word-to-html-converter">Word to HTML Converter</a></li> <li><a href="https://codebeautify.org/json-to-java-converter">JSON to JAVA Converter</a></li> <li><a href="https://codebeautify.org/xml-to-java-converter">XML to JAVA Converter</a></li> <li><a href="https://codebeautify.org/tableizer">Online Tableizer</a></li> <li><a href="https://codebeautify.org/html-to-csv-converter">HTML to CSV Converter</a></li> <li><a href="https://codebeautify.org/html-to-tsv-converter">HTML to TSV Converter</a></li> <li><a href="https://codebeautify.org/html-to-php-converter">HTML to PHP Converter</a></li> <li><a href="https://codebeautify.org/xml-xsl-transformation">XML-XSL Transform</a></li> <li><a href="https://codebeautify.org/xmltojson">XML to JSON</a></li> <li><a href="https://codebeautify.org/jsontoxml">JSON to XML</a></li> <li><a href="https://codebeautify.org/csv-to-xml-json">CSV to XML/JSON</a></li> <li><a href="https://codebeautify.org/yaml-to-json-xml-csv">YAML Converter</a></li> <li><a href="https://codebeautify.org/image-to-base64-converter">Image to Base64</a></li> <li><a href="https://codebeautify.org/base64-to-image-converter">Base64 to Image</a></li> <li><a href="https://codebeautify.org/date-time-calculater">Date Calculater</a></li> <li><a href="https://codebeautify.org/excel-to-html">EXCEL to HTML</a></li> <li><a href="https://codebeautify.org/excel-to-xml">EXCEL to XML</a></li> <li><a href="https://codebeautify.org/excel-to-json">EXCEL to JSON</a></li> <li><a href="https://codebeautify.org/json-to-yaml">JSON to YAML</a></li> <li><a href="https://codebeautify.org/xml-to-yaml">XML to YAML</a></li> <li><a href="https://codebeautify.org/csv-to-xml-converter">CSV to XML</a></li> <li><a href="https://codebeautify.org/csv-to-json-converter">CSV to JSON</a></li> <li><a href="https://codebeautify.org/csv-to-html-converter">CSV to HTML</a></li> <li><a href="https://codebeautify.org/csv-to-tsv-converter">CSV to TSV</a></li> <li><a href="https://codebeautify.org/json-to-csv">JSON to CSV</a></li><li> </li><li><a href="https://codebeautify.org/json-to-tsv-converter">JSON to TSV</a></li> <li><a href="https://codebeautify.org/xml-to-csv-converter">XML to CSV</a></li> <li><a href="https://codebeautify.org/xml-to-tsv-converter">XML to TSV</a></li> <li><a href="https://codebeautify.org/html-to-csv-converter">HTML to CSV</a></li> <li><a href="https://codebeautify.org/csv-to-multi-line-converter">CSV to MULTILINE DATA</a></li> <li><a href="https://codebeautify.org/csv-to-sql-converter">CSV to SQL</a></li> <li><a href="https://codebeautify.org/sql-to-csv-converter">SQL to CSV Converter</a></li> <li><a href="https://codebeautify.org/sql-to-json-converter">SQL to JSON Converter</a></li> <li><a href="https://codebeautify.org/sql-to-xml-converter">SQL to XML Converter</a></li> <li><a href="https://codebeautify.org/sql-to-yaml-converter">SQL to YAML Converter</a></li> <li><a href="https://codebeautify.org/sql-to-html-converter">SQL to HTML Converter</a></li> <li><a href="https://codebeautify.org/opml-to-json-converter">OPML to JSON</a></li> <li><a href="https://codebeautify.org/hex-to-pantone-converter">HEX to Pantone Converter</a></li> <li><a href="https://codebeautify.org/rgb-to-pantone-converter">RGB to Pantone Converter</a></li> <li><a href="https://codebeautify.org/hsv-to-pantone-converter">HSV to Pantone Converter</a></li> <li><a href="https://codebeautify.org/cmyk-to-pantone-converter">CMYK to Pantone Converter</a></li> <li><a href="https://codebeautify.org/cmyk-to-hex-converter">CMYK to HEX Converter</a></li> <li><a href="https://codebeautify.org/cmyk-to-rgb-converter">CMYK to RGB Converter</a></li> <li><a href="https://codebeautify.org/cmyk-to-hsv-converter">CMYK to HSV Converter</a></li> <li><a href="https://codebeautify.org/hsv-to-hex-converter">HSV to HEX Converter</a></li> <li><a href="https://codebeautify.org/hsv-to-rgb-converter">HSV to RGB Converter</a></li> <li><a href="https://codebeautify.org/hsv-to-cmyk-converter">HSV to CMYK Converter</a></li> <li><a href="https://codebeautify.org/hex-to-hsv-converter">HEX to HSV Converter</a></li> <li><a href="https://codebeautify.org/rgb-to-hex-converter">RGB to HEX Converter</a></li> <li><a href="https://codebeautify.org/rgb-to-hsv-converter">RGB to HSV Converter</a></li> <li><a href="https://codebeautify.org/rgb-to-cmyk-converter">RGB to CMYK Converter</a></li> <li><a href="https://codebeautify.org/hex-to-rgb-converter">HEX to RGB Converter</a></li> <li><a href="https://codebeautify.org/hex-to-cmyk-converter">HEX to CMYK Converter</a></li> <li><a href="https://codebeautify.org/json-to-html-converter">JSON to HTML</a></li> <li><a href="https://codebeautify.org/xml-to-html-converter">XML to HTML</a></li> <li><a href="https://codebeautify.org/json-to-excel-converter">JSON to Excel</a></li> <li><a href="https://codebeautify.org/xml-to-excel-converter">XML to Excel</a></li> <li><a href="https://codebeautify.org/csv-to-excel-converter">CSV to Excel</a></li> <li><a href="https://codebeautify.org/yaml-to-excel-converter">YAML to Excel</a></li> </ul> </div> <div class="footersub1"> <h4>Web Viewer / Editor</h4> <ul> <li><a href="https://codebeautify.org/jsonviewer" class="firstchild">JSON Viewer</a> </li> <li><a href="https://codebeautify.org/xmlviewer">XML Viewer</a></li> <li><a href="https://codebeautify.org/mxmlviewer">MXML Viewer</a></li> <li><a href="https://codebeautify.org/htmlviewer">HTML Viewer </a></li> <li><a href="https://codebeautify.org/css-beautify-minify">CSS BEAUTIFY AND MINIFY</a></li> <li><a href="https://codebeautify.org/jsviewer">JAVASCRIPT Viewer</a></li> <li><a href="https://codebeautify.org/rssviewer">RSS Viewer</a></li> <li><a href="https://codebeautify.org/source-code-viewer">SOURCE CODE Viewer</a></li> <li><a href="https://codebeautify.org/opmlviewer">OPML Viewer</a> </li> <li><a href="https://codebeautify.org/csv-viewer">CSV Viewer</a> </li> </ul> <h4>Programming Editors</h4> <ul> <li><a href="https://codebeautify.org/online-xml-editor">XML EDITOR</a></li> <li><a href="https://codebeautify.org/online-json-editor">JSON EDITOR</a></li> <li><a href="https://codebeautify.org/alleditor">ONLINE EDITOR</a></li> <li><a href="https://codebeautify.org/javaviewer">JAVA EDITOR</a></li> <li><a href="https://codebeautify.org/csharpviewer">C# EDITOR</a></li> <li><a href="https://codebeautify.org/actionscript">Action Script EDITOR</a></li> <li><a href="https://codebeautify.org/sqlformatter">SQL Formatter</a></li> </ul> <h4>Escape Unescape Tools</h4> <ul> <li><a href="https://codebeautify.org/html-escape-unescape" title="HTML Escape Unescape">HTML Escape Unescape</a></li> <li><a href="https://codebeautify.org/xml-escape-unescape" title="XML Escape Unescape">XML Escape Unescape</a></li> <li><a href="https://codebeautify.org/java-escape-unescape" title="Java Escape Unescape">Java Escape Unescape</a></li> <li><a href="https://codebeautify.org/csharp-escape-unescape" title="C# Escape Unescape">C# Escape Unescape</a></li> <li><a href="https://codebeautify.org/javascript-escape-unescape" title="Javascript Escape Unescape">Javascript Escape Unescape</a></li> <li><a href="https://codebeautify.org/csv-escape-unescape" title="CSV Escape Unescape">CSV Escape Unescape</a></li> <li><a href="https://codebeautify.org/sql-escape-unescape" title="SQL Escape Unescape">SQL Escape Unescape</a></li> <li><a href="https://codebeautify.org/json-escape-unescape" title="JSON Escape Unescape">JSON Escape Unescape</a></li> <li><a href="https://codebeautify.org/un-google-link" title="Un-Google Link">Un-Google Link</a></li> </ul> <h4>CryptoGraphy Tools</h4> <ul> <li><a href="https://codebeautify.org/encrypt-decrypt">Encryption-Decryption</a></li> </ul> <h4>Other Tools</h4> <ul>  <li><a href="https://codebeautify.org/lorem-ipsum">Lorem-Ipsum</a></li> <li><a href="https://codebeautify.org/share-link-generator">Sharelink Generator</a></li> <li><a href="https://codebeautify.org/hostname-to-ip" title="Hostname to IP">Hostname to IP</a></li> <li><a href="https://codebeautify.org/ip-to-hostname" title="IP to Hostname">IP to Hostname</a></li> <li><a href="https://codebeautify.org/dns-lookup" title="DNS Lookup">DNS Lookup</a></li> <li><a href="https://codebeautify.org/mx-lookup" title="MX Lookup">MX Lookup</a></li> <li><a href="https://codebeautify.org/name-server-lookup" title="name-server-lookup">Nameserver Lookup</a></li> <li><a href="https://codebeautify.org/website-to-ip-address" title="Website to IP Address">Website to IP Address</a></li><li> </li><li><a href="https://codebeautify.org/open-port-checker" title="Open Port Checker">Open Port Checker</a></li><li> </li></ul> </div> <div class="footersub1"> <h4>Utility</h4> <ul> <li><a href="https://codebeautify.org/send-snap-message">Send Snap Message</a></li> <li><a href="https://codebeautify.org/responsive-website-tester">Responsive Website Tester</a></li> <li><a href="https://codebeautify.org/credit-card-validate">Credit Card Validator</a></li> <li><a href="https://codebeautify.org/credit-card-fake-number-generator">Credit Card Fake Number Generator</a></li> <li><a href="https://codebeautify.org/Xpath-Tester">XPath Tester</a></li> <li><a href="https://codebeautify.org/jsonpath-tester" title="Json Path Tester">Json Path Tester</a></li><li> <a href="https://codebeautify.org/jsonminifier" title="JSON Minifier">Json Minifier</a></li> <li><a href="https://codebeautify.org/file-diff">File Difference</a></li> <li><a href="https://codebeautify.org/json-diff">JSON Diff</a></li><li> <a href="https://codebeautify.org/xml-diff">XML Diff</a><span class="blink">New</span></li> <li><a href="https://codebeautify.org/broken-link-checker">Broken Link Checker</a></li> </ul> <h4>String Utilities</h4> <ul> <li><a href="https://codebeautify.org/random-word-generator">Random Word Generator</a></li> <li><a href="https://codebeautify.org/ntlm-hash-generator">NTLM Hash Generator</a></li> <li><a href="https://codebeautify.org/password-generator">Password Generator</a></li> <li><a href="https://codebeautify.org/string-builder">String Builder</a></li> <li><a href="https://codebeautify.org/number-to-word-converter">NUMBER to WORD Converter</a></li> <li><a href="https://codebeautify.org/wordcounter">WORD COUNTER</a></li> <li><a href="https://codebeautify.org/reverse-string">Reverse String</a></li> <li><a href="https://codebeautify.org/html-encode-string">HTML Encode</a></li> <li><a href="https://codebeautify.org/html-decode-string">HTML Decode</a></li> <li><a href="https://codebeautify.org/base64-encode">Base64-Encode</a></li> <li><a href="https://codebeautify.org/base64-decode">Base64-Decode</a></li> <li><a href="https://codebeautify.org/url-encode-string">URL-Encode A String</a></li> <li><a href="https://codebeautify.org/url-decode-string">URL-Decode A String</a></li> <li><a href="https://codebeautify.org/string-hex-converter">String to Hex Converter</a></li> <li><a href="https://codebeautify.org/hex-string-converter">Hex to String Converter</a></li> <li><a href="https://codebeautify.org/string-binary-converter">String to Binary Converter</a></li> <li><a href="https://codebeautify.org/binary-string-converter">Binary to String Converter</a> </li> <li><a href="https://codebeautify.org/case-converter">Case Converter </a></li> <li><a href="https://codebeautify.org/delimited-text-extractor">Delimited Text Extractor </a></li> <li><a href="https://codebeautify.org/remove-accents">Remove Accents </a></li> <li><a href="https://codebeautify.org/remove-duplicate-lines">Remove Duplicate Lines</a></li> <li><a href="https://codebeautify.org/remove-empty-lines">Remove Empty Lines</a></li> <li><a href="https://codebeautify.org/remove-extra-spaces">Remove Extra Spaces </a></li> <li><a href="https://codebeautify.org/remove-line-breaks">Remove Line Breaks</a></li> <li><a href="https://codebeautify.org/remove-lines-containing">Remove Lines Containing</a></li> <li><a href="https://codebeautify.org/sort-text-lines">Sort Text Lines</a></li> </ul> </div> <div class="footersub1"> <h4>Validators</h4> <ul> <li><a href="https://codebeautify.org/cssvalidate">CSS Validator</a></li> <li><a href="https://codebeautify.org/jsvalidate">JAVASCRIPT Validator</a></li> <li><a href="https://codebeautify.org/jsonvalidator">JSON Validator</a></li> <li><a href="https://codebeautify.org/xmlvalidator">XML Validator</a></li> <li><a href="https://codebeautify.org/credit-card-validate">CREDIT CARD Validator</a></li> <li><a href="https://codebeautify.org/api-test">API Test</a></li> <li><a href="https://codebeautify.org/yaml-validator">YAML Validator</a></li> </ul> <h4>Number Utilities</h4> <ul> <li><a href="https://codebeautify.org/all-number-converter">All NumbersConverter</a></li> <li><a href="https://codebeautify.org/decimal-binary-converter">Decimal toBinary Converter</a></li> <li><a href="https://codebeautify.org/decimal-octal-converter">Decimal to Octal Converter</a></li> <li><a href="https://codebeautify.org/binary-decimal-converter">Binary to Decimal Converter</a></li> <li><a href="https://codebeautify.org/binary-hex-converter">Binary to Hex Converter</a></li> <li><a href="https://codebeautify.org/binary-octal-converter">Binary to OctalConverter</a></li> <li><a href="https://codebeautify.org/hex-decimal-converter">Hex to Decimal Converter</a></li> <li><a href="https://codebeautify.org/hex-binary-converter">Hex to Binary Converter</a></li> <li><a href="https://codebeautify.org/hex-octal-converter">Hex to OctalConverter</a></li> <li><a href="https://codebeautify.org/octal-decimal-converter">Octal toDecimal Converter</a></li> <li><a href="https://codebeautify.org/octal-binary-converter">Octal to BinaryConverter</a></li> <li><a href="https://codebeautify.org/octal-hex-converter"> Octal to HexConverter </a></li> </ul> <h4>Image Tools</h4> <ul> <li><a href="https://codebeautify.org/jpg-to-png-converter">JPG to PNG Converter</a></li> <li><a href="https://codebeautify.org/jpg-to-bmp-converter">JPG to BMP Converter</a></li> <li><a href="https://codebeautify.org/jpg-to-gif-converter">JPG to GIF Converter</a></li> <li><a href="https://codebeautify.org/bmp-to-png-converter">BMP to PNG Converter</a></li> <li><a href="https://codebeautify.org/bmp-to-jpg-converter">BMP to JPG Converter</a></li> <li><a href="https://codebeautify.org/bmp-to-gif-converter">BMP to GIF Converter</a></li> <li><a href="https://codebeautify.org/gif-to-png-converter">GIF to PNG Converter</a></li> <li><a href="https://codebeautify.org/gif-to-jpg-converter">GIF to JPG Converter</a></li> <li><a href="https://codebeautify.org/gif-to-bmp-converter">GIF to BMP Converter</a></li> <li><a href="https://codebeautify.org/png-to-jpg-converter">PNG to JPG Converter</a></li> <li><a href="https://codebeautify.org/png-to-bmp-converter">PNG to BMP Converter</a></li> <li><a href="https://codebeautify.org/png-to-gif-converter">PNG to GIF Converter</a></li> </ul> </div> </div> </div>  <style> #pmLink { visibility: hidden; text-decoration: none; cursor: pointer; background: transparent; border: none; } #pmLink:hover { visibility: visible; color: grey; } </style> <div class="span12 footerLinkDiv"> <div class="center"> <a class="footermenu1" href="https://goo.gl/1oWmPe" target="_blank" title="Buy us a Coffee">Buy us a Coffee</a> <a class="footermenu1" href="https://jsonformatter.org/" target="_blank" title="JSON Formatter">JSON Formatter</a> <a class="footermenu1" href="https://codebeautify.org/faq">FAQ</a> <a class="footermenu1" href="https://codebeautify.org/policy">Privacy Policy</a> <a class="footermenu1" href="https://codebeautify.org/aboutus">About</a> <a class="footermenu1" href="https://codebeautify.org/contactus">Contact</a> <a class="footermenu1" href="https://codebeautify.org/history">History</a> <a class="footermenu1" href="https://codebeautify.org/sitemap">Sitemap</a> <a class="footermenu1" href="https://codebeautify.org/where-am-i-right-now">Where am I right now?</a> <a class="footermenu1" href="https://codeblogmoney.com/" rel="noopener">Blog</a> <button id="pmLink" style="visibility: visible;">Privacy Preferences</button> </div> </div> <div class="span12 footerLinkDiv"> <div class="center" style="margin-bottom:100px"> <br> <span class="footermenu1"><b> Copyright © CodeBeautify 2021 | v9.1 </b> </span> <br> </div> </div> </div> <p id="back-top" style=""> <a href="https://codebeautify.org/Xpath-Tester#top" title="Scroll to Top"><i class="icon-arrow-up2"></i></a> </p> </div> <input id="fTitle" type="hidden" value="XPath Tester and Evaluator online"> <input id="loginWith" type="hidden" value=""> <div id="openError" class="hide"> </div> <div id="loadUrlPathDiv" class="hide"> <input type="text" id="path" class="urlPath" placeholder="Paste your url"> <a href="https://codebeautify.org/Xpath-Tester#" id="sampleurlindialog">Sample URL</a> </div>  <div id="savedialog" class="hide"> <input type="hidden" id="edit_link_id" value=""> <table> <tbody><tr> <td>Title</td> <td><input type="text" maxlength="60" id="save_link_title" value=""></td> </tr> <tr> <td>Description</td> <td><textarea id="save_link_description" placeholder="optional"></textarea></td> </tr> <tr> <td>Tags</td> <td><textarea id="save_link_tags" placeholder="optional"></textarea></td> </tr> </tbody></table> <p>By clicking the "Save Online" button you agree to our <a href="javascript:void(0);" style="color: #0088cc" onclick="document.getElementById(&#39;saveDisclaimer&#39;).style.display=&#39;block&#39;;">terms and conditions</a>.</p> <div id="saveDisclaimer" style="display: none;"> <p>All code in shared files are supplied by users, and belongs to the poster.</p> <p>All shared files are made public. No license is enforced.</p> <p>Any code can be removed without warning (if it is deemed offensive, damaging or for any other reason).</p> <p>codebeautify.org are not responsible or liable for any loss or damage of any kind during the usage of provided code.</p> </div> </div> <div id="gdriveDialog" class="hide"> <div id="savetodrive-div"></div> </div> <div style="display: none" id="exportToExcelDiv"> </div>   <script src="./XPath Tester and Evaluator online_files/adex.js.descarga" type="text/javascript"></script><div id="google7ads" style="display: none;"></div> <script type="text/javascript">
+
+    if(document.getElementById('google7ads')){
+        console.log("Yay no ad blocker available! Yay");
+    } else {
+        google7ads='Yes';//ad blocker available
+        console.log("hmm blocker available! Oh no");
+        gtag('event', google7ads, {
+                'app_name': 'codebeautify',
+                'event_category': document.getElementById("viewName").value
+        });
+    }
+    
+    document.getElementById('adBlockerShare').style.display ="";
+
+</script>   <input type="file" name="userfile" style="position: absolute; margin: -5px 0px 0px -175px; padding: 0px; width: 220px; height: 30px; font-size: 14px; opacity: 0; cursor: pointer; display: none; z-index: 2147483583; top: 1048px; left: 338px;"></body></html>

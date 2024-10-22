@@ -1,0 +1,58 @@
+package cuentasCorrientes;
+
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		int opcionDeseada;
+		
+		do {
+			System.out.println("Elija un opcion:\n1.-Incluir un ciclista.\n2.-Eliminar un ciclista."
+					+ "\n3.-Modificar el modelo de bicicleta de un determinado ciclista.\n4.-Añadir una ruta ciclista a un determinado ciclista.."
+					+ "\n5.-Para cada uno de los ciclistas, mostrar las rutas recorridas ordenadas por kms. y y el total de kilómetros recorridos por el ciclista.\n"
+					+ "6.-Añadir ruta a distintos ciclistas\n0.-Salir del programa");
+			opcionDeseada = teclado.nextInt();
+			switch (opcionDeseada) {
+				case(1):{
+					
+					break;
+					
+				}case(2):{
+					
+					
+					break;
+					
+				}case(3):{
+					
+					break;
+					
+				}case(4):{
+			
+					break;
+					
+				}case(5):{
+					
+					break;
+					
+				}case(6):{
+					
+					break;
+					
+				}case(0):{
+					System.out.println("Se va a proceder a cerrar el programa, ¡Hasta Pronto!");
+					break;
+				}default:{
+					System.out.println("Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+				}
+
+			}
+				
+		}while(opcionDeseada != 0);
+
+	
+	}
+}

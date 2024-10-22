@@ -1,0 +1,54 @@
+/*
+ * Crea un programa que muestre por pantalla cuantas vocales de cada tipo hay (cuantas ‘a’,
+cuantas ‘e’, etc.) en una frase introducida por teclado. No se debe diferenciar entre
+mayúsculas y minúsculas. Por ejemplo dada la frase “Mi mama me mima” dirá que hay:
+Nº de A's: 3
+Nº de E's: 1
+Nº de I's: 2
+Nº de O's: 0
+Nº de U's: 0
+ */
+package ejercicio4;
+
+import java.util.Scanner;
+
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+		//----------------------------------------------
+	    //          Declaración de variables 
+	    //----------------------------------------------
+		
+	    // Constantes
+	    // Variables de entrada
+		String fraseIntroducida;
+		int a;
+	    // Variables de salida
+	    // Variables auxiliares
+	    // Clase Scanner para petición de datos
+		
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    //----------------------------------------------
+	    //                Entrada de datos 
+	    //----------------------------------------------
+	    System.out.println("Introduzca una frase");
+	    fraseIntroducida = teclado.nextLine();
+	    
+
+	    //----------------------------------------------
+	    //                 Procesamiento 
+	    //----------------------------------------------
+	    
+	    a = fraseIntroducida.split("a");
+	    
+	    System.out.println("Su frase tiene: " + fraseIntroducida.split("a") + " a's");
+	    
+	    
+	    //----------------------------------------------
+	    //              Salida de resultados 
+	    //----------------------------------------------
+	    
+	    
+	}
+}  

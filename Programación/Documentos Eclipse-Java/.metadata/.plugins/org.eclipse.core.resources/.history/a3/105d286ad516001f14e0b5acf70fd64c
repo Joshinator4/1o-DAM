@@ -1,0 +1,20 @@
+package ejercicio1;
+
+import java.time.LocalDate;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase Partido
+*/
+public class Partido {
+	
+	private LocalDate fecha;
+	private int minutosJugados;
+	public Partido(LocalDate fecha, int minutosJugados) {
+		this.fecha = fecha;
+		this.minutosJugados = minutosJugados;
+	}
+	
+	
+	
+}

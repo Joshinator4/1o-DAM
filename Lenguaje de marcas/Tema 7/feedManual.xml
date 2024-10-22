@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Noticias Benalmádena</title>
+		<link>https://www.benalmadena.es/contenido.php?m=benalmadena-ayuntamientos=noticias</link>
+		<description>Mantente informado con las últimas noticias de Benalmádena.</description>
+		<item>
+			<title>MALAPESQUERA SE PREPARA PARA ‘BATTLE OF HERCULES’, CON GRANDES RIDERS INTERNACIONALES, PADDLE SURF AL MÁXIMO NIVEL EN UN ENCLAVE INCOMPARABLE</title>
+			<link>https://www.benalmadena.es/noticias/N12344/Malapesquera-se-prepara-para-Battle-of-Hercules-con-grandes-riders-internacionales-paddle-surf-al-mximo-nivel-en-un-enclave-incomparable.html</link>
+            <pubDate>Wed, 10 Apr 2024 16:37:40 +0300</pubDate>
+		</item>
+		<item>
+			<title>HARLEY DAVIDSON, CONCIERTOS Y BUENA GASTRONOMÍA INUNDARÁN DE DIVERSIÓN ESTE FIN DE SEMANA EL RECINTO FERIAL DE ARROYO DE LA MIEL</title>
+			<link>https://www.benalmadena.es/noticias/N12343/Harley-Davidson-conciertos-y-buena-gastronoma-inundarn-de-diversin-este-fin-de-semana-el-Recinto-Ferial-de-Arroyo-de-la-Miel.html</link>
+			<pubDate>Wed, 10 Apr 2024 16:37:40 +0300</pubDate>
+		</item>
+    </channel>
+</rss>

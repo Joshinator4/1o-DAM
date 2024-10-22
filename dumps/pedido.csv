@@ -1,0 +1,6 @@
+cod_pedido;fecha_pedido;domicilio;cliente;cocinero;inicio_prep;fin_prep;repartidor;fecha_entrega;vehiculo
+0;2023-12-05;N;5;2;NULL;NULL;1;NULL;C
+0;2023-10-12;S;3;2;NULL;NULL;5;NULL;M
+0;2023-09-15;N;1;2;NULL;NULL;9;NULL;C
+0;2023-05-12;S;2;1;NULL;NULL;9;NULL;M
+0;2023-02-15;S;1;1;NULL;NULL;1;NULL;M

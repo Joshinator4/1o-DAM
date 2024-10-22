@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comunidad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vecinos.xsd">
+    <vecino>
+        <codigoVecino>1</codigoVecino>
+        <nombre>Antonio</nombre>
+        <apellidos>perez</apellidos>
+        <CuentaCorriente>00112233445566778899</CuentaCorriente>
+        <cargo>presidente</cargo>
+    </vecino>
+
+   <vecino>
+        <codigoVecino>2</codigoVecino>
+        <nombre>Juan</nombre>
+        <apellidos>gonzalez</apellidos>
+        <CuentaCorriente>22334455667788990011</CuentaCorriente>
+        <cargo>secretaria</cargo>
+    </vecino>
+
+    <vecino>
+        <codigoVecino>3</codigoVecino>mv fichero1.txt
+        <nombre>Manuel</nombre>
+        <apellidos>Sánchez</apellidos>
+        <CuentaCorriente>55226633441177889900</CuentaCorriente>
+        <cargo>vocal</cargo>
+    </vecino>
+</comunidad>

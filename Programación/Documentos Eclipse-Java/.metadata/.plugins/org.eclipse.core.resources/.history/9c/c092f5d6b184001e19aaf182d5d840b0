@@ -1,0 +1,10 @@
+package plantilla_metodos;
+
+public class Plantilla_Metodos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

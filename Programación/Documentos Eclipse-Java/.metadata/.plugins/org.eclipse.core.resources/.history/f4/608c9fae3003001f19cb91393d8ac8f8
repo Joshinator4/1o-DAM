@@ -1,0 +1,60 @@
+/*
+ * Objetivo:Clase principal del ejercicio
+ * Autor: Joshua Sangareau Quesada
+ * fecha: 25/04/2024
+ * 
+ */
+package ejercicio1;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+
+		int opcionDeseada;
+		
+		
+		do {
+			System.out.println("Elija un opcion:\n1.-Almacenar un servicio de pintura.\n2.-Almacenar un servicio de revisión de alarma."
+					+ "\n3.-Mostrar los servicios realizados un determinado día.\n4.-Mostrar todos servicios de pintura con importe total inferior a una cantidad solicitada al usuario."
+					+ "\n5.-Eliminar un servicio.\n"
+					+ "6.-Exportar todos los servicios del sistema ordenados por cliente y fecha al fichero\n0.-Salir del programa");
+			opcionDeseada = teclado.nextInt();
+			switch (opcionDeseada) {
+				case(1):{
+					
+					break;
+					
+				}case(2):{
+					
+					
+					break;
+					
+				}case(3):{
+					
+					
+				}case(4):{
+					
+					
+				}case(5):{
+					
+					
+				}case(6):{
+					
+					
+				}case(0):{
+					System.out.println("Se va a proceder a cerrar el programa, ¡Hasta Pronto!");
+					break;
+				}default:{
+					System.out.println("Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+				}
+
+			}
+				
+		}while(opcionDeseada != 0);
+
+	}
+
+}

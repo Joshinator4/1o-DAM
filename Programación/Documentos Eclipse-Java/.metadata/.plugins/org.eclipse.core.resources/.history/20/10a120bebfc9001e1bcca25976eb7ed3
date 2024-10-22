@@ -1,0 +1,25 @@
+package ejercicio1;
+
+public class Ciudadano extends Humano{
+	/*
+	 * Esta clase extenderá de la clase Humano
+o Tendrá un atributo protected, de tipo String, documento
+o Tendrá un único constructor el cual como parámetros recibirá un nombre,
+apellido y un documento.
+o Se creará un método identificacion que devolverá el nombre, apellido y el
+documento, este método hará uso de super para reaprovechar el método
+nombrecompleto de la clase padre.
+
+	 */
+		protected String documento;
+		
+		
+		public Ciudadano(String nombre, String apellido,String dni) {
+			super(nombre, apellido);
+			this.documento = dni;
+		}
+		
+		public String identificacion() {
+			return super.getNombreCompleto() + "," + this.documento + ".";
+		}
+}

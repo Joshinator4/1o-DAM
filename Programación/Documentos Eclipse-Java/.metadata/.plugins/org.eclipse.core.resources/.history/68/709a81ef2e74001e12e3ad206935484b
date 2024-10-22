@@ -1,0 +1,110 @@
+package ejercicio3;
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		//----------------------------------------------
+	    //          Declaración de variables 
+	    //----------------------------------------------
+		
+	    // Constantes
+	    // Variables de entrada
+		byte numeroIntroducido;
+		int contadorDecena0, contadorDecena1, contadorDecena2, contadorDecena3, contadorDecena4, contadorDecena5, contadorDecena6, contadorDecena7, contadorDecena8, contadorDecena9;
+		double mediaDecena0, mediaDecena1, mediaDecena2, mediaDecena3, mediaDecena4, mediaDecena5, mediaDecena6, mediaDecena7, mediaDecena8, mediaDecena9;
+		contadorDecena0 = 0;
+		contadorDecena1 = 0;
+		contadorDecena2 = 0;
+		contadorDecena3 = 0;
+		contadorDecena4 = 0; 
+		contadorDecena5 = 0;
+		contadorDecena6 = 0;
+		contadorDecena7 = 0;
+		contadorDecena8 = 0;
+		contadorDecena9 = 0;
+		mediaDecena0 = 0;
+		mediaDecena1 = 0;
+		mediaDecena2 = 0;
+		mediaDecena3 = 0;
+		mediaDecena4 = 0;
+		mediaDecena5 = 0;
+		mediaDecena6 = 0;
+		mediaDecena7 = 0;
+		mediaDecena8 = 0;
+		mediaDecena9 = 0;
+		
+		
+	    // Variables de salida
+	    // Variables auxiliares
+	    // Clase Scanner para petición de datos
+		
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    //----------------------------------------------
+	    //                Entrada de datos 
+	    //----------------------------------------------
+	    
+
+	    //----------------------------------------------
+	    //                 Procesamiento 
+	    //----------------------------------------------
+	    do {
+	    	System.out.println("Introduzca un número");
+	    	numeroIntroducido = teclado.nextByte();
+	    	
+	    	if (numeroIntroducido <= 9 && numeroIntroducido > 0) {
+	    		contadorDecena0++;
+	    		mediaDecena0 = mediaDecena0 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 19) {
+	    		contadorDecena1++;
+	    		mediaDecena1 = mediaDecena1 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 29) {
+	    		contadorDecena2++;
+	    		mediaDecena2 = mediaDecena2 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 39) {
+	    		contadorDecena3++;
+	    		mediaDecena3 = mediaDecena3 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 49) {
+	    		contadorDecena4++;
+	    		mediaDecena4 = mediaDecena4 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 59) {
+	    		contadorDecena5++;
+	    		mediaDecena5 = mediaDecena5 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 69) {
+	    		contadorDecena6++;
+	    		mediaDecena6 = mediaDecena6 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 79) {
+	    		contadorDecena7++;
+	    		mediaDecena7 = mediaDecena7 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 89) {
+	    		contadorDecena8++;
+	    		mediaDecena8 = mediaDecena8 + numeroIntroducido;
+	    		
+	    	} else if (numeroIntroducido <= 100) {
+	    		contadorDecena9++;
+	    		mediaDecena9 = mediaDecena9 + numeroIntroducido;
+	    		
+	    	} else {
+	    		System.out.println("Este valor será ignorado");
+	    	}
+	    } while (numeroIntroducido != 0);
+	    
+	    mediaDecena0 = mediaDecena0 / contadorDecena0;
+	    
+	    //----------------------------------------------
+	    //              Salida de resultados 
+	    //----------------------------------------------
+	    System.out.println("cantidad de numero es la decena0 es :" + contadorDecena0 + " y la media es: " + mediaDecena0);
+	    
+	}
+}  

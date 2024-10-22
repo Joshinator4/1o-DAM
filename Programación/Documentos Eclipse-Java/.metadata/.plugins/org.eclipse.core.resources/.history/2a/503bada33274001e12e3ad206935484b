@@ -1,0 +1,55 @@
+package ejercicio2;
+
+import java.util.Scanner;
+
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		
+		//----------------------------------------------
+	    //          Declaración de variables 
+	    //----------------------------------------------
+		
+	    // Constantes
+	    // Variables de entrada
+		int i;
+		i = 100;
+	    // Variables de salida
+	    // Variables auxiliares
+	    // Clase Scanner para petición de datos
+		
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    //----------------------------------------------
+	    //                Entrada de datos 
+	    //----------------------------------------------
+	    
+
+	    //----------------------------------------------
+	    //                 Procesamiento 
+	    //----------------------------------------------
+	    
+	    //Generamos un bucle for debido a que sabemos en que rango se 
+	    while (i >= 100 && i <= 400) {
+	    	if (i % 5 == 0) {
+	    		System.out.println("Este numero es multiplo de 5: " + i);
+	    		if (i % 15 == 0) {
+	    			System.out.println("Este número también es múltiplo de 15: " + i);
+	    		}
+    		
+    		}else if (i % 9 == 0) {
+    			System.out.println("Este número es múltiplo de 9: " + i);
+    		}
+	    	
+	    	i++;
+	    }
+	    
+	    
+	    //----------------------------------------------
+	    //              Salida de resultados 
+	    //----------------------------------------------
+	    
+	      
+			
+	}
+}

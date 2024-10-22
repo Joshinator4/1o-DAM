@@ -1,0 +1,18 @@
+35000.0;Joshua asdadw;1992-08-22;
+22000.0;Rafa;1989-12-20;
+19000.0;Juan Antonio;1998-06-08;
+36000.0;Leticia;1987-09-15;
+30000.0;Richard Carl;1999-11-05;
+27000.0;David de Marcos;2002-03-18;
+35000.0;Joshua asdadw;1992-08-22
+22000.0;Rafa;1989-12-20
+19000.0;Juan Antonio;1998-06-08
+36000.0;Leticia;1987-09-15
+30000.0;Richard Carl;1999-11-05
+27000.0;David de Marcos;2002-03-18
+35000.0;Joshua asdadw;1992-08-22
+22000.0;Rafa;1989-12-20
+19000.0;Juan Antonio;1998-06-08
+36000.0;Leticia;1987-09-15
+30000.0;Richard Carl;1999-11-05
+27000.0;David de Marcos;2002-03-18

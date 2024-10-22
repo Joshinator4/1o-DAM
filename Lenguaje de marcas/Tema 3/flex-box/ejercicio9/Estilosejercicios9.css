@@ -1,0 +1,42 @@
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: calc(100% - 20px);
+
+}
+.contenedor div{
+    text-align: center;
+}
+.item1{
+    flex-grow: 1;
+    font-size: 25px;
+    background-color: blue;
+    color: rgb(208, 255, 0);
+}
+.item2{
+    flex-grow: 2;
+    font-size: 25px;
+    background-color: rgb(1, 82, 8);
+}
+.item3{
+    flex-grow: 1;
+    font-size: 25px;
+    background-color: aqua;
+}
+.item4{
+    flex-grow: 1;
+    font-size: 25px;
+    background-color: rgb(114, 0, 221);
+}
+.item5{
+    flex-grow: 4;
+    background-color: chocolate;
+    font-size: 25px;
+}
+.item6{
+    flex-grow: 1;
+    font-size: 25px;
+    background-color: violet;    
+}

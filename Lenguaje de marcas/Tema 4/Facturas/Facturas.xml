@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<facturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Facturas.xsd">
+    <cliente>
+        <codigoCliente>C2022</codigoCliente>
+        <direccion>
+            <tipoDeVia>calle</tipoDeVia>
+            <numeroDeVia>6</numeroDeVia>
+            <localidad>Arroyo de la Miel</localidad>
+            <provincia>Malaga</provincia>
+            <codigoPostal>29631</codigoPostal>
+        </direccion>
+        <telefonoContacto>
+            <telefono>915784742</telefono>
+            <tipo>
+                <rrhh></rrhh>
+            </tipo>
+        </telefonoContacto>
+        <factura>EMP-20-2425</factura>
+        <tipoCliente>
+            <empresa>
+                <nombre>Antonio Lopez</nombre>
+                <razonSocial>Churrerias Antonio</razonSocial>
+                <web>www.cherreiasantonio.es</web>
+                <cif>X89574742</cif>
+            </empresa>
+        </tipoCliente>
+    </cliente>
+    <factura>
+        <fecha>2021-08-21</fecha>
+        <numeroFactura>EMP-20-2425</numeroFactura>
+        <formaDePago>
+            <bizum></bizum>
+        </formaDePago>
+        <observaciones></observaciones>
+        <productos>
+            <nombre>harina</nombre>
+            <codigoProducto>ABC-ERT-QIZ</codigoProducto>
+            <precio>5</precio>
+            <cantidad>10</cantidad>
+        </productos>
+        <cuantia>
+            <iva>10</iva>
+            <total>55</total>
+        </cuantia>
+    </factura>
+ </facturas>

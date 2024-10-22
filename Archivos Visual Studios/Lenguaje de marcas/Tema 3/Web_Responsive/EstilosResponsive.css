@@ -1,0 +1,273 @@
+body, html{
+    width: calc(100% - 10px);;
+    height: calc(100% - 10px);;
+}
+.contenedor-grid{
+    width: 100%;
+    height:  100%;
+    display: grid;
+    overflow: auto;
+    grid-template-columns: 18% 13% 13% 13% 13% 13% 15%;
+    grid-template-rows: 15% 38% 38% 5%;
+    grid-gap: 5px;
+    overflow: auto;
+}
+.header{
+    float: left;
+    background-image: url(WOW.jfif);
+    background-repeat:space;
+    background-position: 50%;
+    font-size: 40px;
+    grid-column: 1/8;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(25, 0, 255);
+}
+.navegador{
+    font-family: NAV;
+    align-items: center;
+    float: left;
+    background-color: chartreuse;
+    border: 5px red solid;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    padding-left: 25px;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cuerpo1{
+    font-family: NAV;
+    font-size: 50px;
+    float: left;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background-color: rgb(158, 24, 0);
+    background-image: url(Orco.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position: 40%;
+    background-size:100%;
+    color: rgb(255, 183, 0);
+}
+.cuerpo2{
+    font-family: NAV;
+    color: chocolate;
+    font-size: 50px;
+    background-image: url(Trols.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position-y: 50%;
+    float: left;
+    grid-column: 5/7;
+    grid-row: 2/3;
+    background-color: rgb(0, 136, 52);
+}
+.cuerpo3{
+    font-family: NAV;
+    color: rgba(0, 36, 0, 0.671);
+    background-image: url(Humanos.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-size: 50px;
+    background-size:100%;
+    float: left;
+    grid-column: 3/5;
+    grid-row: 3/4;
+    background-color: rgb(4, 185, 240);
+    
+    }
+.cuerpo4{
+    font-family: NAV;
+    color: rgb(134, 76, 0);
+    background-image: url(Enano.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-size: 50px;
+    background-size:100%;
+    float: left;
+    grid-column: 5/7;
+    grid-row: 3/4;
+    background-color: bisque;
+}
+.imagenFooter{
+width: 20%;
+height: 90%;
+}
+.footer{
+    grid-column: 1/8;
+    grid-row: 4/5;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+.cuerpoBandera1{
+    font-family: Horda;
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(BanderaLaHorda.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-size: 50px;
+    background-size:70%;
+    color: rgb(7, 0, 1);
+
+}
+.cuerpoBandera2{
+    font-family: Alianza;
+    background-color: white;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 60px;
+    background-image: url(BanderaLaAlianza.jpg);
+    background-repeat: no-repeat;
+    background-position:50%;
+    background-size:85%;
+    background-position-y: 60%;
+}
+.anuncio{
+    background-image: url(PublicidadVertical.jpg.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 50%;
+    font-size: 35px;
+    color: chartreuse;
+    background-color: burlywood;
+    grid-column: 7/8;
+    grid-row: 2/4;
+}
+@font-face {
+    font-family: Horda;
+    src: url(DarkCollege.otf);
+}
+@font-face {
+    font-family: Alianza;
+    src: url(CowboyMovie.ttf);
+}
+@font-face {
+    font-family: NAV;
+    src: url(Warcraft-Yj2j.ttf);
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    body, html{
+    height: 200%;
+    }
+    .header, .navegador, .cuerpo1, .cuerpo2, .cuerpo3, .cuerpo4, .cuerpoBandera1, .cuerpoBandera2, .footer, .anuncio {
+      grid-column: 1/8;
+    }
+    .contenedor-grid{
+    grid-template-columns: 93%;
+    grid-template-rows: repeat(9, 10.3%) 5%;
+    }
+    .header{
+    grid-row: 1/2;
+    }
+    .navegador{
+    width: 90%;
+    
+    grid-row: 2/3;
+    font-size: 25px;
+    }
+    .cuerpoBandera1{
+    grid-row: 3/4;
+    background-size:60%;
+    }
+    .cuerpo1{
+    grid-row: 4/5;
+    }
+    .cuerpo2{
+    grid-row: 5/6;
+    }
+    .cuerpoBandera2{
+    grid-row: 6/7;
+    background-size: 60%;
+    }
+    .cuerpo3{
+    grid-row: 7/8;
+    }
+    .cuerpo4{
+    grid-row: 8/9;
+    }
+    .anuncio{
+    background-image: url(anuncioMovil.png);
+    background-size: 85%;
+    grid-row: 9/10;
+    }
+    .footer{
+    grid-row: 10/11;
+    }
+    .imagenFooter{
+    width: 85%;
+    height: 100%;
+    }
+  }
+@media only screen and (min-width:501px) and (max-width:900px)   {
+    body, html{
+        height: 200%;
+        }
+        .header, .navegador, .cuerpo1, .cuerpo2, .cuerpo3, .cuerpo4, .cuerpoBandera1, .cuerpoBandera2, .footer, .anuncio {
+          grid-column: 1/8;
+        }
+        .contenedor-grid{
+        grid-template-columns: 40% 40% 18%;
+        grid-template-rows: 10% 15% repeat(4, 17%) 5%;
+        }
+        .header{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        }
+        .navegador{
+        width: 94%;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        font-size: 33px;
+        }
+        .cuerpoBandera1{
+        background-position:initial;
+        background-repeat: repeat-y;
+        grid-row: 3/5;
+        grid-column: 1/2;
+        background-size:95%;
+        }
+        .cuerpo1{
+        grid-row: 3/4;
+        grid-column: 2/3;
+        }
+        .cuerpo2{
+        grid-row: 4/5;
+        grid-column: 2/3;
+        }
+        .cuerpoBandera2{
+        background-position:initial;
+        background-repeat: repeat-y;
+        grid-row: 5/7;
+        grid-column: 1/2;
+        background-size:95%;
+        }
+        .cuerpo3{
+        grid-row: 5/6;
+        grid-column: 2/3;
+        }
+        .cuerpo4{
+        grid-row: 6/7;
+        grid-column: 2/3;
+        }
+        .anuncio{
+        background-image: url(PublicidadVertical.jpg.png);
+        background-repeat: repeat-y;
+        background-size: 110%;
+        grid-row: 3/7;
+        grid-column: 3/4;
+        }
+        .footer{
+        grid-row: 7/8;
+        grid-column: 1/4;
+        }
+        .imagenFooter{
+        width: 85%;
+        height: 100%;
+        }
+        
+}

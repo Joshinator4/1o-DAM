@@ -1,0 +1,5 @@
+pepe;1;985;Real Madrid
+juan;2;878;Barcelona
+antonio;3;2648;Betis
+manuel;3;2648;zaragoza
+ramon;10;269851;zaragoza

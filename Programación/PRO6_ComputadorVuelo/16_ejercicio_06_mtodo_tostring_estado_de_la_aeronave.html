@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.6.- Ejercicio 06: Método toString (estado de la aeronave) | Computador vuelo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Computador vuelo</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Computador de vuelo</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_ejercicio_01_atributos_de_la_clase_estado.html" class="no-ch">1.1.- Ejercicio 01: Atributos de la clase (estado)</a></li>
+      <li><a href="12_ejercicio_02_constructores_y_mtodo_fbrica.html" class="no-ch">1.2.- Ejercicio 02: Constructores y método fábrica</a></li>
+      <li><a href="13_ejercicio_03_mtodos_de_consulta_getters_y_modificacin_setters.html" class="no-ch">1.3.- Ejercicio 03: Métodos de consulta (getters) y modificación (setters)</a></li>
+      <li><a href="14_ejercicio_04_iniciando_un_nuevo_vuelo_despegue.html" class="no-ch">1.4.- Ejercicio 04: Iniciando un nuevo vuelo (despegue)</a></li>
+      <li><a href="15_ejercicio_05_finalizando_el_vuelo_aterrizaje.html" class="no-ch">1.5.- Ejercicio 05: Finalizando el vuelo (aterrizaje)</a></li>
+      <li id="active"><a href="16_ejercicio_06_mtodo_tostring_estado_de_la_aeronave.html" class="active no-ch">1.6.- Ejercicio 06: Método toString (estado de la aeronave)</a></li>
+      <li><a href="17_ejercicio_07_documentando_la_clase_javadoc.html" class="no-ch">1.7.- Ejercicio 07: Documentando la clase (javadoc)</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+      <li><a href="22_excepciones.html" class="no-ch">2.2.- Excepciones</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="15_ejercicio_05_finalizando_el_vuelo_aterrizaje.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="17_ejercicio_07_documentando_la_clase_javadoc.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.6.- Ejercicio 06: Método toString (estado de la aeronave)</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id22">
+<div class="iDevice emphasis0">
+<div id="ta22_69" class="block iDevice_content">
+<div class="exe-figure exe-image license-custom position-center" style="width: 450px;"><img src="germany-1349329_960_720.jpg" alt="Motor de aviación" title="Motor de aviación" width="450" height="300" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/photos/alemania-hermekeil-aviaci%C3%B3n-museo-1349329/" target="_blank" class="author" rel="noopener">2427999</a>. <span class="title"><em>Motor de aviación</em></span> <span class="license"><span class="sep">(</span><span class="custom-license"><a href="https://pixabay.com/es/service/license/" title="Acceder a los términos de la licencia Pixabay. (Se abre en nueva ventana)" target="_blank" rel="noopener">Pixabay Lincense</a></span><span class="sep">)</span></span></span></div>
+</div>
+<p>Una vez programada toda la lógica de la clase, vamos a sobrescribir el método <code><strong><span style="background-color: #ccffff; font-family: Courier New;">toString()</span></strong></code> para que devuelva una cadena que represente el <strong>estado del Computador de Vuelo</strong> en un momento dado. Para facilitarte la labor del tratamiento de cadenas, y para hacerlo de una forma óptima, deberás usar el método estático <strong><code>format</code></strong> de la clase <span style="color: #ff0000;"><strong><code>String</code></strong></span> para generar el resultado, y así evitar la concatenación repetida de objetos de tipo <span style="color: #ff0000;"><code>String</code></span>. El resultado del método tendrá la siguiente estructura:</p>
+<ol>
+<li>un <code><strong><span style="background-color: #ccffff; font-family: Courier New;">inicio de bloque</span></strong></code> o <strong>corchete de apertura </strong>(carácter <code><strong><span style="background-color: #ccffff; font-family: Courier New;">[</span></strong></code>)</li>
+<li>la <code><strong><span style="background-color: #ccffff; font-family: Courier New;">matrícula</span></strong></code> de la aeronave</li>
+<li>el <code><strong><span style="background-color: #ccffff; font-family: Courier New;">modelo</span></strong></code> de la aeronave</li>
+<li>el valor del atributo <code><strong><span style="background-color: #ccffff; font-family: Courier New;">volando</span></strong></code>(indica si está o no volando)</li>
+<li>el nombre del <code><strong><span style="background-color: #ccffff; font-family: Courier New;">piloto</span></strong></code></li>
+<li>el <code><strong><span style="background-color: #ccffff; font-family: Courier New;">tipo de vuelo</span></strong></code> que está realizando</li>
+<li>el <code><strong><span style="background-color: #ccffff; font-family: Courier New;">tiempo total</span></strong></code> de vuelo</li>
+<li>la <code><strong><span style="background-color: #ccffff; font-family: Courier New;">velocidad</span></strong></code></li>
+<li>el <code><strong><span style="background-color: #ccffff; font-family: Courier New;">rumbo</span></strong></code></li>
+<li>la <code><strong><span style="background-color: #ccffff; font-family: Courier New;">altitud</span></strong></code></li>
+<li>un <code><strong><span style="background-color: #ccffff; font-family: Courier New;">fin de bloque</span></strong></code> o <strong>corchete de cierre </strong>(carácter <code><strong><span style="background-color: #ccffff; font-family: Courier New;">]</span></strong></code>).</li>
+</ol>
+<p>A continuación, tienes un ejemplo de salida del método:</p>
+<div class="destacado" style="text-align: center;"><code><strong><span style="font-family: Courier New;">[Matricula=EC-FA3, Modelo=Eurostar Evektor EV-97, isVolando=false, Piloto=Rodrigo Sola, TipoVuelo=1, TiempoTotal=230, V=0 km/h, Rumbo=0º, Altitud=0 metros]</span></strong></code></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id32">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Programa de pruebas</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta32_148" class="block story iDevice_content">
+
+</div>
+<div id="taquesQuestion0b32" class="block iDevice_content">
+<p>Al igual que en los ejercicios anteriores, puedes probar el <strong>ejercicio 06 </strong>con el programa <code><strong><span style="background-color: #ccffff; font-family: Courier New;">TestEj06</span></strong></code>. El resultado que debería salir por pantalla al ejecutar el programa de pruebas es el siguiente</p>
+</div>
+<form name="feedback-form-quesFeedback0b32" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b32text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b32" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b32" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>
+CASO DE PRUEBAS 06: método toString()                         
+------------------------------------------------------------
+
+Registrando un ComputadorVuelo para la aeronave [EC-FA3,Eurostar Evektor EV-97,Pepito Pérez]
+ -&gt; Objeto creado con éxito
+
+----------------------------------------------------------
+ - PRUEBA 01 - Visualización del estado del objeto          
+------------------------------------------------------------
+EC-FA3 va a despegar...
+[Matricula=EC-FA3, Modelo=Eurostar Evektor EV-97, isVolando=true, Piloto=Pepito Pérez, TipoVuelo=0, TiempoTotal=0, V=150 km/h, Rumbo=0º, Altitud=2000 metros]
+
+EC-FA3 cambia de rumbo, velocidad y altitud...
+[Matricula=EC-FA3, Modelo=Eurostar Evektor EV-97, isVolando=true, Piloto=Pepito Pérez, TipoVuelo=0, TiempoTotal=0, V=190 km/h, Rumbo=90º, Altitud=2500 metros]
+
+EC-FA3 va a aterrizar ...
+[Matricula=EC-FA3, Modelo=Eurostar Evektor EV-97, isVolando=false, Piloto=Pepito Pérez, TipoVuelo=0, TiempoTotal=150, V=0 km/h, Rumbo=0º, Altitud=0 metros]
+
+EC-FA3 va a despegar ...
+[Matricula=EC-FA3, Modelo=Eurostar Evektor EV-97, isVolando=true, Piloto=Pepito Pérez, TipoVuelo=1, TiempoTotal=150, V=200 km/h, Rumbo=0º, Altitud=3000 metros]
+
+EC-FA3 cambia de rumbo, velocidad y altitud...
+[Matricula=EC-FA3, Modelo=Eurostar Evektor EV-97, isVolando=true, Piloto=Pepito Pérez, TipoVuelo=1, TiempoTotal=150, V=150 km/h, Rumbo=270º, Altitud=1500 metros]
+
+EC-FA3 va a aterrizar ...
+[Matricula=EC-FA3, Modelo=Eurostar Evektor EV-97, isVolando=false, Piloto=Pepito Pérez, TipoVuelo=1, TiempoTotal=240, V=0 km/h, Rumbo=0º, Altitud=0 metros]
+
+</code></pre>
+</div>
+</div></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="15_ejercicio_05_finalizando_el_vuelo_aterrizaje.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="17_ejercicio_07_documentando_la_clase_javadoc.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="almacen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="articulo" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombreArticulo">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1" />
+                                        <xs:maxLength value="20" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>    
+                            <xs:element name="precio" type="xs:double" />
+                            <xs:element name="existencias" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:nonNegativeInteger">
+                                        <xs:minInclusive  value="0" />
+                                    </xs:restriction>
+                                </xs:simpleType> 
+                            </xs:element>   
+                            <xs:element name="seccion" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern  value="([a-zA-Z]\d)" />
+                                    </xs:restriction>
+                                </xs:simpleType> 
+                            </xs:element>  
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>   
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

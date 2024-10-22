@@ -1,0 +1,10 @@
+package lectura;
+
+public class PrincipalEscritura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

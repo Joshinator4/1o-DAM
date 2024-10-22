@@ -1,0 +1,42 @@
+package ejercicio1;
+
+import java.time.LocalDate;
+
+public class Pintura extends Servicio{
+
+	private int superficie;
+	private double precioPint;
+	private double material;
+	private double manoObra;
+	
+	public Pintura(String trabajador, LocalDate fecha_servicio, String cliente, int superficie, double precioPint) {
+		super(trabajador, fecha_servicio, cliente);
+		this.superficie = superficie;
+		this.precioPint = precioPint;
+		this.material = calcularMaterial();
+		this.manoObra = calcularManoObra();
+		
+	}
+	
+	@Override
+	protected double calcularMaterial() {
+		double devolucion;
+		devolucion = (double)superficie*7.8*precioPint;
+		return devolucion;
+	}
+	@Override
+	protected double calcularManoObra() {
+		double devolucion;
+		if(superficie < 50) {
+			devolucion = (double)superficie/10*7.5;
+			devolucion += devolucion*0.15;
+		}else {
+			devolucion = (double)superficie/10*7.5;
+		}
+		
+		return devolucion;
+	}
+	
+	
+	
+}

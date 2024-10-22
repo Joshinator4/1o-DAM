@@ -1,0 +1,16 @@
+1º ESO D;Molina González, Samuel Oliver;4;3;3;3;4
+1º ESO A;Subiri Rueda, Fco José;3;3;4;2;2
+1º ESO D;Bououalli Cano, Linda María;2;1;3;1;1
+1º ESO B;Fernández Leiva, Francisco Adrián;2;2;6;1;5
+1º ESO D;Plaza López, Laura;2;2;4;1;2
+1º ESO D;Solano Fernández, Macarena;2;2;2;1;1
+1º ESO A;Suárez Cano, Francisco José;2;3;4;1;2
+1º ESO E;Ben Aouda , Mounir;1;1;1;1;1
+1º ESO A;García Valderrama, Sergio;1;1;3;1;1
+1º ESO A;Godoy Barrionuevo, Antonio Jesús;1;1;3;1;1
+1º ESO B;González Solano, Ana Belén;1;2;1;1;1
+1º ESO A;Gutiérrez Martín, Marina;1;1;2;4;1
+1º ESO D;Jalao Puertas, Jonathan;1;1;1;1;1
+1º ESO D;Mayer Jiménez, Alejandro;1;1;1;1;1
+1º ESO D;Oïbrien , George Iván;1;1;1;1;1
+1º ESO D;Solano Fernández, Alejandro David;1;1;1;1;1

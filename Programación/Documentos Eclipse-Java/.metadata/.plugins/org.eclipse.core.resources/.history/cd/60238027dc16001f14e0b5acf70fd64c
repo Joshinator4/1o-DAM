@@ -1,0 +1,43 @@
+package ejercicio1;
+
+import java.util.ArrayList;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase SocioBaloncesto
+*/
+public class SocioBaloncesto extends Socio{
+	
+	enum TipoPosicion{BASE, ESCOLTA, ALERO, PIVOT};
+	
+	private TipoPosicion posicion;
+	
+	
+	private ArrayList<PartidoBaloncesto> partidosBaloncesto;
+
+
+	public SocioBaloncesto(String nombre, String dni, String telefono, TipoPosicion posicion) {
+		super(nombre, dni, telefono);
+		this.posicion = posicion;
+		this.partidosBaloncesto = null;
+	}
+
+
+
+	public TipoPosicion convertirEnum(String posicion) {
+		TipoPosicion devolucion = null;
+		if(posicion.equalsIgnoreCase("BASE")) {
+			devolucion = TipoPosicion.BASE;
+		}else if(posicion.equalsIgnoreCase("ESCOLTA")) {
+			devolucion = TipoPosicion.ESCOLTA;
+		}else if(posicion.equalsIgnoreCase("ALERO")) {
+			devolucion = TipoPosicion.ALERO;
+		}else if(posicion.equalsIgnoreCase("PIVOT")) {
+			devolucion = TipoPosicion.PIVOT;
+		}
+		return devolucion;
+		
+	}
+	
+
+}

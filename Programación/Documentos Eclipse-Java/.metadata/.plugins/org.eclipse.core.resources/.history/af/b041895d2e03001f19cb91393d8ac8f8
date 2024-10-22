@@ -1,0 +1,16 @@
+/*
+ * Objetivo:Clase principal del ejercicio
+ * Autor: Joshua Sangareau Quesada
+ * fecha: 25/04/2024
+ * 
+ */
+package ejercicio1;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

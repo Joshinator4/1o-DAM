@@ -1,0 +1,9 @@
+1;pepe;985;Real Madrid;39
+2;juan;878;Barcelona;39
+3;antonio;2648;Betis;36
+10;ramon;269851;zaragoza;30
+4;raul;985;BASE;45
+5;pablo;878;ALERO;45
+6;ricardo;2648;PIVOT;45
+7;ana;2648;ESCOLTA;40
+9;juana;2488;ESCOLTA;30

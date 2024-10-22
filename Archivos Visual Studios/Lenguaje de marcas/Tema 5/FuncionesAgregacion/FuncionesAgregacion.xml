@@ -1,0 +1,27 @@
+<bookstore>
+<book category="COOKING">
+<title lang="en">Everyday Italian</title>
+<author>Giada De Laurentiis</author>
+<year>2005</year>
+<price>30.00</price>
+</book>
+<book category="COOKING">
+<title lang="es">Recetas de gazpacho</title>
+<author>El cocinero sagaz</author>
+<year>2005</year>
+<price>24.00</price>
+</book>
+<book category="COOKING">
+<title lang="en">Recetas de barbacoa</title>
+<author>El cocinero sagaz</author>
+<year>2015</year>
+<price>45.00</price>
+</book>
+<book category="CHILDREN">
+<title lang="en">Harry Potter</title>
+<author>J K. Rowling</author>
+<author>Giada De Laurentiis</author>
+<year>2006</year>
+<price>29.99</price>
+</book>
+</bookstore>

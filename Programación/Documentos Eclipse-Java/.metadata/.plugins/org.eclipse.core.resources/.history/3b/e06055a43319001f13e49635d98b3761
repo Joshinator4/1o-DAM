@@ -1,0 +1,50 @@
+package ejercicio1;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 23 may 2024 
+Descripcion: clase Moto
+*/
+public class Moto extends Vehiculo{
+	
+	private int espejos;
+	private boolean casco;
+	
+	public Moto(String matricula, String dni, String telefono, String modelo, int espejos, boolean casco) {
+		super(matricula, dni, telefono, modelo);
+		this.espejos = espejos;
+		this.casco = casco;
+	}
+
+	@Override
+	public double calcularPrecio(int dias) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getEspejos() {
+		return espejos;
+	}
+
+	public boolean isCasco() {
+		return casco;
+	}
+
+	public void setEspejos(int espejos) {
+		this.espejos = espejos;
+	}
+
+	public void setCasco(boolean casco) {
+		this.casco = casco;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "Moto [espejos=" + espejos + ", casco=" + casco + "]";
+	}
+	
+	
+	
+	
+	
+	
+}

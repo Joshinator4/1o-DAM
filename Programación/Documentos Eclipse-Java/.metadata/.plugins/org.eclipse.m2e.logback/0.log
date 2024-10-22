@@ -1,0 +1,198 @@
+2024-02-05 21:18:32,286 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-05 21:25:43,580 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-05 21:26:20,695 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-06 16:11:17,023 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-06 17:23:26,611 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-08 19:35:11,972 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-09 14:14:15,018 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-12 15:19:42,704 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-13 14:19:25,493 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-13 19:38:46,560 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-15 18:25:53,245 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-15 21:09:15,795 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-16 20:10:51,195 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-19 17:37:42,876 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-19 21:16:46,471 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-20 14:19:29,671 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-20 19:28:00,028 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-20 21:08:42,808 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-21 14:44:56,897 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-21 16:11:00,179 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-22 18:05:17,398 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-22 20:02:59,705 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-04 14:16:46,754 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-05 14:20:49,538 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-05 18:46:31,468 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-06 19:03:08,925 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-06 20:56:41,570 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-07 14:14:39,343 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-07 18:46:55,165 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-08 15:28:01,602 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-08 17:37:13,469 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-11 18:15:17,151 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-12 19:48:29,191 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-13 19:55:15,963 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-15 14:25:57,841 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-15 19:29:29,142 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-18 17:41:21,334 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-19 14:17:39,816 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-20 17:49:55,243 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-20 20:46:13,276 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-20 21:02:50,826 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-21 19:00:19,151 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-01 14:19:50,098 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-02 19:27:53,813 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-03 16:26:17,749 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-04 18:44:34,020 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-05 13:20:07,335 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-08 19:36:19,501 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-09 17:00:24,301 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-10 15:27:43,564 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-11 15:22:34,263 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-12 15:50:27,256 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-15 17:58:14,200 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-15 21:18:48,950 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-16 17:20:03,874 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-17 15:20:54,641 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-18 20:13:17,875 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-19 17:54:20,230 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-22 19:59:32,484 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-23 19:45:13,103 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-24 13:20:52,770 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-24 19:34:02,145 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-25 13:20:41,560 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-26 13:28:37,322 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-29 19:29:00,519 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-04-29 20:04:36,339 [ModalContext] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-04-29 20:53:09,868 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-29 20:53:12,387 [Worker-7: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-04-29 20:55:31,924 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-29 20:55:34,112 [Worker-3: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-04-29 21:04:59,412 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-29 21:05:01,614 [Worker-6: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-04-29 21:09:52,676 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-29 21:09:55,437 [Worker-3: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-04-30 13:16:46,001 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-04-30 13:16:50,568 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-02 18:52:18,289 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-02 18:52:21,980 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-06 15:53:06,168 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-06 15:53:09,997 [Worker-7: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-06 20:17:45,481 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-06 20:17:47,948 [Worker-2: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-07 19:25:40,659 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-07 19:25:44,250 [Worker-2: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-07 20:12:19,956 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-07 20:12:20,475 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (4716) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (4716) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-07 21:16:02,141 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-07 21:16:02,581 [Worker-6: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10187) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10187) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-09 17:49:22,976 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-09 17:49:26,752 [Worker-6: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-10 18:35:19,377 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-10 18:35:22,947 [Worker-2: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-10 20:18:10,073 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-10 20:18:12,575 [Worker-7: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-10 20:20:10,989 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-10 20:20:13,424 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-13 13:23:53,268 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-13 13:23:57,067 [Worker-1: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-13 15:45:28,436 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-13 15:45:31,083 [Worker-7: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-13 19:33:33,337 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-13 19:33:36,026 [Worker-1: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-13 19:52:20,420 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-13 19:52:24,924 [Worker-2: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-14 13:22:47,956 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-14 13:22:52,077 [Worker-1: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-14 13:43:34,141 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-14 13:43:36,566 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-14 18:12:07,415 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-14 18:12:10,779 [Worker-6: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-14 19:51:08,411 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-14 19:51:10,918 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-15 13:39:22,192 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-15 13:39:25,351 [Worker-1: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-15 21:05:00,451 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-15 21:05:03,745 [Worker-2: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-16 18:38:17,776 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-16 18:38:21,706 [Worker-8: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-17 15:04:39,723 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-17 15:04:43,625 [Worker-8: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-17 19:45:09,336 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-17 19:45:11,748 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-20 18:00:57,125 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-20 18:00:57,648 [Worker-6: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (16050) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (16050) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-21 13:26:37,062 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-21 13:26:40,221 [Worker-6: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-22 15:08:24,056 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-22 15:08:24,593 [Worker-6: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10311) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10311) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'
+2024-05-23 16:31:44,578 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-23 16:32:15,019 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2024-05-24 13:14:07,595 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-24 13:14:11,461 [Worker-9: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\DAM!', return code '1', error message '<3>WSL (10) ERROR: CreateProcessEntryCommon:505: execvpe /bin/bash failed 2
+<3>WSL (10) ERROR: CreateProcessEntryCommon:508: Create process not expected to return
+'

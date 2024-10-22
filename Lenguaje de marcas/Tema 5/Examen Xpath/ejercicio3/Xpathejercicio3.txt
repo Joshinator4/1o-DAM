@@ -1,0 +1,112 @@
+<school>
+<classroom id="101" floor="1">
+<name>Mates</name>
+<furniture>
+<chairs>30</chairs>
+<desks>15</desks>
+<tables>5</tables>
+</furniture>
+<equipment>
+<windows>4</windows>
+<whiteboards>2</whiteboards>
+<computers>20</computers>
+<lockers>10</lockers>
+</equipment>
+</classroom>
+<classroom id="102" floor="1">
+<name>Ciencias Lab</name>
+<furniture>
+<chairs>24</chairs>
+<desks>12</desks>
+<tables>8</tables>
+</furniture>
+<equipment>
+<windows>6</windows>
+<whiteboards>1</whiteboards>
+<microscopes>10</microscopes>
+<safetyShowers>1</safetyShowers>
+</equipment>
+</classroom>
+<classroom id="201" floor="2">
+<name>Informatica</name>
+<furniture>
+<chairs>25</chairs>
+<desks>20</desks>
+<tables>6</tables>
+</furniture>
+<equipment>
+<windows>3</windows>
+<whiteboards>2</whiteboards>
+<computers>15</computers>
+<bookshelves>5</bookshelves>
+</equipment>
+</classroom>
+<classroom id="301" floor="3">
+<name>Historia</name>
+<furniture>
+<chairs>28</chairs>
+<desks>18</desks>
+<tables>7</tables>
+</furniture>
+<equipment>
+<windows>5</windows>
+<whiteboards>3</whiteboards>
+<computers>12</computers>
+<lockers>8</lockers>
+</equipment>
+</classroom>
+</school>
+
+
+
+
+
+ejercicio3:
+1. Obtén el nombre de todas las aulas en el primer piso.
+/school/classroom[@floor=1]/name
+
+resultado: 
+<name>Mates</name>
+<name>Ciencias Lab</name>
+
+
+2. Encuentra el número total de sillas en todas las aulas.
+sum(/school/classroom/furniture/chairs)
+
+resultado: 
+107
+
+3. Encuentra el número de ventanas en el aula de Informatica.
+/school/classroom[name='Informatica']/equipment/windows
+
+resultado:
+<windows>3</windows>
+
+
+4. Obtén el nombre de las aulas que tienen más de 26 sillas.
+/school/classroom/furniture[chairs>26]/../name
+
+resultado: 
+<name>Mates</name>
+<name>Historia</name>
+
+
+5. Equipamiento del aula de Historia
+/school/classroom[name='Historia']/equipment
+
+resultado:
+<equipment>
+  <windows>5</windows>
+  <whiteboards>3</whiteboards>
+  <computers>12</computers>
+  <lockers>8</lockers>
+</equipment>
+
+
+6. Total de silla y mesas en la primera plant 
+sum(/school/classroom[@floor=1]/furniture/chairs)
+sum(/school/classroom[@floor=1]/furniture/tables)
+
+resultado: 
+sillas: 54
+mesas: 13

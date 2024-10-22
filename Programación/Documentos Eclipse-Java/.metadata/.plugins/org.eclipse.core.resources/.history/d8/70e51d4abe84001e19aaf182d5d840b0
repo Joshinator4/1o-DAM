@@ -1,0 +1,51 @@
+package plantilla_metodos;
+
+import java.util.Arrays;
+
+public class Plantilla_Metodos {
+
+	public static void main(String[] args) {
+		//Decalaracion de variables
+		final byte a=1;
+		String nombreVariable = null, nombreOtraVariable = null;
+		int [] numeros = new int [a];
+		
+		
+		//Clase String
+		//.substring(int posicion, int (n-1)) devuelve en un string las posiciones que se indican (en este caso de la pos 0 a la (3-1))
+		nombreVariable.substring(0, 3);
+		
+		//.charAt(posición) devuelve el carácter de esa que hay en esa posición empieza desde el 0.
+		nombreVariable.charAt(0);
+		
+		//.equals(variable string) compara si son iguales las 2 variables y devuelve un true/false
+		nombreVariable.equals(nombreOtraVariable);
+		
+		//.equalsIgnoreCase(variable string) compara si son iguales las 2 variables ignorando las mayúsculas y devuelve un true/false
+		nombreVariable.equalsIgnoreCase(nombreOtraVariable);
+		
+		//.toLowerCase() convierte todos los caracteres alfabéticos del string a minúsculas
+		nombreVariable.toLowerCase();
+		
+		//.toUpperCase() convierte todos los caracteres alfabéticos del string a mayúsculas
+		nombreVariable.toUpperCase();
+		
+		//.length() devuelve el número de posiciones (incluyendo espacios y todo) del String.
+		nombreVariable.length();
+		
+		//.split(" ") separa el string en otros Strings actuando el espacio como separador. En este caso cada espacio separa cada palabra en otro string 
+		nombreVariable.split(" ");
+		
+		
+		//clase Array
+		//Arrays.fill(tipo de variable, numero o variable con la que rellena) elegir tipo de variable. Rellena el array con el numero o variables seleccionado
+		Arrays.fill(numeros, 0);
+		
+		//Arrays.sort(nombre de variable) Elegir tipo de variable. Ordena el array de mayor a menor.
+		Arrays.sort(numeros);
+		
+		//Arrays.toString(nombre de la variable). Elegir tipo de variable. Coge todas las posiciones del array y las junta en un string
+		Arrays.toString(numeros);
+	}
+
+}

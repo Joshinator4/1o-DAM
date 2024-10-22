@@ -1,0 +1,74 @@
+<!--El error estaba en la línea 5 de este archivo (había espacio entre deporte y ">")-->
+<?xml version="1.0" encoding="UTF-8"?>
+    <deportistas>
+        <deportista>
+            <deporte> Atletismo </deporte>
+            <nombre>Jesse Owens</nombre>
+        </deportista>
+        <deportista>
+            <deporte> Natación </deporte>
+            <nombre>Mark Spitz</nombre>
+        </deportista>
+    </deportistas>
+
+
+<!--En la línea 26 de este archivo. La etiqueta de inicio de <autor> tiene un espacio y esa misma línea debería estar
+incluido dentro del elemento anterior de <película>, los errores están corregidos-->
+<?xml version="1.0" encoding="UTF-8"?>
+    <peliculas>
+        <pelicula>
+            <titulo>Con faldas y a lo loco</titulo>
+            <director>Billy Wilder</director>
+        </pelicula>
+        <pelicula>
+            <director>Leo McCarey</director>
+            <titulo>Sopa de ganso</titulo>
+            <autor>barto</autor>
+        </pelicula>
+    </peliculas>
+ <!--En la linea 34 de este archivo la etiqueta final de </titulo> le falta la "t" en mayúscula para que coincida con la 
+ etiqueta inicial y en la línea 39 la etqueta inicial y final <http://> sobran las barras y los dos puntos, 
+ se corrigen errores--> 
+<?xml version="1.0" encoding="UTF-8"?>
+    <texto>
+        <Titulo>XML explicado a los niños</Titulo>
+        <párrafo>El <abreviatura>XML</abreviatura>define cómo crear
+        lenguajes de marcas.</párrafo>
+        <párrafo>Las marcas se añaden a un documento de texto
+        para añadir información.</párrafo>
+        <http>www.example.org</http>
+    </texto>
+ <!-- En la línea 44 de este archivo la etiqueta <geografia mundial> no puede contener espacio, en la línea 48 de este
+ archivo la etiqueta final </capital> contiene un espacio que hay q eliminar, se corrigen los errores-->  
+<?xml version="1.0" encoding="UTF-8"?>
+    <geografia-mundial>
+        <pais>
+            <pais>España</pais>
+            <continente>Europa</continente>
+            <capital nombre="Madrid" ></capital>
+        </pais>
+    </geografia-mundial>
+<!--En la linea 56 de este archivo en LGPL faltan las comillas para definir que se refiere a licencia=,
+se corrigen los errores-->   
+<?xml version="1.0" encoding="UTF-8"?>
+    <programas>
+        <programa nombre="Firefox" licencia="GPL" licencia="MPL" />
+        <programa nombre="OpenOffice.org" licencia="LGPL" />
+        <programa nombre="Inkscape" licencia="GPL" />
+    </programas>
+<!--En la linea 64 de este archivo falta el atributo nombre y en la linea 65 falta el nombre de la etiqueta año
+ y el atributo nombre, se corrigen errores  -->    
+<?xml version="1.0" encoding="UTF-8"?>
+    <mundiales-de-futbol>
+        <mundial>
+            <pais nombre="España"/>
+            <año nombre="1982"/>
+        </mundial>
+    </mundiales-de-futbol>
+<!--En la linea 72 y 73 de este archivo las comillas de bicicleta y patinete estan de forma erronea, se corrigen
+errores-->  
+<?xml version="1.0" encoding="UTF-8"?>
+    <mediosDeTransporte>
+        <vehiculo nombre="bicicleta" velocidad="v&lt;100km/h" />
+        <vehiculo nombre="patinete" velocidad="50 km/h" />
+    </mediosDeTransporte>

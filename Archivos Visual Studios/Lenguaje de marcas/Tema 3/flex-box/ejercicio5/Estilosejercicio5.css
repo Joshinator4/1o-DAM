@@ -1,0 +1,61 @@
+body, html{
+    height: calc(100% - 20px);
+    margin: 0;
+}
+.contenedor{
+    background-color: rgb(0, 183, 255);
+    justify-content: space-between;
+    border: solid rgb(146, 0, 98) 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.contenedor div{
+    width: 100%;
+    font-size: 10px;
+}
+.item1{
+    text-align: center;
+    background-color: blue;
+    color: rgb(208, 255, 0);
+}
+.item2{
+    text-align: center;
+    background-color: azure;
+}
+.item3{
+    text-align: center;
+    background-color: aqua;
+}
+.item4{
+    text-align: center;
+  
+    background-color: rgb(114, 0, 221);
+}
+.item5{
+    background-color: chocolate;
+    text-align: center;
+}
+.item6{
+    text-align: center;
+    background-color: violet;    
+}
+.item7{
+    text-align: center;
+    background-color: yellow;
+}
+.item8{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.item9{
+    text-align: center;
+    background-color: crimson;
+    
+}
+.item10{
+    text-align: center;
+    background-color: darkgreen;
+}

@@ -1,0 +1,10 @@
+<!ELEMENT articles (Movie+)>
+<!ELEMENT article (name, month, author, (reviews | feedback)+)>
+<!ATTLIST article id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT month (#PCDATA) >
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author name CDATA #IMPLIED>
+<!ELEMENT reviews (#PCDATA)>
+<!ELEMENT feedback (#PCDATA)>
+<!ATTLIST reviews lang CDATA #IMPLIED>

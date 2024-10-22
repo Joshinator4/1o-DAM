@@ -1,0 +1,15 @@
+package ejercicio2;
+
+import java.time.LocalDate;
+
+public class Deportivo extends Coche {
+	enum Traccion {delantera, total}
+	
+	private Traccion traccion;
+	
+	
+	public Deportivo(String matricula, String nombrePropietario, LocalDate fecha, int cilindrada, int potencia, Traccion traccion) {
+		super(matricula, nombrePropietario, fecha, cilindrada, potencia);
+		this.traccion = traccion;
+	}
+}

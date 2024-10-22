@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.3.- Interfaces Ajustable y Personalizable | Mobiliario </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-11"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Mobiliario</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mobiliario</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_clase_mueble.html" class="no-ch">1.1.- Clase Mueble</a></li>
+      <li><a href="12_clase_modulo.html" class="no-ch">1.2.- Clase Modulo</a></li>
+      <li id="active"><a href="13_interfaces_ajustable_y_personalizable.html" class="active no-ch">1.3.- Interfaces Ajustable y Personalizable</a></li>
+      <li><a href="14_clase_asiento.html" class="no-ch">1.4.- Clase Asiento</a></li>
+      <li><a href="15_clase_silla.html" class="no-ch">1.5.- Clase Silla</a></li>
+      <li><a href="16_clase_sillon.html" class="no-ch">1.6.- Clase Sillon</a></li>
+      <li><a href="17_clase_sofa.html" class="no-ch">1.7.- Clase Sofa</a></li>
+      <li><a href="18_clase_almacenaje.html" class="no-ch">1.8.- Clase Almacenaje</a></li>
+      <li><a href="19_clase_estanteria.html" class="no-ch">1.9.- Clase Estanteria</a></li>
+      <li><a href="110_clase_armario.html" class="no-ch">1.10.- Clase Armario</a></li>
+      <li><a href="111_clase_mesa.html" class="no-ch">1.11.- Clase Mesa</a></li>
+      <li><a href="112_documentacin_javadoc.html" class="no-ch">1.12.- Documentación javadoc</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="daddy">2.- Información de interés</a>
+   <ul class="other-section">
+      <li><a href="21_programas_de_pruebas.html" class="no-ch">2.1.- Programas de pruebas</a></li>
+   </ul>
+   </li>
+   <li><a href="3_evaluacin_de_la_tarea.html" class="no-ch">3.- Evaluación de la tarea</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="12_clase_modulo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="14_clase_asiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.3.- Interfaces Ajustable y Personalizable</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id27">
+<div class="iDevice emphasis0">
+<div id="ta27_154" class="block iDevice_content">
+<div class="exe-figure exe-image position-center" style="width: 160px;"><img src="gear-1077550_640.png" alt="Icono de configuración" title="Ajuste" width="160" height="160" style="display: block; margin-left: auto; margin-right: auto;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/vectors/engranaje-configuraci%C3%B3n-opciones-1077550/" target="_blank" class="author" rel="noopener">IO-Images</a> (<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)">Licencia Pixabay</a>)</span></div>
+</div>
+<p>Algunas subclases de la clase <strong><code>Mueble</code></strong> tendrán que implementar una o varias de las interfaces que se describen a continuación:</p>
+<p><strong><span class="destacado_inline">1.- Interfaz <code>Ajustable</code></span></strong></p>
+<p>La interfaz <strong><code>Ajustable</code></strong> será implementada por cualquier mueble que se pueda poner en varias posiciones. Para proporcionar esta funcionalidad habrá que escribir los siguientes métodos:</p>
+<ul>
+<li class="lista_verificacion">método <strong><code>obtenerPosicion()</code></strong>, que permite obtener la <strong>posición actual</strong> del mueble ajustable.</li>
+<li class="lista_verificacion">método <strong><code>subirPosicion()</code></strong>, que permitirá <strong>subir una posición</strong> del mueble ajustable y devolverá un <code>int</code> que indicará la nueva posición. Este método deberá lanzar la excepción <code>IllegalStateException</code>, las circunstancias en las que se lanzará dicha excepción se detallarán en las clases que implementan esta interfaz.</li>
+<li class="lista_verificacion">método <strong><code>bajarPosicion()</code></strong>, que permitirá <strong>bajar una posición</strong> del mueble ajustable y devolverá un <code>int</code> que indicará la nueva posición. Este método deberá lanzar la excepción <code>IllegalStateException</code>, las circunstancias en las que se lanzará dicha excepción también se detallarán en las clases que implementan esta interfaz.</li>
+</ul>
+<p></p>
+<p><strong><span class="destacado_inline">2. Interfaz <code>Personalizable</code></span></strong></p>
+<div class="exe-figure exe-image position-center" style="width: 161px;"><img src="building-blocks-2026726_640.png" alt="Icono de bloques de construcción" title="Personalizable" width="161" height="160" hspace="12" style="margin-left: auto; margin-right: auto; display: block;" />
+<div class="figcaption" style="text-align: center;"><span style="font-size: 8pt;"><a href="https://pixabay.com/es/vectors/bloques-de-construcci%C3%B3n-tetris-3d-2026726/" target="_blank" class="author" rel="noopener">OpenClipart-Vectors</a> (<a href="https://pixabay.com/es/service/license/" title="Acceder a la Licencia Pixabay. (Se abre en una nueva ventana)">Licencia Pixabay</a>)</span></div>
+</div>
+<p style="text-align: justify;">La interfaz <strong><code>Personalizable</code></strong> será implementada por todas aquellas clases cuyas instancias dispongan de la capacidad de ser "personalizadas", como por ejemplo un <strong><code>Armario</code></strong>. Los métodos que obliga a implementar esta interfaz son:</p>
+<ul class="lista_verificacion">
+<li style="text-align: justify;">método <strong><code>obtenerModulos()</code></strong>, que devolverá una cadena con los <strong>módulos que se han añadido</strong> al mueble personalizable.</li>
+<li>método <strong><code>anyadirModulo(Modulo modulo)</code></strong>, que añadirá al mueble personalizable un elemento de tipo <code>Modulo</code> y no devolverá nada. Este método deberá lanzar las excepciones <code>IllegalStateException</code> y <code>NullPointerException</code>, las circunstancias en las que se lanzarán dichas excepciones se detallarán en las clases que implementan esta interfaz.</li>
+<li>método <strong><code>extraerModulo()</code></strong>, que extraerá del mueble personalizable un elemento de tipo <code>Modulo</code> y lo devolverá. Este método deberá lanzar la excepción <code>IllegalStateException</code>, las circunstancias en las que se lanzará dicha excepción también se detallarán en las clases que implementan esta interfaz.</li>
+</ul>
+<p></p>
+<p>Las clases que incorporen estas interfaces tendrán que implementar estos métodos "a su modo", dependiendo del comportamiento y las características de cada clase específica. Es posible que cada clase tenga que implementarlos de una manera diferente (<strong>polimorfismo</strong>) o no.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="12_clase_modulo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="14_clase_asiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

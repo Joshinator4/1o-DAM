@@ -1,0 +1,100 @@
+.titulos {
+    font-style: oblique ;
+    color:rgb(0, 255, 64);
+    background-color: rgb(255, 71, 71);
+    border: 7px solid rgb(25, 0, 255);
+    border-style: dotted;
+    padding: 20px;
+    text-align:center;
+
+}
+.principio {
+    overflow: auto;
+    color: rgb(0, 255, 76);
+    border: 10px solid rgb(200, 255, 0);
+    border-style: double;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding: 20px;
+    background-image: url(fondoneones.jpg);
+    background-size: cover;
+}
+.secundario {
+    overflow: auto;
+    font-style: unset;
+    color: rgb(0, 0, 0);
+    border: 10px solid rgb(0, 0, 0);
+    border-style: ridge;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    padding: 80px;
+    background-image: url(fondo.avif);
+    background-position: center;
+}
+.tercero{
+    overflow: auto;
+    font-style: unset;
+    color: rgb(0, 255, 242);
+    background-color: rgb(0, 53, 16);
+    border: 10px;
+    border-color: black rgb(255, 123, 0) red blue;
+    border-style:  dotted dashed solid double;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding: 35px
+}
+.imagenes {
+    float: left;
+    margin-right: 5px;
+}
+.piepagina{
+    text-align: right;
+}
+#enlace{
+    color: rgb(106, 117, 0);
+}
+#enlace:active {
+    text-align: center;
+    color:darkorange ;
+}
+#enlace:visited{
+color: darkgreen;
+}
+#enlace:hover{
+    color: darkred;
+}
+
+nav{
+    background-color: bisque;
+    margin-top: 50px;
+    float: left;
+    width: 30%;
+    height: 1300px;
+    margin-bottom: 15px;
+}
+
+article{
+    margin-left: 10px;
+    background-color: aqua;
+    margin-top: 50px;
+    float: left;
+    width: 69%;
+    height: 1300px;
+    margin-bottom: 15px;
+}
+footer{
+    overflow: auto;
+    background-color: chartreuse;
+    width: 100%;
+    clear: both;
+    margin-top: 15px;
+}
+
+body{
+    background-image: url(fondopagina.png);
+    background-size: 50%;
+}
+

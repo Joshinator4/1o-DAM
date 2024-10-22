@@ -1,0 +1,28 @@
+package ejercicio1;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 23 may 2024 
+Descripcion: clase Coche
+*/
+public class Coche extends Vehiculo{
+	
+	
+	enum Estado {NUEVO, DAÑADO_PARCIAL, DAÑADO};
+
+	private int kilometros;
+	private Estado estado;
+	
+	public Coche(String matricula, String dni, String telefono,String modelo, int kilometros, Estado estado) {
+		super(matricula, dni, telefono, modelo);
+		if(kilometros < 0) {
+			throw new IllegalArgumentException("Los km del coche no pueden ser menores a 0");
+		}else {
+			this.kilometros = kilometros;
+		}
+		this.estado = estado;
+	}
+	
+	
+	
+	
+}

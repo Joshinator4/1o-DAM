@@ -1,0 +1,64 @@
+package Vehiculo;
+
+import vehiculo.Vehiculo;
+
+public class Pincipal {
+
+	public static void main(String[] args) {
+
+		try {
+			Vehiculo vehiculo1 = new Vehiculo ();
+		
+			vehiculo1.repostar(25);
+			vehiculo1.arrancar();
+			vehiculo1.realizarTrayecto(5);
+			vehiculo1.realizarTrayecto(500);
+			vehiculo1.apagar();
+			System.out.println(vehiculo1.getCombustibleConsumido());
+			System.out.println(vehiculo1.getDistanciaRecorrida());
+			System.out.println(vehiculo1.getDistanciaRecorridaTotal());
+			System.out.println(vehiculo1.toString());
+			
+		}catch(IllegalArgumentException excepcion1) {
+			System.out.println(excepcion1.getMessage());
+		}catch(IllegalStateException excepcion2) {
+			System.out.println(excepcion2.getMessage());
+		}
+		
+		try {
+			Vehiculo vehiculo2 = new Vehiculo (40, 20);
+			vehiculo2.repostar(40);
+			vehiculo2.arrancar();
+			vehiculo2.realizarTrayecto(100);
+			System.out.println(vehiculo2.getCombustibleConsumido());
+			System.out.println(vehiculo2.getDistanciaRecorrida());
+			System.out.println(vehiculo2.getDistanciaRecorridaTotal());
+			System.out.println(vehiculo2.estadoVehiculo());
+		}catch(IllegalArgumentException excepcion3) {
+			System.out.println(excepcion3.getMessage());
+		}catch(IllegalStateException excepcion4) {
+			System.out.println(excepcion4.getMessage());
+		}
+		
+		try {
+			Vehiculo vehiculo3 = new Vehiculo ();
+			vehiculo3.repostar(10);
+			vehiculo3.arrancar();
+			vehiculo3.realizarTrayecto(300);
+			vehiculo3.apagarMotor();
+			vehiculo3.repostar(20);
+			vehiculo3.arrancar();
+			vehiculo3.realizarTrayecto(200);
+			System.out.println(vehiculo3.getCombustibleConsumido());
+			System.out.println(vehiculo3.getDistanciaRecorrida());
+			System.out.println(vehiculo3.getDistanciaRecorridaTotal());
+			System.out.println(vehiculo3.estadoVehiculo());
+		}catch(IllegalArgumentException excepcion3) {
+			System.out.println(excepcion3.getMessage());
+		}catch(IllegalStateException excepcion4) {
+			System.out.println(excepcion4.getMessage());
+		}
+
+	}
+
+}

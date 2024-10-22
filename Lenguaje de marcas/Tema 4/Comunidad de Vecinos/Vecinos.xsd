@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="comunidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="1" name="vecino">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="codigoVecino" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="1" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="apellidos" type="xs:string" />
+                            <xs:element name="CuentaCorriente" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:pattern value="[0-9]{20}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>    
+                            <xs:element name="cargo" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="presidente" />
+                                        <xs:enumeration value="vicepresidente" />
+                                        <xs:enumeration value="secretario" />
+                                        <xs:enumeration value="secretaria" />
+                                        <xs:enumeration value="vocal" />
+                                        <xs:enumeration value="ninguno" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>    
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

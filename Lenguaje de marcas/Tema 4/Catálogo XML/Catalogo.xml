@@ -1,0 +1,35 @@
+!-- guardar 1 solo nombre(sin signo), descripción opcional(signo ?), precio puede haber 1 o mas (signo +)--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  articulos [
+    <!ELEMENT articulos (articulo*)>
+    <!ELEMENT articulo (nombre, descripcion?, precio+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+
+<articulos>
+    <articulo>
+        <nombre>Libro</nombre>
+        <descripcion>asdasd</descripcion>
+        <precio>7.5€</precio>
+        <precio>9.5€</precio>
+    </articulo>
+
+    <articulo>
+        <nombre>Pelicula</nombre>
+        <precio>10.8€</precio>
+    </articulo>
+
+    <articulo>
+        <nombre>Revista</nombre>
+        <descripcion>Genero Adultos</descripcion>
+        <precio>37.95€</precio>
+        <precio>7.95€</precio>
+        <precio>19.95€</precio>
+    </articulo>
+
+</articulos>
+    
+
+ 

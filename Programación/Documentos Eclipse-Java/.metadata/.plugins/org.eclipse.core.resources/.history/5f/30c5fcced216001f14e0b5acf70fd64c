@@ -1,0 +1,88 @@
+package ejercicio1;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 20 may 2024 
+Descripcion: clase Socio
+*/
+public abstract class Socio {
+	
+	private static int contadorSocio=0;
+	
+	protected String nombre;
+	protected String dni;
+	protected String telefono;
+	protected int identificador;
+	
+	
+	public Socio(String nombre, String dni, String telefono) {
+		this.nombre = nombre;
+		this.dni = dni;
+		this.telefono = telefono;
+		this.identificador = contadorSocio;
+		contadorSocio ++;
+		
+	}
+
+
+	public static int getContadorSocio() {
+		return contadorSocio;
+	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public String getDni() {
+		return dni;
+	}
+
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+
+	public int getIdentificador() {
+		return identificador;
+	}
+
+
+	public static void setContadorSocio(int contadorSocio) {
+		Socio.contadorSocio = contadorSocio;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+
+	public void setIdentificador(int identificador) {
+		this.identificador = identificador;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Socio [nombre=" + nombre + ", dni=" + dni + ", telefono=" + telefono + ", identificador="
+				+ identificador + "]";
+	}
+	
+	
+	
+	
+	
+
+}

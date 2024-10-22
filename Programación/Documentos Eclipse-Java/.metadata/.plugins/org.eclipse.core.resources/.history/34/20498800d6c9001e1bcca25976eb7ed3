@@ -1,0 +1,21 @@
+package ejercicio2;
+
+import java.time.LocalDate;
+
+public class Deportivo extends Coche {
+	enum Traccion {delantera, total}
+	
+	private Traccion traccion;
+	
+	
+	public Deportivo(String matricula, String nombrePropietario, LocalDate fecha, int cilindrada, int potencia, Traccion traccion) throws IllegalArgumentException{
+		super(matricula, nombrePropietario, fecha, cilindrada, potencia);
+		this.traccion = traccion;
+	}
+
+
+	@Override
+	public String toString() {
+		return super.toString() + "Deportivo [traccion=" + traccion + "]";
+	}
+}

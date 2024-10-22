@@ -1,0 +1,62 @@
+body {
+    background-color:rgb(255, 81, 0);
+}
+header {
+    border: hwb(20 0% 20%) 3px solid;
+    border-radius: 0 20px 20px 20px;
+    margin: 10px 50px;
+    background-color: hwb(25 40% 0%);
+}
+main {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    border-style: none;
+    background-color: bisque;
+    color: black;
+}
+section{
+    border: 2px;
+    
+    text-align: center;
+}
+h2 {
+    background-color: rgb(0, 11, 20);
+    color: rgb(255, 126, 255);
+}
+footer {
+    margin-top: 100px;
+    margin-left: 80px;
+    border-style: dashed;
+    border-color: crimson;
+    background-color: deepskyblue;
+}
+section.Aragonés{
+    margin: 10px 10px 10px 10px;
+    background-image: url(campodefutbol.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-style: dotted;
+    border-color: rgb(44, 3, 226);
+}
+section.Márquez {
+    margin: 80px;
+    background-color: aqua;
+    border-style:groove;
+    border-color: rgb(112, 7, 0);
+    border-width: 15px;
+}
+section.Matute {
+
+    border: hwb(300 0% 10%) 3px solid;
+    border-radius: 20px 0;
+    margin: 50px 50px;
+    background-color: hwb(300 80% 0%)
+}
+section.Alfredo{
+    border: hwb(125 0% 73%) 3px solid;
+    border-radius: 20px 0;
+    margin: 50px 50px;
+    background-color: hwb(125 1% 2%)
+}

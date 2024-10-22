@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;SangareauJoshua_10.99/src&apos;&#x0D;&#x0A;- Original project: &apos;JavaFXCalculadora&apos;&#x0D;&#x0A;- Destination element: &apos;SangareauJoshua_10.99/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JavaFXCalculadora/src/vista&#x0D;&#x0A;     JavaFXCalculadora/src/controlador&#x0D;&#x0A;     JavaFXCalculadora/src/modelo" description="Copy packages" destination="=SangareauJoshua_10.99/src" element1="/src&lt;vista" element2="/src&lt;controlador" element3="/src&lt;modelo" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1715359043803" version="1.0"/>
+</session>

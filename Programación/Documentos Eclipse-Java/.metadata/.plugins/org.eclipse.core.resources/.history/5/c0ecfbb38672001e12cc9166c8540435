@@ -1,0 +1,10 @@
+package descubrir_NºAleatorio;
+
+public class Descubrir_nºAleatorio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

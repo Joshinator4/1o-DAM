@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pizzas SYSTEM "DTDpizzeria.dtd">
+<pizzas>
+  <pizza nombre="Barbacoa" precio="8">
+    <ingrediente nombre="Salsa Barbacoa"/>
+    <ingrediente nombre="Mozzarella"/>
+    <ingrediente nombre="Pollo"/>
+    <ingrediente nombre="Bacon"/>
+    <ingrediente nombre="Ternera"/>
+    <masa>clasica</masa>
+    <horneado>15 min</horneado>
+    <salsas>barbacoa</salsas>
+  </pizza>
+  <pizza nombre="Margarita" precio="6">
+    <ingrediente nombre="Tomate"/>
+    <ingrediente nombre="Jamón"/>
+    <ingrediente nombre="Queso"/>
+    <masa>fina</masa>
+    <horneado>25 min</horneado>
+  </pizza>
+</pizzas>

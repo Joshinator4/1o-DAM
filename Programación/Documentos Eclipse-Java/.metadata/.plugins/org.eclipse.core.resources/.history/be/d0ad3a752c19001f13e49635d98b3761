@@ -1,0 +1,93 @@
+package ejercicio1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import ejercicio1.Coche.Estado;
+import ejercicio1.SocioBaloncesto.TipoPosicion;
+
+/*Autor: Joshua Sangareau Quesada
+Fecha: 23 may 2024 
+Descripcion: clase Principal
+Incluir un estacionamiento para un vehículo si hay disponibilidad. Si no hay disponibilidad hay que indicarlo.
+Exportar todos los vehículos estacionados a un documento de texto mostrando toda la información ordenados por matrícula.
+Mostrar la información de los coches con estado de conservación “nuevo”.
+Buscar si está estacionado un vehículo a partir de su matrícula mostrando toda la información.
+Calcular el precio del estacionamiento de un vehículo a partir de su matrícula que debe existir en el sistema. El número de días se pedirá al usuario.
+Eliminar un vehículo a partir de su matrícula. Se informará en el caso de que no exista la matrícula.
+Calcular el número de estacionamientos de coches y motocicletas disponibles.
+*/
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in); 
+		int opcionDeseada;
+	
+		
+		do {
+			System.out.println("Elija un opcion:\n1 - Mostrar Películas.\n2 - Borrar Plataforma"
+					+ "\n3 - Modificar Plataforma.\n4 - Mostrar Películas por plataformas\n0 - Salir del programa");
+			opcionDeseada = teclado.nextInt();
+			switch (opcionDeseada) {
+			case (1): {
+			
+				break;
+
+			}
+			case (2): {
+				
+				break;
+
+			}
+			case (3): {
+				
+				break;
+				
+			}
+			case (4): {
+	
+				break;
+				
+			}
+			case (0): {
+				System.out.println("Se va a proceder a cerrar el programa, ¡Hasta Pronto!");
+			
+				break;
+			}
+			default: {
+				System.out.println(
+						"Se ha introducido una opcion incorrecta, introduzca un numero de cualquiera de las funciones");
+			}
+
+			}
+
+		} while (opcionDeseada != 0);
+
+	}
+	
+	//Este metodo convierte el string en un tipo enumerado de TipoPosicion
+		public static Estado convertirEnum(String posicion) {
+			Estado devolucion = null;
+			if(posicion.equalsIgnoreCase("NUEVO")) {
+				devolucion = Estado.NUEVO;
+			}else if(posicion.equalsIgnoreCase("DAÑADO PARCIAL")) {
+				devolucion = Estado.DAÑADO_PARCIAL;
+			}else if(posicion.equalsIgnoreCase("DAÑADO")) {
+				devolucion = Estado.DAÑADO;
+			}
+			return devolucion;
+			
+		}
+	
+	public static void crearEstacionamiento() {
+		String matricula, dni, telefono, modelo;
+		Estado estado;
+		
+		
+	}
+
+	
+
+}

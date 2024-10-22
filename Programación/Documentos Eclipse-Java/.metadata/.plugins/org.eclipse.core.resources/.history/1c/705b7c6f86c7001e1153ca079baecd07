@@ -1,0 +1,47 @@
+package vehiculo;
+
+/*
+ * Richard Chadwick Plaza	1ºDAM	
+ * 
+ * Crear un programa que simule el funcionamiento elemental de una flota de vehículos
+ */
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		try {
+			Vehiculo vehiculo1 = new Vehiculo ();
+		
+			vehiculo1.repostar(25);
+			vehiculo1.arrancar();
+			vehiculo1.realizarTrayecto(5);
+			//vehiculo1.realizarTrayecto(500);
+			//vehiculo1.apagarMotor();
+			System.out.println(vehiculo1.getCombustibleConsumido());
+			System.out.println(vehiculo1.getDistanciaRecorrida());
+			System.out.println(vehiculo1.getDistanciaRecorridaTotal());
+		}catch(IllegalArgumentException excepcion1) {
+			System.out.println(excepcion1.getMessage());
+		}catch(IllegalStateException excepcion2) {
+			System.out.println(excepcion2.getMessage());
+		}
+		
+		try {
+			Vehiculo vehiculo2 = new Vehiculo (40, 20);
+			vehiculo2.repostar(100);
+			vehiculo2.arrancar();
+			vehiculo2.realizarTrayecto(100);
+			//vehiculo1.realizarTrayecto(500);
+			//vehiculo1.apagarMotor();
+			//System.out.println(vehiculo1.getCombustibleConsumido());
+			//System.out.println(vehiculo1.getDistanciaRecorrida());
+			//System.out.println(vehiculo1.getDistanciaRecorridaTotal());
+		}catch(IllegalArgumentException excepcion1) {
+			System.out.println(excepcion1.getMessage());
+		}catch(IllegalStateException excepcion2) {
+			System.out.println(excepcion2.getMessage());
+		}
+		
+		
+	}
+}

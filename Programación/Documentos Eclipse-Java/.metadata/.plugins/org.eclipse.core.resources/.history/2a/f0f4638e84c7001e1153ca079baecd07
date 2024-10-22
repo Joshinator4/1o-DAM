@@ -1,0 +1,34 @@
+package vehiculo;
+
+/*
+ * Richard Chadwick Plaza	1ºDAM	
+ * 
+ * Crear un programa que simule el funcionamiento elemental de una flota de vehículos
+ */
+public class Principal {
+
+	public static void main(String[] args) {
+		
+	    try {
+            Vehiculo v1 = new Vehiculo();
+            
+            Vehiculo v2 = new Vehiculo(110, 4);
+            
+            Vehiculo v3 = new Vehiculo();
+            
+            v3.repostar(40);
+            v3.arrancar();
+            v3.realizarTrayecto(60);
+            
+            System.out.println(v3.estadoVehiculo());
+            
+        } catch (IllegalArgumentException e) {
+        	
+            System.out.println("Error: " + e.getMessage());
+            
+        }catch(IllegalStateException e) {
+        	
+        	 System.out.println("Error: " + e.getMessage());	
+        }
+	}
+}
